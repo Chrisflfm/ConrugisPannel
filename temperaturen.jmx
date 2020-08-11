@@ -1,0 +1,399 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="temperaturen" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/temperaturen.png" id="temperaturen" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="684.06" imagePath="images/conrugisPlattegrond.jpg" x="11.70" y="16.94" cx="342.03" cy="362" height="724"/>
+  </object>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Ruimte" id="0"/>
+    <MLText L1="Dak" id="3"/>
+    <MLText L1="Garage" id="4"/>
+    <MLText L1="Loods" id="6"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="clschtrImg6" static="true">
+   <wgtStyle width="59" imagePath="images/thermlrecycboilr.svg" x="825.02" y="68.59" cx="29" cy="34" height="68"/>
+  </object>
+  <object class="GroupWgt" id="GauVert1" customType="Linear Gauge">
+   <wgtStyle width="99" x="103.08" y="285.38" cx="30" cy="90" height="251" mtx="0.606061,0,0,0,0.717131,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd" id="GauVert1.bgImg" static="true">
+    <wgtStyle width="99" imagePath="images/vgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="10" cy="39" height="251"/>
+   </object>
+   <object class="LabelsWgt" id="GauVert1.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="13" showThousandSeparator="false" startAngle="-20" cy="114" step="1" timeSpec="local" reverseScale="true" endAngle="185" x="52.33" y="22" rotated="true" vert-align="top" text="" max="55" usingFormat="" value="" keypad-type="None" align="1" min="-10" width="28" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="176" labelFreq="5" form="vertical" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauVert1.scale">
+    <wgtStyle alarmMin="-10" forcePaint="65" cx="11" startAngle="-20" cy="118" reverseScale="true" endAngle="185" x="29" y="27" max="55" autoAdjust="true" min="-10" stroke-width="21" width="25" Color="none" fill="none" size="143" alarmMax="5" height="162" stroke="rgb(255,0,0)" form="vertical"/>
+   </object>
+   <object class="TicksWgt" id="GauVert1.ticks">
+    <wgtStyle forcePaint="1" cx="13" startAngle="-10" cy="159" endAngle="200" reverseScale="true" tickSize2="23" x="23" y="27" max="55" align="1" min="-10" stroke-width="3" width="29" stroke-linecap="butt" tickSize="12" tickFreq="4" height="166" labelFreq="5" form="vertical" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauVert1.ndl">
+    <wgtStyle forcePaint="1" cx="14" cy="173" acceptClick="true" reverseScale="true" moveStep="1" x="18" y="19" discrete="true" max="55" value="20" min="-10" width="34" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="182" toolTipBgColor="rgb(255,255,255)" form="vertical"/>
+    <object class="ImageWgt" id="GauVert1.ndl.img">
+     <wgtStyle width="29" imagePath="images/ne_pointed_vert.svg" x="0" forcePaint="65" y="123" fill="rgb(255,0,0)" cx="14" cy="8" height="17" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GauVert2" customType="Linear Gauge">
+   <wgtStyle width="99" x="390.91" y="273.58" cx="30" cy="90" height="251" mtx="0.606061,0,0,0,0.717131,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd" id="GauVert2.bgImg" static="true">
+    <wgtStyle width="99" imagePath="images/vgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="10" cy="39" height="251"/>
+   </object>
+   <object class="LabelsWgt" id="GauVert2.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="13" showThousandSeparator="false" startAngle="-20" cy="114" step="1" timeSpec="local" reverseScale="true" endAngle="185" x="52.33" y="22" rotated="true" vert-align="top" text="" max="55" usingFormat="" value="" keypad-type="None" align="1" min="-10" width="28" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="176" labelFreq="5" form="vertical" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauVert2.scale">
+    <wgtStyle alarmMin="-10" forcePaint="65" cx="11" startAngle="-20" cy="118" reverseScale="true" endAngle="185" x="29" y="27" max="55" autoAdjust="true" min="-10" stroke-width="21" width="25" Color="none" fill="none" size="143" alarmMax="5" height="162" stroke="rgb(255,0,0)" form="vertical"/>
+   </object>
+   <object class="TicksWgt" id="GauVert2.ticks">
+    <wgtStyle forcePaint="1" cx="13" startAngle="-10" cy="159" endAngle="200" reverseScale="true" tickSize2="23" x="23" y="27" max="55" align="1" min="-10" stroke-width="3" width="29" stroke-linecap="butt" tickSize="12" tickFreq="4" height="166" labelFreq="5" form="vertical" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauVert2.ndl">
+    <wgtStyle forcePaint="1" cx="14" cy="173" acceptClick="true" reverseScale="true" moveStep="1" x="18" y="19" discrete="true" max="55" value="22" min="-10" width="34" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="182" toolTipBgColor="rgb(255,255,255)" form="vertical"/>
+    <object class="ImageWgt" id="GauVert2.ndl.img">
+     <wgtStyle width="29" imagePath="images/ne_pointed_vert.svg" x="0" forcePaint="65" y="123" fill="rgb(255,0,0)" cx="14" cy="8" height="17" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt1">
+   <wgtStyle width="95" x="185.90" y="105.75" cx="47.50" cy="39.50" height="79"/>
+   <object class="BargraphWgt" hmiStyle="hmi-type:*barv" id="GroupWgt1.BargraphSeg2">
+    <wgtStyle width="95" imagePath="images/barseg_round_leds.svg" reverseScale="false" x="0" y="0" fill="rgb(0,0,255)" cx="47" form="segments" cy="39" height="79" value="0" nodeCount="20" min="-5" max="5" color="rgb(255,173,91)"/>
+   </object>
+   <object class="NumericWgt" id="GroupWgt1.field1">
+    <wgtStyle forcePaint="65" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="6.60" y="46.76" vert-align="top" text="20" max="25" usingFormat="" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="15" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GroupWgt2">
+   <wgtStyle width="95" x="477.07" y="115.79" cx="47.50" cy="39.50" height="79"/>
+   <object class="BargraphWgt" hmiStyle="hmi-type:*barv" id="GroupWgt2.BargraphSeg2">
+    <wgtStyle width="95" imagePath="images/barseg_round_leds.svg" reverseScale="false" x="0" y="0" fill="rgb(0,0,255)" cx="47" form="segments" cy="39" height="79" value="0" nodeCount="20" min="-5" max="5" color="rgb(255,173,91)"/>
+   </object>
+   <object class="NumericWgt" id="GroupWgt2.field1">
+    <wgtStyle forcePaint="65" font-family="Roboto" font-sizepx="16" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="6.60" y="46.76" vert-align="top" text="20" max="25" usingFormat="" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="15" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="12"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GauVert3" customType="Linear Gauge">
+   <wgtStyle width="99" x="260.71" y="274.95" cx="30" cy="90" height="251" mtx="0.606061,0,0,0,0.717131,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd" id="GauVert3.bgImg" static="true">
+    <wgtStyle width="99" imagePath="images/vgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="10" cy="39" height="251"/>
+   </object>
+   <object class="LabelsWgt" id="GauVert3.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="13" showThousandSeparator="false" startAngle="-20" cy="114" step="1" timeSpec="local" reverseScale="true" endAngle="185" x="52.33" y="22" rotated="true" vert-align="top" text="" max="55" usingFormat="" value="" keypad-type="None" align="1" min="-10" width="28" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="176" labelFreq="5" form="vertical" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauVert3.scale">
+    <wgtStyle alarmMin="-10" forcePaint="65" cx="11" startAngle="-20" cy="118" reverseScale="true" endAngle="185" x="29" y="27" max="55" autoAdjust="true" min="-10" stroke-width="21" width="25" Color="none" fill="none" size="143" alarmMax="5" height="162" stroke="rgb(255,0,0)" form="vertical"/>
+   </object>
+   <object class="TicksWgt" id="GauVert3.ticks">
+    <wgtStyle forcePaint="1" cx="13" startAngle="-10" cy="159" endAngle="200" reverseScale="true" tickSize2="23" x="23" y="27" max="55" align="1" min="-10" stroke-width="3" width="29" stroke-linecap="butt" tickSize="12" tickFreq="4" height="166" labelFreq="5" form="vertical" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauVert3.ndl">
+    <wgtStyle forcePaint="1" cx="14" cy="173" acceptClick="true" reverseScale="true" moveStep="1" x="18" y="19" discrete="true" max="55" value="25" min="-10" width="34" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="182" toolTipBgColor="rgb(255,255,255)" form="vertical"/>
+    <object class="ImageWgt" id="GauVert3.ndl.img">
+     <wgtStyle width="29" imagePath="images/ne_pointed_vert.svg" x="0" forcePaint="65" y="123" fill="rgb(255,0,0)" cx="14" cy="8" height="17" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GauVert4" customType="Linear Gauge">
+   <wgtStyle width="99" x="584.22" y="273.58" cx="30" cy="90" height="251" mtx="0.606061,0,0,0,0.717131,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rrect_1; hmi-type:bkgd" id="GauVert4.bgImg" static="true">
+    <wgtStyle width="99" imagePath="images/vgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="10" cy="39" height="251"/>
+   </object>
+   <object class="LabelsWgt" id="GauVert4.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="13" showThousandSeparator="false" startAngle="-20" cy="114" step="1" timeSpec="local" reverseScale="true" endAngle="185" x="52.33" y="22" rotated="true" vert-align="top" text="" max="55" usingFormat="" value="" keypad-type="None" align="1" min="-10" width="28" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="176" labelFreq="5" form="vertical" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauVert4.scale">
+    <wgtStyle alarmMin="-10" forcePaint="65" cx="11" startAngle="-20" cy="118" reverseScale="true" endAngle="185" x="29" y="27" max="55" autoAdjust="true" min="-10" stroke-width="21" width="25" Color="none" fill="none" size="143" alarmMax="5" height="162" stroke="rgb(255,0,0)" form="vertical"/>
+   </object>
+   <object class="TicksWgt" id="GauVert4.ticks">
+    <wgtStyle forcePaint="1" cx="13" startAngle="-10" cy="159" endAngle="200" reverseScale="true" tickSize2="23" x="23" y="27" max="55" align="1" min="-10" stroke-width="3" width="29" stroke-linecap="butt" tickSize="12" tickFreq="4" height="166" labelFreq="5" form="vertical" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauVert4.ndl">
+    <wgtStyle forcePaint="1" cx="14" cy="173" acceptClick="true" reverseScale="true" moveStep="1" x="18" y="19" discrete="true" max="55" value="27" min="-10" width="34" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="182" toolTipBgColor="rgb(255,255,255)" form="vertical"/>
+    <object class="ImageWgt" id="GauVert4.ndl.img">
+     <wgtStyle width="29" imagePath="images/ne_pointed_vert.svg" x="0" forcePaint="65" y="123" fill="rgb(255,0,0)" cx="14" cy="8" height="17" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="54" font-color="rgb(23,30,40)" x="106.08" font-sizepx="16" y="473.38" font-family="Roboto" wrapping="true" cx="25.02" cy="10.42" height="22" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label2" static="true">
+   <wgtStyle width="54" font-color="rgb(23,30,40)" x="393.91" font-sizepx="16" y="467.04" font-family="Roboto" wrapping="true" cx="25.02" cy="10.42" height="22" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label3" static="true">
+   <wgtStyle width="57" font-color="rgb(23,30,40)" x="585.72" font-sizepx="16" y="466.83" font-family="Roboto" wrapping="true" cx="26.41" cy="10.62" height="22.42" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label4" static="true">
+   <wgtStyle width="57" font-color="rgb(23,30,40)" x="262.21" font-sizepx="16" y="462.95" font-family="Roboto" wrapping="true" cx="26.41" cy="10.62" height="22.42" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="3"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="clsctnksImg22" static="true">
+   <wgtStyle width="52" imagePath="images/tnk18.svg" x="799.02" y="176.91" cx="26.36" cy="38" height="76"/>
+  </object>
+  <object class="ImageWgt" id="clsctnksImg1" static="true">
+   <wgtStyle width="52" imagePath="images/tnk18.svg" x="862.73" y="176.91" cx="26.36" cy="38" height="76"/>
+  </object>
+  <object class="GroupWgt" id="GauHrz" customType="Linear Gauge">
+   <wgtStyle width="270" x="932.86" y="64.09" cx="82.50" cy="38.50" height="148" mtx="0.611111,0,0,0,0.52027,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd" id="GauHrz.bgImg" static="true">
+    <wgtStyle width="270" imagePath="images/hgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="29.76" cy="23" height="148"/>
+   </object>
+   <object class="LabelsWgt" id="GauHrz.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="102" showThousandSeparator="false" startAngle="-20" cy="13" step="1" timeSpec="local" endAngle="185" x="29" y="26" rotated="true" vert-align="top" text="" max="100" usingFormat="" value="" keypad-type="None" min="0" width="213" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="20" labelFreq="5" form="horizontal" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauHrz.scale" static="true">
+    <wgtStyle alarmMin="95" cx="95.49" startAngle="-20" cy="19.52" reverseScale="false" endAngle="185" x="38" y="46" max="100" autoAdjust="true" stroke-width="21" width="196" Color="none" fill="none" size="143" alarmMax="100" height="26" stroke="rgb(255,0,0)" form="horizontal"/>
+   </object>
+   <object class="TicksWgt" id="GauHrz.ticks">
+    <wgtStyle forcePaint="65" cx="95.82" startAngle="-10" cy="26" endAngle="200" reverseScale="true" tickSize2="23" x="37" y="45" max="100" stroke-width="4" width="200" stroke-linecap="butt" tickSize="12" tickFreq="4" height="27" labelFreq="5" form="horizontal" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauHrz.ndl">
+    <wgtStyle forcePaint="65" cx="7.03" cy="21.76" acceptClick="true" moveStep="1" x="31" y="38" discrete="true" max="100" value="80" width="210" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="42" form="horizontal"/>
+    <object class="ImageWgt" id="GauHrz.ndl.img">
+     <wgtStyle width="14" imagePath="images/ne_pointed_horiz.svg" x="0" forcePaint="65" y="9" fill="rgb(255,0,0)" cx="7" cy="15" height="31" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GauHrz1" customType="Linear Gauge">
+   <wgtStyle width="270" x="932.86" y="176.41" cx="82.50" cy="38.50" height="148" mtx="0.611111,0,0,0,0.52027,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd" id="GauHrz1.bgImg" static="true">
+    <wgtStyle width="270" imagePath="images/hgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="29.76" cy="23" height="148"/>
+   </object>
+   <object class="LabelsWgt" id="GauHrz1.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="102" showThousandSeparator="false" startAngle="-20" cy="13" step="1" timeSpec="local" endAngle="185" x="29" y="26" rotated="true" vert-align="top" text="" max="100" usingFormat="" value="" keypad-type="None" min="0" width="213" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="20" labelFreq="5" form="horizontal" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauHrz1.scale" static="true">
+    <wgtStyle alarmMin="95" cx="95.49" startAngle="-20" cy="19.52" reverseScale="false" endAngle="185" x="38" y="46" max="100" autoAdjust="true" stroke-width="21" width="196" Color="none" fill="none" size="143" alarmMax="100" height="26" stroke="rgb(255,0,0)" form="horizontal"/>
+   </object>
+   <object class="TicksWgt" id="GauHrz1.ticks">
+    <wgtStyle forcePaint="65" cx="95.82" startAngle="-10" cy="26" endAngle="200" reverseScale="true" tickSize2="23" x="37" y="45" max="100" stroke-width="4" width="200" stroke-linecap="butt" tickSize="12" tickFreq="4" height="27" labelFreq="5" form="horizontal" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauHrz1.ndl">
+    <wgtStyle forcePaint="65" cx="7.03" cy="21.76" acceptClick="true" moveStep="1" x="31" y="38" discrete="true" max="100" value="70" width="210" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="42" form="horizontal"/>
+    <object class="ImageWgt" id="GauHrz1.ndl.img">
+     <wgtStyle width="14" imagePath="images/ne_pointed_horiz.svg" x="0" forcePaint="65" y="9" fill="rgb(255,0,0)" cx="7" cy="15" height="31" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle font-bold="true" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="center" x="207.90" y="210.25" vert-align="top" frameFill="rgb(255,255,0)" text="20" max="25" usingFormat="" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="15" width="49" numberFormat="1" readWrite="true" height="19" frame="true" font-size="16" form="Numeric" frameColor="rgb(255,255,0)"/>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle font-bold="true" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="center" x="500.32" y="220.29" vert-align="top" frameFill="rgb(255,255,0)" text="20" max="25" usingFormat="" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="15" width="49" numberFormat="1" readWrite="true" height="19" frame="true" font-size="16" form="Numeric" frameColor="rgb(255,255,0)"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg41" static="true">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
+   <wgtStyle width="65" x="4.76" y="746.50" fill="rgb(160,160,164)" dx="1" cx="32" form="gesture" dy="-1" cy="25" height="51" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="arrwImg1" static="true">
+   <wgtStyle width="32" imagePath="images/arrowhead.svg" x="838.52" y="311.23" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="ImageWgt" id="arrwImg2" static="true">
+   <wgtStyle width="32" imagePath="images/arrowhead.svg" x="838.52" y="423.54" cx="16" cy="16" height="32" mtx="-1,0,0,0,-1,0,32,32,1"/>
+  </object>
+  <object class="GroupWgt" id="GauHrz2" customType="Linear Gauge">
+   <wgtStyle width="270" x="932.86" y="288.73" cx="82.50" cy="38.50" height="148" mtx="0.611111,0,0,0,0.52027,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd" id="GauHrz2.bgImg" static="true">
+    <wgtStyle width="270" imagePath="images/hgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="29.76" cy="23" height="148"/>
+   </object>
+   <object class="LabelsWgt" id="GauHrz2.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="102" showThousandSeparator="false" startAngle="-20" cy="13" step="1" timeSpec="local" endAngle="185" x="29" y="26" rotated="true" vert-align="top" text="" max="100" usingFormat="" value="" keypad-type="None" min="0" width="213" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="20" labelFreq="5" form="horizontal" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauHrz2.scale" static="true">
+    <wgtStyle alarmMin="95" cx="95.49" startAngle="-20" cy="19.52" reverseScale="false" endAngle="185" x="38" y="46" max="100" autoAdjust="true" stroke-width="21" width="196" Color="none" fill="none" size="143" alarmMax="100" height="26" stroke="rgb(255,0,0)" form="horizontal"/>
+   </object>
+   <object class="TicksWgt" id="GauHrz2.ticks">
+    <wgtStyle forcePaint="65" cx="95.82" startAngle="-10" cy="26" endAngle="200" reverseScale="true" tickSize2="23" x="37" y="45" max="100" stroke-width="4" width="200" stroke-linecap="butt" tickSize="12" tickFreq="4" height="27" labelFreq="5" form="horizontal" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauHrz2.ndl">
+    <wgtStyle forcePaint="65" cx="7.03" cy="21.76" acceptClick="true" moveStep="1" x="31" y="38" discrete="true" max="100" value="80" width="210" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="42" form="horizontal"/>
+    <object class="ImageWgt" id="GauHrz2.ndl.img">
+     <wgtStyle width="14" imagePath="images/ne_pointed_horiz.svg" x="0" forcePaint="65" y="9" fill="rgb(255,0,0)" cx="7" cy="15" height="31" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GauHrz21" customType="Linear Gauge">
+   <wgtStyle width="270" x="932.86" y="401.04" cx="82.50" cy="38.50" height="148" mtx="0.611111,0,0,0,0.52027,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd" id="GauHrz21.bgImg" static="true">
+    <wgtStyle width="270" imagePath="images/hgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="29.76" cy="23" height="148"/>
+   </object>
+   <object class="LabelsWgt" id="GauHrz21.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="102" showThousandSeparator="false" startAngle="-20" cy="13" step="1" timeSpec="local" endAngle="185" x="29" y="26" rotated="true" vert-align="top" text="" max="100" usingFormat="" value="" keypad-type="None" min="0" width="213" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="20" labelFreq="5" form="horizontal" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauHrz21.scale" static="true">
+    <wgtStyle alarmMin="95" cx="95.49" startAngle="-20" cy="19.52" reverseScale="false" endAngle="185" x="38" y="46" max="100" autoAdjust="true" stroke-width="21" width="196" Color="none" fill="none" size="143" alarmMax="100" height="26" stroke="rgb(255,0,0)" form="horizontal"/>
+   </object>
+   <object class="TicksWgt" id="GauHrz21.ticks">
+    <wgtStyle forcePaint="65" cx="95.82" startAngle="-10" cy="26" endAngle="200" reverseScale="true" tickSize2="23" x="37" y="45" max="100" stroke-width="4" width="200" stroke-linecap="butt" tickSize="12" tickFreq="4" height="27" labelFreq="5" form="horizontal" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauHrz21.ndl">
+    <wgtStyle forcePaint="65" cx="7.03" cy="21.76" acceptClick="true" moveStep="1" x="31" y="38" discrete="true" max="100" value="40" width="210" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="42" form="horizontal"/>
+    <object class="ImageWgt" id="GauHrz21.ndl.img">
+     <wgtStyle width="14" imagePath="images/ne_pointed_horiz.svg" x="0" forcePaint="65" y="9" fill="rgb(255,0,0)" cx="7" cy="15" height="31" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GauHrz3" customType="Linear Gauge">
+   <wgtStyle width="270" x="932.86" y="513.36" cx="82.50" cy="38.50" height="148" mtx="0.611111,0,0,0,0.52027,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd" id="GauHrz3.bgImg" static="true">
+    <wgtStyle width="270" imagePath="images/hgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="29.76" cy="23" height="148"/>
+   </object>
+   <object class="LabelsWgt" id="GauHrz3.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="102" showThousandSeparator="false" startAngle="-20" cy="13" step="1" timeSpec="local" endAngle="185" x="29" y="26" rotated="true" vert-align="top" text="" max="100" usingFormat="" value="" keypad-type="None" min="0" width="213" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="20" labelFreq="5" form="horizontal" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauHrz3.scale" static="true">
+    <wgtStyle alarmMin="95" cx="95.49" startAngle="-20" cy="19.52" reverseScale="false" endAngle="185" x="38" y="46" max="100" autoAdjust="true" stroke-width="21" width="196" Color="none" fill="none" size="143" alarmMax="100" height="26" stroke="rgb(255,0,0)" form="horizontal"/>
+   </object>
+   <object class="TicksWgt" id="GauHrz3.ticks">
+    <wgtStyle forcePaint="65" cx="95.82" startAngle="-10" cy="26" endAngle="200" reverseScale="true" tickSize2="23" x="37" y="45" max="100" stroke-width="4" width="200" stroke-linecap="butt" tickSize="12" tickFreq="4" height="27" labelFreq="5" form="horizontal" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauHrz3.ndl">
+    <wgtStyle forcePaint="65" cx="7.03" cy="21.76" acceptClick="true" moveStep="1" x="31" y="38" discrete="true" max="100" value="20" width="210" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="42" form="horizontal"/>
+    <object class="ImageWgt" id="GauHrz3.ndl.img">
+     <wgtStyle width="14" imagePath="images/ne_pointed_horiz.svg" x="0" forcePaint="65" y="9" fill="rgb(255,0,0)" cx="7" cy="15" height="31" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="GauHrz31" customType="Linear Gauge">
+   <wgtStyle width="270" x="932.86" y="625.68" cx="82.50" cy="38.50" height="148" mtx="0.611111,0,0,0,0.52027,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;ScaleWgt.min;LabelsWgt.min;TicksWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;ScaleWgt.max;LabelsWgt.max;TicksWgt.max"/>
+    <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.startAngle"/>
+    <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:rrect_1; hmi-type:bkgd" id="GauHrz31.bgImg" static="true">
+    <wgtStyle width="270" imagePath="images/hgau_rrect1_chrome.svg" x="0" y="0" fill="rgb(255,255,255)" cx="29.76" cy="23" height="148"/>
+   </object>
+   <object class="LabelsWgt" id="GauHrz31.lbls">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="102" showThousandSeparator="false" startAngle="-20" cy="13" step="1" timeSpec="local" endAngle="185" x="29" y="26" rotated="true" vert-align="top" text="" max="100" usingFormat="" value="" keypad-type="None" min="0" width="213" labelNames="" numberFormat="1" readWrite="true" tickFreq="5" height="20" labelFreq="5" form="horizontal" font-size="0"/>
+   </object>
+   <object class="ScaleWgt" id="GauHrz31.scale" static="true">
+    <wgtStyle alarmMin="95" cx="95.49" startAngle="-20" cy="19.52" reverseScale="false" endAngle="185" x="38" y="46" max="100" autoAdjust="true" stroke-width="21" width="196" Color="none" fill="none" size="143" alarmMax="100" height="26" stroke="rgb(255,0,0)" form="horizontal"/>
+   </object>
+   <object class="TicksWgt" id="GauHrz31.ticks">
+    <wgtStyle forcePaint="65" cx="95.82" startAngle="-10" cy="26" endAngle="200" reverseScale="true" tickSize2="23" x="37" y="45" max="100" stroke-width="4" width="200" stroke-linecap="butt" tickSize="12" tickFreq="4" height="27" labelFreq="5" form="horizontal" minorStroke-width="2"/>
+   </object>
+   <object class="NeedleWgt" id="GauHrz31.ndl">
+    <wgtStyle forcePaint="65" cx="7.03" cy="21.76" acceptClick="true" moveStep="1" x="31" y="38" discrete="true" max="100" value="20" width="210" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" toolTipBgColor="rgb(255,255,255)" height="42" form="horizontal"/>
+    <object class="ImageWgt" id="GauHrz31.ndl.img">
+     <wgtStyle width="14" imagePath="images/ne_pointed_horiz.svg" x="0" forcePaint="65" y="9" fill="rgb(255,0,0)" cx="7" cy="15" height="31" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="ImageWgt" id="arrwImg3" static="true">
+   <wgtStyle width="32" imagePath="images/arrowhead.svg" x="838.52" y="532.94" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="ImageWgt" id="arrwImg4" static="true">
+   <wgtStyle width="32" imagePath="images/arrowhead.svg" x="838.52" y="645.25" cx="16" cy="16" height="32" mtx="-1,0,0,0,-1,0,32,32,1"/>
+  </object>
+  <object class="LabelWgt" id="label5" static="true">
+   <wgtStyle width="84.73" font-color="rgb(23,30,40)" x="812.15" font-sizepx="21" y="367.35" font-family="Roboto" wrapping="true" cx="39.27" cy="15.20" height="32.08" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label6" static="true">
+   <wgtStyle width="84.73" font-color="rgb(23,30,40)" x="812.15" font-sizepx="21" y="589.05" font-family="Roboto" wrapping="true" cx="39.27" cy="15.20" height="32.08" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="clschtrImg1" static="true">
+   <wgtStyle width="29.57" imagePath="images/thermlrecycboilr.svg" x="535.54" y="518.97" cx="14.53" cy="13.97" height="27.94"/>
+  </object>
+  <object class="ImageWgt" id="clsctnksImg2" static="true">
+   <wgtStyle width="24.27" imagePath="images/tnk18.svg" x="470.56" y="676.03" cx="12.30" cy="12.50" height="25"/>
+  </object>
+  <object class="ImageWgt" id="clsctnksImg3" static="true">
+   <wgtStyle width="24.27" imagePath="images/tnk18.svg" x="500.29" y="676.03" cx="12.30" cy="12.50" height="25"/>
+  </object>
+ </object>
+</wgtPage>

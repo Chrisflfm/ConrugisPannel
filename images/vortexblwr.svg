@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="146.67px" xml:space="preserve" height="186.59px" viewBox="0 0 146.668 186.586" baseProfile="tiny" version="1.2" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g transform="matrix(1.2333 0 0 1.2333 -37.109 -31.273)">
+	<path d="m121.32 28.686v106.04h-7.264v-106.04h7.26z" fill="#C0C0C0"/>
+	<rect height="51.636" width="79.19" stroke="#000" y="48.786" x="35.349" stroke-width="2" fill="#808080"/>
+	<rect height="51.637" width="79.19" stroke="#000" y="124.36" x="35.349" stroke-width="2" fill="#808080"/>
+	<path d="m108.1 124.36v45.201h-66.32v-45.201h66.32z" stroke="#000" stroke-width="2" fill="#C0C0C0"/>
+	<path d="m110.09 118.56v5.304h-66.32v-5.304h66.32z" stroke="#000" stroke-width="2" fill="#C0C0C0"/>
+	<path d="m94.592 97.995l5.148 20.476h-49.557l5.791-20.476h38.618z" stroke="#000" stroke-width="2" fill="#C0C0C0"/>
+	<path d="m87.192 98.243l5.792 20.623h-36.045l6.435-20.623h23.818z" stroke="#000" stroke-width="2" fill="#808080"/>
+	<path d="m148.37 26v113.04h-28.709v-113.04h28.71z" stroke="#000" stroke-width="2" fill="#C0C0C0"/>
+	<path d="m129.72 28.686v106.04h-9.689v-106.04h9.69z" fill="#808080"/>
+	<path d="m147.76 128.33v5.544h-27.607v-5.544h27.61z" fill="#808080"/>
+	<path d="m147.56 134v4.58h-27.606v-4.58h27.61z"/>
+	<path d="m113.95 49.633v3.451h-78.009v-3.451h78.009z"/>
+	<path d="m147.87 30.349v-3.583h-27.999v3.583h28z" fill="#808080"/>
+	<path d="m113.27 85.058v-22.336h-77.203v22.336h77.203z" fill="#C0C0C0"/>
+	<line y2="111.21" x2="133.52" stroke="#000" y1="111.21" x1="114.09" fill="none"/>
+	<line y2="119.21" x2="133.52" stroke="#000" y1="119.21" x1="114.09" fill="none"/>
+	<line y2="131.94" x2="133.62" stroke="#000" y1="131.94" x1="114.18" fill="none"/>
+	<line y2="126.9" x2="132.91" stroke="#000" y1="126.9" x1="113.47" fill="none"/>
+	<line y2="32.748" x2="133.62" stroke="#000" y1="32.748" x1="114.18" fill="none"/>
+	<line y2="37.898" x2="133.91" stroke="#000" y1="37.898" x1="114.47" fill="none"/>
+	<line y2="55.246" x2="133.42" stroke="#000" y1="55.246" x1="113.99" fill="none"/>
+	<line y2="55.246" x2="133.42" stroke="#000" y1="55.246" x1="113.99" fill="none"/>
+	<line y2="55.246" x2="133.42" stroke="#000" y1="55.246" x1="113.99" fill="none"/>
+	<line y2="55.246" x2="133.42" stroke="#000" y1="55.246" x1="113.99" fill="none"/>
+	<line y2="55.246" x2="133.42" stroke="#000" y1="55.246" x1="113.99" fill="none"/>
+	<line y2="55.246" x2="133.42" stroke="#000" y1="55.246" x1="113.99" fill="none"/>
+	<line y2="61.214" x2="133.52" stroke="#000" y1="61.214" x1="114.09" fill="none"/>
+	<line y2="48.696" x2="134.22" stroke="#000" y1="48.696" x1="114.79" fill="none"/>
+	<line y2="42.898" x2="133.91" stroke="#000" y1="42.898" x1="114.47" fill="none"/>
+	<line y2="42.898" x2="133.91" stroke="#000" y1="42.898" x1="114.47" fill="none"/>
+	<line y2="42.898" x2="133.91" stroke="#000" y1="42.898" x1="114.47" fill="none"/>
+	<line y2="42.898" x2="133.91" stroke="#000" y1="42.898" x1="114.47" fill="none"/>
+	<line y2="42.898" x2="133.91" stroke="#000" y1="42.898" x1="114.47" fill="none"/>
+	<line y2="42.898" x2="133.91" stroke="#000" y1="42.898" x1="114.47" fill="none"/>
+	<line y2="42.898" x2="133.91" stroke="#000" y1="42.898" x1="114.47" fill="none"/>
+	<path d="m108.38 46.212v3.218h-67.573v-3.218h67.573z" stroke="#000" fill="#fff"/>
+	<path d="m108.43 50.026v3.218h-67.569v-3.218h67.569z" stroke="#000" fill="#fff"/>
+	<path d="m108.4 55.911v3.218h-67.566v-3.218h67.566z" stroke="#000" fill="#fff"/>
+	<path d="m108.4 63.145v3.218h-67.566v-3.218h67.566z" stroke="#000" fill="#fff"/>
+	<path d="m108.4 70.262v3.218h-67.566v-3.218h67.566z" stroke="#000" fill="#fff"/>
+	<path d="m108.4 77.666v3.218h-67.566v-3.218h67.566z" stroke="#000" fill="#fff"/>
+	<path d="m108.4 84.482v3.218h-67.566v-3.218h67.566z" stroke="#000" fill="#fff"/>
+	<path d="m114.16 96.601v3.452h-78.017v-3.452h78.017z"/>
+	<path d="m108.38 91.18v3.218h-67.573v-3.218h67.573z" stroke="#000" fill="#fff"/>
+	<path d="m108.43 94.995v3.218h-67.568v-3.218h67.568z" stroke="#000" fill="#fff"/>
+	<path d="m147.7 67.714v24.71h-27.253v-24.71h27.25z" fill="#808080"/>
+	<path d="m147.62 65.951v1.097h-27.348v-1.097h27.35z" fill="#fff"/>
+	<path d="m147.27 92.893v2.666h-27.35v-2.666h27.35z" fill="#fff"/>
+	<path d="m122.32 28.809l8-0.046v106.09l-8-0.005m0.03 0.05l-7.736-0.041v-106.04l8.118 0.054" stroke="#000" stroke-width="2" fill="none"/>
+	<line y2="67.214" x2="133.52" stroke="#000" y1="67.214" x1="114.09" fill="none"/>
+	<line y2="74.214" x2="133.52" stroke="#000" y1="74.214" x1="114.09" fill="none"/>
+	<line y2="80.214" x2="133.52" stroke="#000" y1="80.214" x1="114.09" fill="none"/>
+	<line y2="98.214" x2="133.52" stroke="#000" y1="98.214" x1="114.09" fill="none"/>
+	<line y2="105.21" x2="133.52" stroke="#000" y1="105.21" x1="114.09" fill="none"/>
+	<line y2="93.214" x2="133.52" stroke="#000" y1="93.214" x1="114.09" fill="none"/>
+	<line y2="86.214" x2="133.52" stroke="#000" y1="86.214" x1="114.09" fill="none"/>
+	<g stroke="#000">
+		<path d="m34.882 156.95v12.001h-4.294v-12.001h4.294z"/>
+		<path d="m34.882 142.83v15h-4.294v-15h4.294z" fill="#808080"/>
+		<path d="m34.882 131.42v12h-4.294v-12h4.294z" fill="#C0C0C0"/>
+	</g>
+</g>
+</svg>

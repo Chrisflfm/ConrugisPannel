@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="269px" xml:space="preserve" height="118px" viewBox="0 0 269 118" baseProfile="tiny" version="1.2" y="0px" x="0px" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g transform="translate(1,-39)">
+	<path d="m152 76v80h-152v-80h152z" stroke="#000" stroke-width="2" fill="#00C0C0"/>
+	<path d="m130 94v47h-73v-47h73z" stroke="#000" stroke-width="2" fill="#00C0C0"/>
+	<path d="m102 40v18h-19v-18h19z" stroke="#000" stroke-width="2" fill="#00C0C0"/>
+	<rect height="26.914" width="149.81" y="128.24" x="1.148" fill="#008080"/>
+	<rect height="25.71" width="148.72" y="103.07" x="1.148" fill="#00C0C0"/>
+	<rect height="16.008" width="4.465" y="40.979" x="83.98" fill="#008080"/>
+	<rect height="16.137" width="1.992" y="40.981" x="98.98" fill="#04706F"/>
+	<rect height="15.937" width="1.843" y="41.001" x="88.521" fill="#80FFFF"/>
+	<path d="m128.36 44.775h-13.66l-7.729 6.28h-37.782l-7.729 7.28" stroke="#035958" stroke-width="4" fill="none"/>
+	<rect height="26.313" width="149.68" y="77" x="1.148" fill="#09D9D7"/>
+	<path d="m104 58v18h-48v-18h48z" stroke="#000" stroke-width="2" fill="#00C0C0"/>
+	<rect height="16.065" width="6.604" y="58.947" x="56.908" fill="#008080"/>
+	<rect height="16.037" width="5.544" y="58.947" x="63.351" fill="#0AECE9"/>
+	<rect height="16.037" width="4.138" y="58.947" x="73.531" fill="#40FFFF"/>
+	<rect height="16.236" width="2.826" y="58.783" x="100.05" fill="#008080"/>
+	<path d="m57 76v80h-29v-80h29z" stroke="#000" stroke-width="2" fill="#00C0C0"/>
+	<rect height="9.955" width="26.723" y="111.86" x="29.027" fill="#40FFFF"/>
+	<rect height="6.433" width="26.723" y="103.68" x="29.027" fill="#03D5D3"/>
+	<rect height="6.433" width="27.056" y="76.919" x="28.861" fill="#008080"/>
+	<rect height="6.434" width="27.056" y="148.73" x="28.944" fill="#008080"/>
+	<path d="m267 40v11h-144v-11h144z" stroke="#000" stroke-width="2" fill="#00C0C0"/>
+	<path d="m265.89 47.257v2.758h-141.9v-2.758h141.9z" fill="#057D7C"/>
+	<path d="m265.89 41.027v2.758h-141.9v-2.758h141.9z" fill="#40FFFF"/>
+	<rect height="6.432" width="26.723" y="123.7" x="29.027" fill="#03D5D3"/>
+</g>
+</svg>

@@ -1,0 +1,34 @@
+<files>
+ <file fill="rgb(127,255,212)" strokeSize="-1" imgSize="19,54" stroke="rgb(255,255,255)" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_fathours.svg" numSizes="1"/>
+ <file fill="rgb(127,255,212)" strokeSize="-1" imgSize="18,66" stroke="rgb(255,255,255)" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_fatmins.svg" numSizes="1"/>
+ <file fill="rgb(60,179,113)" strokeSize="-1" imgSize="7,61" stroke="rgb(255,255,255)" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_secs2.svg" numSizes="1"/>
+ <file fill="rgb(192,192,192)" strokeSize="3" imgSize="16,29" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/ribbed_thumb_gray1.svg" numSizes="1"/>
+ <file fill="rgb(0,255,0)" imgSize="28,23" stroke="rgb(255,251,240)" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" imgSize="28,23" stroke="rgb(255,251,240)" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
+ <file fill="rgb(200,200,200)" imgSize="28,23" stroke="rgb(255,251,240)" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
+ <file fill="rgb(255,128,0)" imgSize="52,46" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
+ <file fill="rgb(0,0,255)" imgSize="52,46" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
+ <file fill="rgb(192,192,192)" imgSize="85,191" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
+ <file fill="rgb(0,255,0)" imgSize="85,191" stroke="none" numUses="3" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="2"/>
+ <file fill="rgb(40,40,40)" strokeSize="3" imgSize="36,24" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/hthmb_blkpl_rect_2_rev1.svg" numSizes="1"/>
+ <file fill="rgb(40,40,40)" strokeSize="3" imgSize="65,62" stroke="none" numUses="5" isSvgFile="true" dynamic="true" file="images/knob_blkpl_1_rev1.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" strokeSize="3" imgSize="29,17" stroke="none" numUses="4" isSvgFile="true" dynamic="true" file="images/ne_pointed_vert.svg" numSizes="1"/>
+ <file fill="rgb(255,0,0)" strokeSize="3" imgSize="14,31" stroke="none" numUses="6" isSvgFile="true" dynamic="true" file="images/ne_pointed_horiz.svg" numSizes="1"/>
+ <file fill="rgb(246,246,246)" imgSize="43,51" stroke="none" numUses="76" isSvgFile="true" file="images/btn_kbdwht_std_2_rev1.svg" numSizes="36" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="43,51" stroke="none" numUses="76" isSvgFile="true" file="images/btn_kbdwht_std_1_rev1.svg" numSizes="36" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="80,51" stroke="none" numUses="5" isSvgFile="true" file="images/btn_kbdwht_wide_2_rev1.svg" numSizes="5" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="80,51" stroke="none" numUses="5" isSvgFile="true" file="images/btn_kbdwht_wide_1_rev1.svg" numSizes="5" prePath="keypads"/>
+ <file fill="none" imgSize="45,41" stroke="none" numUses="4" isSvgFile="true" file="images/btn_kbdwht_long_2_rev1.svg" numSizes="4" prePath="keypads"/>
+ <file fill="none" imgSize="45,41" stroke="none" numUses="4" isSvgFile="true" file="images/btn_kbdwht_long_1_rev1.svg" numSizes="4" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="41,40" stroke="none" numUses="3" isSvgFile="true" file="images/ic_cn2_03.svg" numSizes="3" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="43,51" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl2_114.svg" numSizes="2" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="43,51" stroke="none" numUses="2" isSvgFile="true" file="images/ic_pl2_115.svg" numSizes="2" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="201,51" stroke="none" numUses="1" isSvgFile="true" file="images/btn_kbdwht_long_2_rev1.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(246,246,246)" imgSize="201,51" stroke="none" numUses="1" isSvgFile="true" file="images/btn_kbdwht_long_1_rev1.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/backspace_small.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_117.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_116_rev1.svg" numSizes="1" prePath="keypads"/>
+ <file fill="rgb(127,255,212)" imgSize="490,498" stroke="none" numUses="1" isSvgFile="true" file="images/clkticks_round_dots.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="490,498" stroke="none" numUses="1" isSvgFile="true" file="images/glass_round_dkgray.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="226,50" stroke="none" numUses="1" isSvgFile="true" file="images/hslbk_rrect1_metal.svg" numSizes="1"/>
+</files>

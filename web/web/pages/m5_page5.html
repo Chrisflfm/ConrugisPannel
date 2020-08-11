@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html class="jm-html">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, target-densityDpi=device-dpi, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="default">
+		<meta name="mobile-web-app-capable" content="yes">
+		<link rel="icon" type="image/x-icon" href="../images/hmistudio.ico"/>
+		<link rel="apple-touch-icon" href="../images/hmistudio.ico" />
+		<title>Conrugis - m5_page5</title>
+        <link rel="stylesheet" href="../css/lib.min.css">
+		<link rel="stylesheet" href="../css/core.min.css">
+		<link type="text/css" rel="stylesheet" href="../css/pages/commons.css"/>
+		<link type="text/css" rel="stylesheet" href="../css/pages/_m5_page5.css"/>
+		<!-- script section starts -->
+		<script type="text/javascript" >
+			if ( !window.EventSource ) {
+				var head = document.getElementsByTagName( "head" )[0];
+				var script = document.createElement( "script" );
+				script.type = "text/javascript";
+				script.src = "js/eventsource.min.js";
+				head.appendChild( script );
+			}
+		</script>
+		<script type="text/javascript" src="../js/hmi.libs.min.js" ></script>
+		<script type="text/javascript" src="../js/hmi.combined.min.js" ></script>	
+		<script type="text/javascript" src="../js/page.combined.js" ></script>	
+		<script type="text/javascript" src="../js/loadProject.js" ></script>
+	</head>
+	<body class="jm-body">
+		<div class="jm-status-bar" data-role="status-bar" style="position:absolute;display:none">
+			<div class="jm-connstatus jm-active"></div>
+		</div>
+		<div id="jm-container">
+			<div id="hmi-templates"></div>
+			<div id="_m5_page5" data-role="page" class="jm-pg">
+				<div data-role="content">
+					<div id="m5_page5" style="position:absolute;top:0px;width:1280px;height:800px;overflow:hidden;left:0px;background-color:rgb(255,255,255);background-image:url('../images/63616d657261.png');background-size:contain;background-repeat:no-repeat;" data-widget="PageWgt" data-hmilang="L1">
+<div id="m5_wgt459" data-sid="_PageMLTextMgrWgt" style="width:0px;height:0px;" class="jm-wgt" data-widget="PageMLTextMgrWgt">
+</div><div id="m5_wgt460" data-sid="ipcamera" style="width:874px;height:556px;left:215px;top:91px;" class="jm-wgt" data-cx="437" data-cy="278" data-widget="IPCameraWgt">
+<img style="width:100%;height:100%" class="jm-hmi-camera">
+</img></div><div id="m5_wgt462" data-sid="gstArea" style="width:65px;height:51px;left:4px;top:747px;" class="jm-wgt" data-cx="32" data-cy="25" data-widget="ButtonWgt">
+</div></div>
+				</div>
+				<script id="hmi-page" type="text/javascript">
+					$hmi.addPageInitFunction("_m5_page5", function(stage){
+var m5_page5=new $hmi.defs.hmiPage({"wgtId":"m5_page5"},"camera",{"prefix":"m5","width":1280,"height":800,"fitsize":1,"fonts":[],"exportedLang":"L1"},stage);
+var m5_wgt460=new $hmi.defs.hmiIPCamera({"wgtId":"m5_wgt460"},"ipcamera",{"cx":437,"cy":278,"left":215,"top":91,"width":874,"height":556,"bR":[215,91,874,556],"datalinks":[],"ip":"http://192.168.5.61/image.jpg"},m5_page5,m5_page5),
+m5_wgt462=new $hmi.defs.hmiButton({"wgtId":"m5_wgt462"},"gstArea",{"cx":32,"cy":25,"left":4,"top":746.5,"width":65,"height":51,"bR":[4,746.5,65,51],"datalinks":[],"form":"gesture","toggle":0,"dx":1,"dy":-1},m5_page5,m5_page5),
+m5_act28= new $hmi.actionMgr.defs.hmiActionLoadPage({"wgtId":"m5_act28"},"onMouseClick",{"t":0,"c":"LoadPage","p":{"pg":"m1_page1","actID":1}},m5_page5,m5_wgt462);var m5_wgt459=new $hmi.defs.hmiPageMLTextMgr({"wgtId":"m5_wgt459"},"_PageMLTextMgrWgt",{"texts":{},"curLangId":"L1"},m5_page5,m5_page5);return m5_page5;})
+				</script>
+			</div>
+        </div>
+		<script id="hmi-init" type="text/javascript">
+			/**
+			 * The code that executes when the page loads for the first time, not when the page is	
+			 * loaded through an AJAX call.
+			 */
+			if ( $hmi.getActiveProject() == null ) {
+				// Resetting the viewport if necessary
+				$hmi.resetViewport();
+				//Attaching the pageshow event through which we handle all processing meant for page load actions
+				$hmi.attachPageEvents();
+				// Start the widget engine
+				$hmi.initWidgetEngine("m5_page5");
+			}
+		</script>
+		<!-- We need to load the broken image initially itself so that it can be loaded correctly
+            when the connection is severed -->
+            <div class="jm-broken jm-hidden"></div>
+		<div id="jm-hmi-dtpop"></div>
+		<div id="jm-spinnerbox">
+			<div class="jm-spinner"></div>
+		</div>
+		<div id="jm-layer-messages"></div>
+	</body>
+</html>

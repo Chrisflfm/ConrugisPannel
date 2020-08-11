@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" height="46.674" width="44.177" version="1.1" viewBox="0 0 44.177261 46.673999">
+<polygon points="38.029 48.273 38.029 40.695 36.431 40.695 36.431 48.273" fill="#f4f7e5" transform="translate(-5.9657 -5.086)"/>
+<path id="bgColor04" d="m37.376 43.926v-15.714h-8.656v15.714h-3.129v2.748h14.536v-2.748h-2.751z"/>
+<polygon points="41.428 48.793 41.428 34.343 40.537 34.343 40.537 48.793" fill="#fff" transform="translate(-5.9657 -5.086)"/>
+<path stroke-linejoin="round" d="m8.3843 19.716c-1.4 3.403 0.766 6.38 4.333 5.907" stroke="#fff" stroke-linecap="round" fill="none"/>
+<path stroke-linejoin="round" d="m4.5293 22.061c-1.4 3.403 0.766 6.38 4.333 5.908" stroke="#fff" stroke-linecap="round" fill="none"/>
+<path stroke-linejoin="round" d="m0.93026 24.342c-1.4 3.403 0.766 6.38 4.334 5.907" stroke="#fff" stroke-linecap="round" fill="none"/>
+<polygon id="bgColor01" points="17.464 20.847 23.964 20.492 26.401 24.714 22.843 30.165" transform="translate(-5.9657 -5.086)"/>
+<polygon opacity=".15" transform="translate(-5.9657 -5.086)" points="26.401 24.714 22.843 30.165 17.464 20.847 23.964 20.492" fill="#fff"/>
+<polygon id="bgColor00" points="22.191 17.381 43.487 5.086 50.143 16.614 28.847 28.909" transform="translate(-5.9657 -5.086)"/>
+<polygon opacity=".15" transform="translate(-5.9657 -5.086)" points="50.143 16.614 28.847 28.909 22.191 17.381 43.487 5.086" fill="#fff"/>
+<polygon points="18.72 23.024 25.017 22.316 25.211 22.652 19.769 24.841" fill="#fff" transform="translate(-5.9657 -5.086)"/>
+<polygon points="23.696 19.986 44.992 7.691 44.262 6.427 22.967 18.722" fill="#fff" transform="translate(-5.9657 -5.086)"/>
+<polygon id="bgColor03" points="41.186 32.448 41.186 30.739 36.246 30.739 36.246 32.448" transform="translate(-5.9657 -5.086)"/>
+<path id="bgColor02" d="m29.314 16.659v8.177h6.687v-9.243c-0.815-3.399-6.945-2.947-6.687 1.066z"/>
+<circle transform="translate(-5.9657 -5.086)" cy="20.129" cx="38.62" r="1.358" fill="#fff"/>
+</svg>
