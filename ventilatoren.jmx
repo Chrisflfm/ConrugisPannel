@@ -1,5 +1,5 @@
 <wgtPage rev="1" projectType="HMI Project">
- <object pageName="Ventilatoren" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/ventilatoren.png" id="Ventilatoren" staticOptEnable="true">
+ <object pageName="Ventilatoren" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" usedFonts="Roboto" staticFile="opt/ventilatoren.png" id="Ventilatoren" staticOptEnable="true">
   <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="ImageWgt" id="bldgImg41" static="true">
    <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
@@ -10,16 +10,20 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
-    <MLText L1="DakVent 1" id="0"/>
-    <MLText L1="DakVent 2" id="3"/>
-    <MLText L1="Vent 1" id="4"/>
-    <MLText L1="Vent 2" id="5"/>
+    <MLText L1="" id="1"/>
+    <MLText L1="Garage" id="2"/>
     <MLText L1="Extractor" id="6"/>
     <MLText L1="Extractie tijd" id="7"/>
+    <MLText L1="Loods" id="9"/>
+    <MLText L1="Vent 1A" id="10"/>
+    <MLText L1="Dak Vent" id="12"/>
+    <MLText L1="Vent 2A" id="13"/>
+    <MLText L1="Dak Vent" id="15"/>
+    <MLText L1="" id="16"/>
    </MLTexts>
   </object>
   <object class="GroupWgt" id="Knob1" customType="Knob">
-   <wgtStyle width="124" x="77.31" y="121" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
+   <wgtStyle width="124" x="77.31" y="130" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min"/>
     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max"/>
@@ -32,14 +36,17 @@
     <wgtStyle font-family="Roboto" font-sizepx="13" cx="62" showThousandSeparator="false" startAngle="45" cy="62" step="1" timeSpec="local" dataFormat="labels" endAngle="135" x="0" y="0" vert-align="top" text="" max="3" usingFormat="" value="" keypad-type="None" font-color="rgb(102,102,102)" min="1" width="124" labelNames="auto,uit,aan" numberFormat="1" readWrite="true" tickFreq="1" height="124" labelFreq="3" form="round" font-size="0" dataType="Text"/>
    </object>
    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:round_1; hmi-type:top-knob" id="Knob1.ndl">
-    <wgtStyle forcePaint="65" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <wgtStyle forcePaint="73" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="StatusVent1A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
     <object class="ImageWgt" id="Knob1.ndl.img">
      <wgtStyle width="65" rot="-135" imagePath="images/knob_blkpl_1_rev1.svg" x="0" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="32" cy="31" height="62" stroke="none" stroke-width="3"/>
     </object>
    </object>
   </object>
   <object class="GroupWgt" id="Knob2" customType="Knob">
-   <wgtStyle width="124" x="77.31" y="313.63" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
+   <wgtStyle width="124" x="257" y="130" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min"/>
     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max"/>
@@ -52,14 +59,17 @@
     <wgtStyle font-family="Roboto" font-sizepx="13" cx="62" showThousandSeparator="false" startAngle="45" cy="62" step="1" timeSpec="local" dataFormat="labels" endAngle="135" x="0" y="0" vert-align="top" text="" max="3" usingFormat="" value="" keypad-type="None" font-color="rgb(102,102,102)" min="1" width="124" labelNames="auto,uit,aan" numberFormat="1" readWrite="true" tickFreq="1" height="124" labelFreq="3" form="round" font-size="0" dataType="Text"/>
    </object>
    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:round_1; hmi-type:top-knob" id="Knob2.ndl">
-    <wgtStyle forcePaint="65" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <wgtStyle forcePaint="73" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="StatusVentDak1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
     <object class="ImageWgt" id="Knob2.ndl.img">
      <wgtStyle width="65" rot="-135" imagePath="images/knob_blkpl_1_rev1.svg" x="0" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="32" cy="31" height="62" stroke="none" stroke-width="3"/>
     </object>
    </object>
   </object>
   <object class="GroupWgt" id="Knob3" customType="Knob">
-   <wgtStyle width="124" x="1075.28" y="121" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
+   <wgtStyle width="124" x="77.31" y="579" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min"/>
     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max"/>
@@ -72,14 +82,17 @@
     <wgtStyle font-family="Roboto" font-sizepx="13" cx="62" showThousandSeparator="false" startAngle="45" cy="62" step="1" timeSpec="local" dataFormat="labels" endAngle="135" x="0" y="0" vert-align="top" text="" max="3" usingFormat="" value="" keypad-type="None" font-color="rgb(102,102,102)" min="1" width="124" labelNames="auto,uit,aan" numberFormat="1" readWrite="true" tickFreq="1" height="124" labelFreq="3" form="round" font-size="0" dataType="Text"/>
    </object>
    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:round_1; hmi-type:top-knob" id="Knob3.ndl">
-    <wgtStyle forcePaint="65" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="2" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <wgtStyle forcePaint="73" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="2" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="StatusExtractor" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
     <object class="ImageWgt" id="Knob3.ndl.img">
      <wgtStyle width="65" rot="-90" imagePath="images/knob_blkpl_1_rev1.svg" x="0" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="32" cy="31" height="62" stroke="none" stroke-width="3"/>
     </object>
    </object>
   </object>
   <object class="GroupWgt" id="SldrHrz4" customType="Slider">
-   <wgtStyle width="143" x="770.04" y="126.23" cx="135.50" cy="68.96" height="61" mtx="1.8951,0,0,0,2.26087,0,0,0,1" groupStyle="xform-scaling"/>
+   <wgtStyle width="143" x="192.51" forcePaint="97" y="584" cx="135.50" cy="68.96" height="61" staticFile="opt/VentilatorenSldrHrz4.png" mtx="1.8951,0,0,0,2.26087,0,0,0,1" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min;ScaleWgt.min"/>
     <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max;ScaleWgt.max"/>
@@ -102,84 +115,35 @@
     <wgtStyle width="119" imagePath="images/hslbk_rrect1_metal.svg" enableCache="true" x="11" forcePaint="1" y="19" cx="59.85" cy="7.65" height="22"/>
    </object>
    <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:rect_2; hmi-type:top-hthmb" id="SldrHrz4.ndl">
-    <wgtStyle forcePaint="65" cx="20.42" cy="11" acceptClick="true" moveStep="1" x="0" y="19" discrete="true" max="15" value="5" min="1" width="143" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="23" toolTipBgColor="rgb(255,255,255)" form="horizontal"/>
+    <wgtStyle forcePaint="8" cx="20.42" cy="11" acceptClick="true" moveStep="1" x="0" y="19" discrete="true" max="15" value="5" min="1" width="143" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="23" toolTipBgColor="rgb(255,255,255)" form="horizontal"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="LoopTijdEXtractor" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
     <object class="ImageWgt" id="SldrHrz4.ndl.img">
      <wgtStyle width="36" imagePath="images/hthmb_blkpl_rect_2_rev1.svg" x="104" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="18" cy="12" height="24" stroke="none" stroke-width="3"/>
     </object>
    </object>
   </object>
   <object class="LabelWgt" id="label1" static="true">
-   <wgtStyle width="114" font-color="rgb(23,30,40)" x="91.32" font-sizepx="21" y="68.76" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="114" font-color="rgb(23,30,40)" x="91.32" font-sizepx="21" y="78" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
-    <lang class="MLTextLink" textid="4"/>
+    <lang class="MLTextLink" textid="10"/>
    </links>
   </object>
   <object class="LabelWgt" id="label2" static="true">
-   <wgtStyle width="114" font-color="rgb(23,30,40)" x="91.32" font-sizepx="21" y="277.60" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="114" font-color="rgb(23,30,40)" x="271" font-sizepx="21" y="79" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
-    <lang class="MLTextLink" textid="5"/>
-   </links>
-  </object>
-  <object class="GroupWgt" id="Knob4" customType="Knob">
-   <wgtStyle width="124" x="256.32" y="122.89" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
-   <links>
-    <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min"/>
-    <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max"/>
-    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle"/>
-    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;LabelsWgt.reverseScale"/>
-    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle"/>
-    <attr attrName="numStates" alias="NeedleWgt.numStates;TicksWgt.numStates;LabelsWgt.numStates"/>
-   </links>
-   <object class="LabelsWgt" id="Knob4.lbl">
-    <wgtStyle font-family="Roboto" font-sizepx="13" cx="62" showThousandSeparator="false" startAngle="45" cy="62" step="1" timeSpec="local" dataFormat="labels" endAngle="135" x="0" y="0" vert-align="top" text="" max="3" usingFormat="" value="" keypad-type="None" font-color="rgb(102,102,102)" min="1" width="124" labelNames="auto,uit,aan" numberFormat="1" readWrite="true" tickFreq="1" height="124" labelFreq="3" form="round" font-size="0" dataType="Text"/>
-   </object>
-   <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:round_1; hmi-type:top-knob" id="Knob4.ndl">
-    <wgtStyle forcePaint="65" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
-    <object class="ImageWgt" id="Knob4.ndl.img">
-     <wgtStyle width="65" rot="-135" imagePath="images/knob_blkpl_1_rev1.svg" x="0" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="32" cy="31" height="62" stroke="none" stroke-width="3"/>
-    </object>
-   </object>
-  </object>
-  <object class="GroupWgt" id="Knob5" customType="Knob">
-   <wgtStyle width="124" x="256.32" y="315.52" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
-   <links>
-    <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min"/>
-    <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max"/>
-    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle"/>
-    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;LabelsWgt.reverseScale"/>
-    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle"/>
-    <attr attrName="numStates" alias="NeedleWgt.numStates;TicksWgt.numStates;LabelsWgt.numStates"/>
-   </links>
-   <object class="LabelsWgt" id="Knob5.lbl">
-    <wgtStyle font-family="Roboto" font-sizepx="13" cx="62" showThousandSeparator="false" startAngle="45" cy="62" step="1" timeSpec="local" dataFormat="labels" endAngle="135" x="0" y="0" vert-align="top" text="" max="3" usingFormat="" value="" keypad-type="None" font-color="rgb(102,102,102)" min="1" width="124" labelNames="auto,uit,aan" numberFormat="1" readWrite="true" tickFreq="1" height="124" labelFreq="3" form="round" font-size="0" dataType="Text"/>
-   </object>
-   <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:round_1; hmi-type:top-knob" id="Knob5.ndl">
-    <wgtStyle forcePaint="65" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
-    <object class="ImageWgt" id="Knob5.ndl.img">
-     <wgtStyle width="65" rot="-135" imagePath="images/knob_blkpl_1_rev1.svg" x="0" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="32" cy="31" height="62" stroke="none" stroke-width="3"/>
-    </object>
-   </object>
-  </object>
-  <object class="LabelWgt" id="label3" static="true">
-   <wgtStyle width="114" font-color="rgb(23,30,40)" x="270.33" font-sizepx="21" y="70.65" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
-   <links>
-    <lang class="MLTextLink" textid="0"/>
-   </links>
-  </object>
-  <object class="LabelWgt" id="label4" static="true">
-   <wgtStyle width="114" font-color="rgb(23,30,40)" x="270.33" font-sizepx="21" y="279.49" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
-   <links>
-    <lang class="MLTextLink" textid="3"/>
+    <lang class="MLTextLink" textid="12"/>
    </links>
   </object>
   <object class="LabelWgt" id="label5" static="true">
-   <wgtStyle width="114" font-color="rgb(23,30,40)" x="1089.29" font-sizepx="21" y="70.65" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="114" font-color="rgb(23,30,40)" x="91.32" font-sizepx="21" y="543" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="6"/>
    </links>
   </object>
   <object class="LabelWgt" id="label6" static="true">
-   <wgtStyle width="196" font-color="rgb(23,30,40)" x="799.74" font-sizepx="21" y="68.76" font-family="Roboto" wrapping="true" cx="90.83" cy="10.73" height="22.65" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="196" font-color="rgb(23,30,40)" x="230.01" font-sizepx="21" y="542" font-family="Roboto" wrapping="true" cx="90.83" cy="10.73" height="22.65" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="7"/>
    </links>
@@ -189,6 +153,298 @@
    <links>
     <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
    </links>
+  </object>
+  <object class="GroupWgt" id="Knob6" customType="Knob">
+   <wgtStyle width="124" x="77.31" y="402" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;LabelsWgt.reverseScale"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle"/>
+    <attr attrName="numStates" alias="NeedleWgt.numStates;TicksWgt.numStates;LabelsWgt.numStates"/>
+   </links>
+   <object class="LabelsWgt" id="Knob6.lbl">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="62" showThousandSeparator="false" startAngle="45" cy="62" step="1" timeSpec="local" dataFormat="labels" endAngle="135" x="0" y="0" vert-align="top" text="" max="3" usingFormat="" value="" keypad-type="None" font-color="rgb(102,102,102)" min="1" width="124" labelNames="auto,uit,aan" numberFormat="1" readWrite="true" tickFreq="1" height="124" labelFreq="3" form="round" font-size="0" dataType="Text"/>
+   </object>
+   <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:round_1; hmi-type:top-knob" id="Knob6.ndl">
+    <wgtStyle forcePaint="73" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="StatusVent2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" id="Knob6.ndl.img">
+     <wgtStyle width="65" rot="-135" imagePath="images/knob_blkpl_1_rev1.svg" x="0" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="32" cy="31" height="62" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="GroupWgt" id="Knob7" customType="Knob">
+   <wgtStyle width="124" x="257" y="402" cx="71.01" cy="74.18" height="124" mtx="1.14538,0,0,0,1.19649,0,0,0,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="min" alias="NeedleWgt.min;LabelsWgt.min"/>
+    <attr attrName="max" alias="NeedleWgt.max;LabelsWgt.max"/>
+    <attr attrName="endAngle" alias="NeedleWgt.endAngle;LabelsWgt.endAngle;TicksWgt.endAngle"/>
+    <attr attrName="reverseScale" alias="NeedleWgt.reverseScale;LabelsWgt.reverseScale"/>
+    <attr attrName="startAngle" alias="NeedleWgt.startAngle;LabelsWgt.startAngle;TicksWgt.startAngle"/>
+    <attr attrName="numStates" alias="NeedleWgt.numStates;TicksWgt.numStates;LabelsWgt.numStates"/>
+   </links>
+   <object class="LabelsWgt" id="Knob7.lbl">
+    <wgtStyle font-family="Roboto" font-sizepx="13" cx="62" showThousandSeparator="false" startAngle="45" cy="62" step="1" timeSpec="local" dataFormat="labels" endAngle="135" x="0" y="0" vert-align="top" text="" max="3" usingFormat="" value="" keypad-type="None" font-color="rgb(102,102,102)" min="1" width="124" labelNames="auto,uit,aan" numberFormat="1" readWrite="true" tickFreq="1" height="124" labelFreq="3" form="round" font-size="0" dataType="Text"/>
+   </object>
+   <object class="NeedleWgt" hmiStyle="hmi-name:black plastic; hmi-shape:round_1; hmi-type:top-knob" id="Knob7.ndl">
+    <wgtStyle forcePaint="73" cx="50" startAngle="45" cy="53" acceptClick="true" moveStep="1" endAngle="135" x="11" y="8" discrete="true" max="3" value="1" min="1" initAngle="180" width="103" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="88" toolTipBgColor="rgb(255,255,255)" labelFreq="3" form="round"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="StatusVentDak2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+    <object class="ImageWgt" id="Knob7.ndl.img">
+     <wgtStyle width="65" rot="-135" imagePath="images/knob_blkpl_1_rev1.svg" x="0" forcePaint="65" y="-1" fill="rgb(40,40,40)" cx="32" cy="31" height="62" stroke="none" stroke-width="3"/>
+    </object>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label7" static="true">
+   <wgtStyle width="114" font-color="rgb(23,30,40)" x="91.32" font-sizepx="21" y="350" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8" static="true">
+   <wgtStyle width="114" font-color="rgb(23,30,40)" x="271.01" font-sizepx="21" y="350" font-family="Roboto" wrapping="true" cx="52.83" cy="9.95" height="21" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11" static="true">
+   <wgtStyle width="283" font-color="rgb(23,30,40)" x="96.32" font-sizepx="40" y="12" font-family="Roboto" wrapping="true" cx="131.15" cy="21.86" height="46.15" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="30"/>
+   <links>
+    <lang class="MLTextLink" textid="2"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label12" static="true">
+   <wgtStyle width="283" font-color="rgb(23,30,40)" x="96.32" font-sizepx="40" y="284" font-family="Roboto" wrapping="true" cx="131.15" cy="21.86" height="46.15" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="30"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Ventilatoren@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="768" imagePath="images/conrugisPlattegrond.jpg" x="488" y="130" cx="384" cy="261.59" height="523.18"/>
+  </object>
+  <object class="ImageWgt" id="clscblwrImg9" static="true">
+   <wgtStyle width="69" imagePath="images/vortexblwr.svg" x="804" y="560" cx="34" cy="31" height="63"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg64" static="true">
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="683.07" y="259.52" cx="53.85" cy="37.61" height="37.68"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg1" static="true">
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="683.07" y="458.16" cx="18.48" cy="18.84" height="37.68"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg2" static="true">
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="985.18" y="292.35" cx="18.48" cy="18.84" height="37.68"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg13" static="true">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="829" y="190" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg3" static="true">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="829" y="430.39" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg4" static="true">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="1194.82" y="206" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="ImageWgt" id="bldgImg5" static="true">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="1194.82" y="445" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="GroupWgt" id="LgtSmp1" customType="Light">
+   <wgtStyle width="10" x="841" y="200" cx="5" cy="5" height="10" mtx="1,0,0,0,1,0,0,0,1"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp1.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27" mtx="1,0,0,0,1,0,0,0,1"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp1.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)" mtx="1,0,0,0,1,0,0,0,1"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp1.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="16"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5" mtx="1,0,0,0,1,0,0,0,1"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp2" customType="Light">
+   <wgtStyle width="10" x="694" y="275" cx="5" cy="5" height="10"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp2.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp2.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVentDak2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp2.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp2.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp3" customType="Light">
+   <wgtStyle width="10" x="694" y="474" cx="5" cy="5" height="10"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp3.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp3.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVentDak2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp3.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp3.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp4" customType="Light">
+   <wgtStyle width="10" x="842" y="442" cx="5" cy="5" height="10"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp4.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp4.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp4.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp5" customType="Light">
+   <wgtStyle width="10" x="825" y="606" cx="5" cy="5" height="10"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp5.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp5.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusExtractor" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp5.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp5.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp6" customType="Light">
+   <wgtStyle width="10" x="996" y="309" cx="5" cy="5" height="10"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp6.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp6.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVentDak1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp6.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp6.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp7" customType="Light">
+   <wgtStyle width="10" x="1205.82" y="217" cx="5" cy="5" height="10"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp7.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp7.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent1A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp7.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp7.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtSmp8" customType="Light">
+   <wgtStyle width="10" x="1205.82" y="456" cx="5" cy="5" height="10"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp8.frmImg" static="true">
+    <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp8.ind">
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(0,255,0);rgb(255,0,255);rgb(0,0,255)" height="10" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent1A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp8.lbl" static="true">
+    <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp8.icoImg" static="true">
+    <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
+   </object>
   </object>
  </object>
 </wgtPage>

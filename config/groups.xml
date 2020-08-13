@@ -10,4 +10,33 @@
   <active>false</active>
   <tag>System Time</tag>
  </group>
+ <group Type="Auto">
+  <name>Ventilatoren@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>LoopTijdEXtractor</tag>
+  <tag>StatusExtractor</tag>
+  <tag>StatusVent1A</tag>
+  <tag>StatusVent1B</tag>
+  <tag>StatusVent2A</tag>
+  <tag>StatusVent2B</tag>
+  <tag>StatusVentDak1</tag>
+  <tag>StatusVentDak2A</tag>
+ </group>
+ <group Type="Auto">
+  <name>Verwarming@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>AvgTmpAanv1</tag>
+  <tag>AvgTmpAanv2</tag>
+  <tag>AvgTmpRet1</tag>
+  <tag>AvgTmpRet2</tag>
+  <tag>ctFlow1</tag>
+  <tag>ctFlow2</tag>
+  <tag>ctPressH2O</tag>
+  <tag>hrPomp1</tag>
+  <tag>hrPomp2</tag>
+  <tag>hrVent1A</tag>
+  <tag>hrVent1B</tag>
+  <tag>hrVent2A</tag>
+  <tag>hrVent2B</tag>
+ </group>
 </groups>
