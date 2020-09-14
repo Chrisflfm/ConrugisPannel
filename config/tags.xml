@@ -66,32 +66,6 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>ctExtVorstVlg</name>
-        <resourceLocator>prot1://0?IN?100000206?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://ctExtVorstVlg?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>ctAlarmAan</name>
-        <resourceLocator>prot1://0?IN?100000207?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://ctAlarmAan?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
         <name>resI1_8</name>
         <resourceLocator>prot1://0?IN?100000208?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
@@ -105,8 +79,8 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>alm1_85V</name>
-        <resourceLocator>prot1://0?OUT?100000209?boolean</resourceLocator>
+        <name>ctKlepGarage</name>
+        <resourceLocator>prot1://0?IN?100000209?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -118,12 +92,12 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>alm2_52V</name>
-        <resourceLocator>prot1://0?OUT?100000210?boolean</resourceLocator>
+        <name>ctKlepLoods</name>
+        <resourceLocator>prot1://0?IN?100000210?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://alm2_52V?boolean</simulator>
+        <simulator>VRBL://ctKlepLoods?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <min>0</min>
@@ -131,7 +105,7 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>alm3_37V</name>
+        <name>hrKlepGarage</name>
         <resourceLocator>prot1://0?OUT?100000211?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -144,7 +118,7 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>alm4_29V</name>
+        <name>hrKlepLoods</name>
         <resourceLocator>prot1://0?OUT?100000212?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -340,262 +314,132 @@
     </tag>
     <tag>
         <name>tmpRet1</name>
-        <resourceLocator>prot1://0?IN?100040002?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100040002?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://tmpRet1?boolean</simulator>
+        <simulator>VRBL://tmpRet1?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>tmpRet2</name>
-        <resourceLocator>prot1://0?IN?100040003?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100040003?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Tag1?boolean</simulator>
+        <simulator>VRBL://tmpRet2?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpRet1</name>
-        <resourceLocator>prot1://0?IN?100041106?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgTmpRet1?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpRet2</name>
-        <resourceLocator>prot1://0?IN?100041107?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://Tag1?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>tmpRth1</name>
-        <resourceLocator>prot1://0?IN?100050002?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100050002?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://tmpRth1?boolean</simulator>
+        <simulator>VRBL://tmpRth1?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>tmpRth2</name>
-        <resourceLocator>prot1://0?IN?100050003?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100050003?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://tmpRth2?boolean</simulator>
+        <simulator>VRBL://tmpRth2?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpRth1</name>
-        <resourceLocator>prot1://0?IN?100051106?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgTmpRth1?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpRth2</name>
-        <resourceLocator>prot1://0?IN?100051107?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgTmpRth2?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>tmpRth1dak</name>
-        <resourceLocator>prot1://0?IN?100060002?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100060002?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://tmpRth1dak?boolean</simulator>
+        <simulator>VRBL://tmpRth1dak?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>tmpRth2dak</name>
-        <resourceLocator>prot1://0?IN?100060003?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100060003?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://tmpRth2dak?boolean</simulator>
+        <simulator>VRBL://tmpRth2dak?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpRth1dak</name>
-        <resourceLocator>prot1://0?IN?100061106?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgTmpRth1dak?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpRth2dak</name>
-        <resourceLocator>prot1://0?IN?100061107?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgTmpRth2dak?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>tmpAanv1</name>
-        <resourceLocator>prot1://0?IN?100070002?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100070002?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://tmpAanv1?boolean</simulator>
+        <simulator>VRBL://tmpAanv1?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>tmpAanv2</name>
-        <resourceLocator>prot1://0?IN?100070003?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100070003?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://tmpAanv2?boolean</simulator>
+        <simulator>VRBL://tmpAanv2?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpAanv1</name>
-        <resourceLocator>prot1://0?IN?100071106?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgTmpAanv1?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgTmpAanv2</name>
-        <resourceLocator>prot1://0?IN?100071107?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgTmpAanv2?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>mVSetpoint1</name>
-        <resourceLocator>prot1://0?IN?100080002?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100080002?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://mVSetpoint1?boolean</simulator>
+        <simulator>VRBL://mVSetpoint1?unsignedInt</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <min>0</min>
-        <max>1</max>
+        <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>mVSetpoint2</name>
-        <resourceLocator>prot1://0?IN?100080003?boolean</resourceLocator>
+        <resourceLocator>prot1://0?REG?100080003?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://mVSetpoint2?boolean</simulator>
+        <simulator>VRBL://mVSetpoint2?unsignedInt</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgSetpoint1</name>
-        <resourceLocator>prot1://0?IN?100081106?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgSetpoint1?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>AvgSetpoint2</name>
-        <resourceLocator>prot1://0?IN?100081107?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://AvgSetpoint2?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
+        <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
@@ -703,7 +547,7 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>flExtractorAan</name>
+        <name>flMute</name>
         <resourceLocator>prot1://0?FLAG?30?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -716,38 +560,12 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>flExtractorAuto</name>
-        <resourceLocator>prot1://0?FLAG?31?boolean</resourceLocator>
+        <name>flAck</name>
+        <resourceLocator>prot1://0?FLAG?36?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Tag1?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>flExtractorUit</name>
-        <resourceLocator>prot1://0?FLAG?32?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://Tag1?boolean</simulator>
-        <enableScaling>false</enableScaling>
-        <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>1</max>
-        <isMinMaxEdited>false</isMinMaxEdited>
-    </tag>
-    <tag>
-        <name>flExtractorInAuto</name>
-        <resourceLocator>prot1://0?FLAG?33?boolean</resourceLocator>
-        <refreshTime>500</refreshTime>
-        <accessMode>READ-WRITE</accessMode>
-        <active>false</active>
-        <simulator>VRBL://Tag1?boolean</simulator>
+        <simulator>VRBL://flAck?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <min>0</min>
@@ -1197,7 +1015,7 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>StatusVentDak2A</name>
+        <name>StatusVentDak2</name>
         <resourceLocator>prot1://0?REG?1000027?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -1210,7 +1028,8 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>StatusExtractor</name>
+        <name>StatusErr</name>
+        <group>MQTT_PUB</group>
         <resourceLocator>prot1://0?REG?1000028?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -1220,6 +1039,635 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <min>0</min>
         <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Temperatuur verbrandingsgas</name>
+        <resourceLocator>prot2://1?IREG?330002?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Temperatuur verbrandingsgas?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Bedrijfsuren</name>
+        <resourceLocator>prot2://1?IREG?330021?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Bedrijfsuren?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Uren sinds laatste onderhoud</name>
+        <resourceLocator>prot2://1?IREG?330056?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Uren sinds laatste onderhoud?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Ketelvraag via verwarmingscircuit of boiler aanwezig</name>
+        <resourceLocator>prot2://1?IREG?330057?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Ketelvraag via verwarmingscircuit of boiler aanwezig?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Dagopbrengst_kWh</name>
+        <resourceLocator>prot2://1?IREG?330085?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Dagopbrengst_kWh?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Totaalopbrengst_kWh</name>
+        <resourceLocator>prot2://1?IREG?330086?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Totaalopbrengst_kWh?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Waarschuwing resterende verwarmingsuren tot as legen</name>
+        <resourceLocator>prot2://1?IREG?330087?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Waarschuwing resterende verwarmingsuren tot as legen?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Temperatuur verbrandingsruimte</name>
+        <resourceLocator>prot2://1?IREG?330088?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Temperatuur verbrandingsruimte?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Vermogensvraag</name>
+        <resourceLocator>prot2://1?IREG?330101?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Vermogensvraag?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Aantal reinigingen</name>
+        <resourceLocator>prot2://1?IREG?330102?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Aantal reinigingen?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Tijd tot volgende reiniging</name>
+        <resourceLocator>prot2://1?IREG?330103?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tijd tot volgende reiniging?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Buffer 1 - Buffertemperatuur boven</name>
+        <resourceLocator>prot2://1?IREG?332001?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Buffer 1 - Buffertemperatuur boven?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Buffer 1 - Buffertemperatuur midden</name>
+        <resourceLocator>prot2://1?IREG?331002?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Buffer 1 - Buffertemperatuur midden?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Buffer 1 - Buffertemperatuur onder</name>
+        <resourceLocator>prot2://1?IREG?331003?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Buffer 1 - Aansturing bufferpompen</name>
+        <resourceLocator>prot2://1?IREG?331004?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Buffer 1 - Laadtoestand buffer</name>
+        <resourceLocator>prot2://1?IREG?331007?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Buffer 1 - Laadtoestand buffer?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Keteltemperatuur</name>
+        <resourceLocator>prot2://1?IREG?330001?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Keteltemperatuur?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Regelvariabele ketel</name>
+        <resourceLocator>prot2://1?IREG?300015?unsignedShort</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?unsignedShort</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>65535</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Temp garage H</name>
+        <group>MQTT_SUB</group>
+        <resourceLocator>prot3://Temp garage H?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Temp garage H?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Temp garage L</name>
+        <group>MQTT_SUB</group>
+        <resourceLocator>prot3://Temp garage L?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Temp garage L?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Temp Stal H</name>
+        <group>MQTT_SUB</group>
+        <resourceLocator>prot3://Temp Stal H?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Temp Stal H?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Temp stal L</name>
+        <group>MQTT_SUB</group>
+        <resourceLocator>prot3://Temp stal L?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Temp stal L?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Buiten Temp</name>
+        <group>MQTT_SUB</group>
+        <resourceLocator>prot3://Buiten Temp?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Buiten Temp?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>hrpLichtGarage</name>
+        <resourceLocator>prot1://0?OUT?100000213?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>hrpLichtLoods</name>
+        <resourceLocator>prot1://0?OUT?100000214?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>hrpLichtBuiten</name>
+        <resourceLocator>prot1://0?OUT?100000215?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>hrpVentGarage</name>
+        <resourceLocator>prot1://0?OUT?100000315?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://hrpVentGarage?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>hrpVentLoods</name>
+        <resourceLocator>prot1://0?OUT?100000316?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://hrpVentLoods?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>hrReserve</name>
+        <resourceLocator>prot1://0?OUT?100000315?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>WensTemp1</name>
+        <resourceLocator>prot1://0?REG?1000029?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://WensTemp1?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>WensTemp2</name>
+        <resourceLocator>prot1://0?REG?1000030?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://WensTemp2?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>ctLichtGarage</name>
+        <resourceLocator>prot1://0?IN?100000206?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://ctLichtGarage?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>ctLichtLoods</name>
+        <resourceLocator>prot1://0?IN?100000207?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>ctBuitenLamp</name>
+        <resourceLocator>prot1://0?IN?100000208?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>ctVentGarage</name>
+        <resourceLocator>prot1://0?IN?100000211?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://ctVentGarage?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>ctVentLoods</name>
+        <resourceLocator>prot1://0?IN?100000212?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>hrpBuitenLamp</name>
+        <resourceLocator>prot1://0?OUT?100000314?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://hrpBuitenLamp?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flpVentGarage</name>
+        <resourceLocator>prot1://0?FLAG?31?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flpVentLoods</name>
+        <resourceLocator>prot1://0?FLAG?32?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flpLichtGarage</name>
+        <resourceLocator>prot1://0?FLAG?33?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flpLichtLoods</name>
+        <resourceLocator>prot1://0?FLAG?34?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flpBuitenLamp</name>
+        <resourceLocator>prot1://0?FLAG?35?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flpAllesUit</name>
+        <resourceLocator>prot1://0?FLAG?37?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://flpAllesUit?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>swKlepGarage</name>
+        <resourceLocator>prot1://0?REG?1000032?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://swKlepGarage?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>swKlepLoods</name>
+        <resourceLocator>prot1://0?REG?1000033?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flSetClock</name>
+        <resourceLocator>prot1://0?FLAG?19?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://flSetClock?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flInVorstVeilig1</name>
+        <resourceLocator>prot1://0?FLAG?20?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flInVorstVeilig2</name>
+        <resourceLocator>prot1://0?FLAG?21?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
 </tags>

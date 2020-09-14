@@ -1,0 +1,107 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Weerbericht" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Tahoma" staticFile="opt/weerbericht.png" id="Weerbericht" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts/>
+  </object>
+  <object class="ImageWgt" id="bldgImg41" static="true">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
+   <wgtStyle width="127" x="4" y="671.77" fill="rgb(160,160,164)" dx="1" cx="62.52" form="gesture" dy="-1" cy="61.27" height="125" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="RSSFeed" customType="RSS Feed">
+   <wgtStyle width="1037" x="13" forcePaint="1" y="3.57" cx="516.75" cy="358.34" height="720"/>
+   <object titleSeparator="" RSSSource="http://projects.knmi.nl/RSSread/rss_KNMIverwachtingen.php" class="RSSFeedWgt" CurItem="0" id="RSSFeed.FeedWgt" UpdateRate="15">
+    <wgtStyle width="111.11" x="0" forcePaint="1025" y="607.15" cx="55.56" cy="52.23" height="109.12"/>
+    <Sources>
+     <Source enable="false" name="CNN" resource="http://rss.cnn.com/rss/cnn_topstories"/>
+     <Source enable="false" name="ESPN" resource="http://sports.espn.go.com/espn/rss/news"/>
+     <Source enable="false" name="NewsWeek" resource="http://feeds.newsweek.com/newsweek/TopNews"/>
+     <Source enable="false" name="MSN Money" resource="http://articles.moneycentral.msn.com/Feeds/RSS/latestrss.aspx"/>
+     <Source enable="true" name="Knmi verwachting" resource="http://projects.knmi.nl/RSSread/rss_KNMIverwachtingen.php"/>
+     <Source enable="false" name="Knmi waarschuwingen" resource="http://projects.knmi.nl/RSSread/rss_KNMIwaarschuwingen.php"/>
+    </Sources>
+   </object>
+   <object class="LabelWgt" id="RSSFeed.feedTitle">
+    <wgtStyle width="593.58" font-color="rgb(0,0,255)" x="3.49" forcePaint="9" font-sizepx="26" y="0" font-family="Tahoma" wrapping="true" cx="293.30" cy="29.86" height="109.49" vert-align="top" text="RSSFeed" keypad-type="None" font-size="20"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurTitle" sourceType="Data" dataSource="RSSFeed.FeedWgt"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" id="RSSFeed.feedDesc">
+    <wgtStyle width="1037" x="0" forcePaint="9" font-sizepx="26" y="136.03" font-family="Tahoma" wrapping="true" height="444.61" vert-align="top" text="Feed Description" keypad-type="None" font-size="20"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="text" tag="CurDesc" sourceType="Data" dataSource="RSSFeed.FeedWgt"/>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="RSSFeed.curFeed">
+    <wgtStyle forcePaint="9" font-family="Tahoma" font-sizepx="13" cx="80.30" showThousandSeparator="false" cy="39.82" step="1" timeSpec="local" alignment="center" x="593.58" y="650.32" vert-align="middle" text="99" max="4096" usingFormat="#" value="99" keypad-type="None" font-color="rgb(40,40,40)" min="0" width="90.78" numberFormat="6" height="56.41" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="CurItem" sourceType="Data" dataSource="RSSFeed.FeedWgt">
+      <xForms>
+       <xForm Offset="1" class="ScaleXForm" Scale="1" name="Offset" Mod="1"/>
+      </xForms>
+     </dataLink>
+    </dataLinks>
+   </object>
+   <object class="NumericWgt" id="RSSFeed.numFeeds">
+    <wgtStyle forcePaint="9" font-family="Tahoma" font-sizepx="13" cx="48.87" showThousandSeparator="false" cy="29.86" step="1" timeSpec="local" alignment="center" x="701.80" y="650.32" vert-align="middle" text="99" max="4096" usingFormat="#" value="99" keypad-type="None" font-color="rgb(40,40,40)" min="0" width="90.78" numberFormat="6" height="56.41" form="Numeric" font-size="10"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="value" tag="NumItems" sourceType="Data" dataSource="RSSFeed.FeedWgt"/>
+    </dataLinks>
+   </object>
+   <object class="ButtonWgt" hmiStyle="type:btn" id="RSSFeed.openBtn">
+    <wgtStyle width="1012.55" x="0" forcePaint="1" y="112.82" fill="rgb(160,160,164)" dx="1" cx="502.79" form="hotspot" dy="-1" cy="235.58" height="491.07" releasePath=":/Resources/hotspot_stripe.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+    <links>
+     <action class="LaunchRSSFeedAction" attribute="onClick" event="onClick" actionID="0" widgetId="RSSFeed.FeedWgt" actionWgt="_PageMgr"/>
+    </links>
+   </object>
+   <object class="NumericWgt" id="RSSFeed.seperator">
+    <wgtStyle forcePaint="65" font-family="Tahoma" font-sizepx="16" cx="12.22" showThousandSeparator="false" cy="28.20" step="1" timeSpec="local" alignment="center" x="684.34" y="650.32" vert-align="middle" text="/" max="4096" usingFormat="" value="/" keypad-type="Numeric" font-color="rgb(40,40,40)" min="0" width="24.45" numberFormat="0" readWrite="true" height="56.41" form="Numeric" font-size="12"/>
+   </object>
+   <object class="GroupWgt" id="RSSFeed.prevfeedBtn">
+    <wgtStyle width="101.25" x="789.10" forcePaint="65" y="637.06" cx="48.87" cy="39.82" height="82.94"/>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="RSSFeed.prevfeedBtn.btn">
+     <wgtStyle width="101.25" x="0" forcePaint="65" y="0" fill="rgb(255,255,255)" dx="1" cx="0" form="standard" dy="-1" cy="0" height="82.94" releasePath="images\btn_kbdwht_std_1_rev1.svg" needlePath="images\btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action StepOverLimit="true" class="StepTagAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" Step="-1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" dataSource="RSSFeed.FeedWgt"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="ImageWgt" id="RSSFeed.prevfeedBtn.icoImg">
+     <wgtStyle width="48.87" imagePath="images/leftarrow_symbol_rev1.svg" x="27.93" forcePaint="1" y="16.59" cx="13.97" cy="9.96" height="36.49"/>
+    </object>
+   </object>
+   <object class="GroupWgt" id="RSSFeed.nextfeedBtn">
+    <wgtStyle width="101.25" x="914.79" forcePaint="1" y="637.06" cx="66.35" cy="53.08" height="82.94"/>
+    <object class="ButtonWgt" hmiStyle="type:btn" id="RSSFeed.nextfeedBtn.btn">
+     <wgtStyle width="101.25" x="0" forcePaint="1" y="0" fill="rgb(255,255,255)" dx="1" form="standard" dy="-1" height="82.94" releasePath="images\btn_kbdwht_std_1_rev1.svg" needlePath="images\btn_kbdwht_std_2_rev1.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+     <links>
+      <action StepOverLimit="false" class="StepTagAction" attribute="onMouseRelease" event="onMouseUp" actionID="0" Step="1" StepLimit="0" actionWgt="_TagMgr">
+       <dataLinks>
+        <dataLink readWrite="R" attribute="tagSrc" tag="CurItem" sourceType="Widget" dataSource="RSSFeed.FeedWgt"/>
+       </dataLinks>
+      </action>
+     </links>
+    </object>
+    <object class="ImageWgt" id="RSSFeed.nextfeedBtn.icoImg">
+     <wgtStyle width="48.87" imagePath="images/rightarrow_symbol_rev1.svg" x="24.45" forcePaint="1" y="16.59" cx="34.92" cy="23.23" height="36.49"/>
+    </object>
+   </object>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="150" imagePath="images/Platina klein.jpg" x="1127" y="719" cx="75" cy="37" height="74"/>
+  </object>
+ </object>
+</wgtPage>

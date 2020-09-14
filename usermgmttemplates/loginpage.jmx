@@ -1,6 +1,6 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="LoginPage" pageSize="480,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" usedFonts="Roboto" staticFile="opt/loginpage.png" id="LoginPage" staticOptEnable="false">
-  <wgtStyle width="480" x="0" y="0" height="480" ver="0299005218" v="02.99.00.5218"/>
+  <wgtStyle width="480" x="0" y="0" height="480" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
    <langs defLangId="L1" curLangId="L1">
@@ -11,6 +11,7 @@
     <MLText L1="Error : You are not authorized. Please contact administrator" id="2"/>
     <MLText L1="Error : Connection lost with the Runtime. Please verify the Runtime status" id="3"/>
     <MLText L1="Error : The username or password you entered is incorrect" id="4"/>
+    <MLText L1="Error : User is set Inactive. Please contact administrator" id="16"/>
     <MLText L1="Error : The password entered is incorrect" id="17"/>
     <MLText L1="Error : Action cannot be executed" id="18"/>
     <MLText L1="Error : Passwords do not match" id="19"/>
@@ -22,7 +23,6 @@
     <MLText L1="Error:Password cannot be empty" id="25"/>
     <MLText L1="Error: Your password has expired" id="26"/>
     <MLText L1="Warning: Your password will expire soon" id="27"/>
-    <MLText L1="Error : User is set Inactive. Please contact administrator" id="16"/>
    </MLTexts>
   </object>
   <object class="ImageWgt" id="image2">

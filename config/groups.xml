@@ -11,26 +11,74 @@
   <tag>System Time</tag>
  </group>
  <group Type="Auto">
+  <name>MainPage@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Dagopbrengst_kWh</tag>
+  <tag>Totaalopbrengst_kWh</tag>
+  <tag>flInVorstVeilig1</tag>
+  <tag>flInVorstVeilig2</tag>
+  <tag>laGroen</tag>
+ </group>
+ <group Type="Auto">
+  <name>Settings@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>AlarmTempVorst</tag>
+  <tag>BaseSetpointBedrijf</tag>
+  <tag>HysteresischAanv</tag>
+  <tag>HysteresischBedrijf</tag>
+  <tag>HysteresischDak</tag>
+  <tag>HysteresischVorstV</tag>
+  <tag>MinTempAanVBedrijf</tag>
+  <tag>MinTempAanVVorstVlg</tag>
+  <tag>MinTempAanvoer1</tag>
+  <tag>MinTempAanvoer2</tag>
+  <tag>SetpointVorstVeilig</tag>
+  <tag>TijdVorstVeiligAan</tag>
+  <tag>TijdVorstVeiligUit</tag>
+  <tag>dTVentBijschakelen</tag>
+  <tag>regHours</tag>
+  <tag>regMinutes</tag>
+  <tag>regSeconds</tag>
+  <tag>regTimeOutPomp</tag>
+  <tag>setpointDakVent</tag>
+ </group>
+ <group Type="Auto">
   <name>Ventilatoren@$GroupSubscrWgt@$0</name>
   <active>false</active>
-  <tag>LoopTijdEXtractor</tag>
-  <tag>StatusExtractor</tag>
   <tag>StatusVent1A</tag>
-  <tag>StatusVent1B</tag>
   <tag>StatusVent2A</tag>
-  <tag>StatusVent2B</tag>
   <tag>StatusVentDak1</tag>
-  <tag>StatusVentDak2A</tag>
+  <tag>StatusVentDak2</tag>
+  <tag>ctVentGarage</tag>
+  <tag>ctVentLoods</tag>
+  <tag>hrpVentGarage</tag>
+  <tag>hrpVentLoods</tag>
+ </group>
+ <group Type="Auto">
+  <name>Verlichting@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>ctBuitenLamp</tag>
+  <tag>ctLichtGarage</tag>
+  <tag>ctLichtLoods</tag>
  </group>
  <group Type="Auto">
   <name>Verwarming@$GroupSubscrWgt@$0</name>
   <active>false</active>
-  <tag>AvgTmpAanv1</tag>
-  <tag>AvgTmpAanv2</tag>
-  <tag>AvgTmpRet1</tag>
-  <tag>AvgTmpRet2</tag>
+  <tag>Buffer 1 - Buffertemperatuur boven</tag>
+  <tag>Buffer 1 - Buffertemperatuur midden</tag>
+  <tag>Buffer 1 - Buffertemperatuur onder</tag>
+  <tag>Buffer 1 - Laadtoestand buffer</tag>
+  <tag>Keteltemperatuur</tag>
+  <tag>Regelvariabele ketel</tag>
+  <tag>Temperatuur verbrandingsgas</tag>
+  <tag>Temperatuur verbrandingsruimte</tag>
+  <tag>Tijd tot volgende reiniging</tag>
+  <tag>Uren sinds laatste onderhoud</tag>
+  <tag>Waarschuwing resterende verwarmingsuren tot as legen</tag>
   <tag>ctFlow1</tag>
   <tag>ctFlow2</tag>
+  <tag>ctKlepGarage</tag>
+  <tag>ctKlepLoods</tag>
   <tag>ctPressH2O</tag>
   <tag>hrPomp1</tag>
   <tag>hrPomp2</tag>
@@ -38,5 +86,40 @@
   <tag>hrVent1B</tag>
   <tag>hrVent2A</tag>
   <tag>hrVent2B</tag>
+  <tag>swKlepGarage</tag>
+  <tag>swKlepLoods</tag>
+  <tag>tmpAanv1</tag>
+  <tag>tmpAanv2</tag>
+  <tag>tmpRet1</tag>
+  <tag>tmpRet2</tag>
+ </group>
+ <group Type="Auto">
+  <name>temperaturen@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>Buiten Temp</tag>
+  <tag>SetpointBedrijf1</tag>
+  <tag>SetpointBedrijf2</tag>
+  <tag>Temp Stal H</tag>
+  <tag>Temp garage H</tag>
+  <tag>Temp garage L</tag>
+  <tag>Temp stal L</tag>
+  <tag>tmpRth1</tag>
+  <tag>tmpRth1dak</tag>
+  <tag>tmpRth2</tag>
+  <tag>tmpRth2dak</tag>
+ </group>
+ <group Type="userdefined">
+  <name>MQTT_PUB</name>
+  <active>false</active>
+  <tag>StatusErr</tag>
+ </group>
+ <group Type="userdefined">
+  <name>MQTT_SUB</name>
+  <active>false</active>
+  <tag>Buiten Temp</tag>
+  <tag>Temp Stal H</tag>
+  <tag>Temp garage H</tag>
+  <tag>Temp garage L</tag>
+  <tag>Temp stal L</tag>
  </group>
 </groups>

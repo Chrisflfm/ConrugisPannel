@@ -1,6 +1,6 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="DeleteUser" pageSize="480,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" usedFonts="Roboto" staticFile="opt/deleteuser.png" id="DeleteUser" staticOptEnable="false">
-  <wgtStyle width="480" x="0" y="0" height="480" ver="0299003163" v="02.99.00.3163"/>
+  <wgtStyle width="480" x="0" y="0" height="480" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
    <langs defLangId="L1" curLangId="L1">

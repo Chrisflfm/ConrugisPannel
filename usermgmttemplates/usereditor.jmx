@@ -1,6 +1,6 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="UserEditor" pageSize="480,480" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" usedFonts="Roboto" staticFile="opt/usereditor.png" id="UserEditor" staticOptEnable="false">
-  <wgtStyle width="480" x="0" y="0" height="480" ver="0299005218" v="02.99.00.5218"/>
+  <wgtStyle width="480" x="0" y="0" height="480" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
    <langs defLangId="L1" curLangId="L1">
@@ -139,7 +139,7 @@
    <wgtStyle width="39" font-color="rgb(40,40,40)" x="312" font-sizepx="16" y="329" font-family="Roboto" cx="13" cy="9" height="19" vert-align="top" marker="true" text="(Min)" keypad-type="None" font-size="12"/>
   </object>
   <object class="NumericWgt" id="field1">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="18.86" cy="12.60" step="1" timeSpec="local" alignment="center" x="361" y="325" vert-align="middle" text="0" max="60" usingFormat="#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="40" numberFormat="6" readWrite="true" height="27" form="Numeric" frame="true" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="18.86" showThousandSeparator="false" cy="12.60" step="1" timeSpec="local" alignment="center" x="361" y="325" vert-align="middle" text="0" max="60" usingFormat="#" value="0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="40" numberFormat="6" readWrite="true" height="27" form="Numeric" frame="true" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R/W" attribute="value" tag="editUserlogoff" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>
     <dataLink readWrite="R" attribute="disabled" tag="enableEditUserLogOff" widgetType="Project" sourceType="Data" dataSource="_UserMgr"/>

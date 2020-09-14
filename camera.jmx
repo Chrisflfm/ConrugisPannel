@@ -12,13 +12,16 @@
    <wgtStyle width="874" x="215" y="91" cx="437" cy="278" height="556"/>
   </object>
   <object class="ImageWgt" id="bldgImg41" static="true">
-   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="20.82" y="754.70" cx="15.45" cy="15.41" height="32"/>
   </object>
   <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
-   <wgtStyle width="65" x="4" y="746.50" fill="rgb(160,160,164)" dx="1" cx="32" form="gesture" dy="-1" cy="25" height="51" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <wgtStyle width="137" x="4" y="684.90" fill="rgb(160,160,164)" dx="1" cx="67.45" form="gesture" dy="-1" cy="54.90" height="112" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    <links>
     <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
    </links>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="150" imagePath="images/Platina klein.jpg" x="1127" y="719" cx="75" cy="37" height="74"/>
   </object>
  </object>
 </wgtPage>

@@ -1,0 +1,185 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="alarm" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/alarm.png" id="alarm" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Active Alarms" id="0"/>
+    <MLText L1="Action" id="1"/>
+    <MLText L1="Enable" id="2"/>
+    <MLText L1="Severity" id="3"/>
+    <MLText L1="Description" id="4"/>
+    <MLText L1="Time" id="5"/>
+    <MLText L1="Value" id="6"/>
+    <MLText L1="State" id="7"/>
+    <MLText L1="Groups" id="8"/>
+    <MLText L1="Name" id="9"/>
+    <MLText L1="Select" id="10"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="bldgImg41" static="true">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
+   <wgtStyle width="89.68" x="4" y="682.88" fill="rgb(160,160,164)" dx="1" cx="44.15" form="gesture" dy="-1" cy="55.88" height="114" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="ActvAlrmLite" customType="Alarms List">
+   <wgtStyle width="1147" x="62" y="91" cx="573.50" cy="282" height="564"/>
+   <object class="LabelWgt" id="ActvAlrmLite.lbl" static="true">
+    <wgtStyle width="546.20" font-color="rgb(40,40,40)" x="312.11" font-sizepx="16" y="0" font-family="Roboto" wrapping="true" cx="270.41" cy="9.45" height="65.81" alignment="center" vert-align="top" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="0"/>
+    </links>
+   </object>
+   <object class="TableWgt" id="ActvAlrmLite.tbl">
+    <wgtStyle width="1147" x="0" forcePaint="8" font-sizepx="13" y="57.01" font-family="Roboto" showHeader="true" cx="58.27" datafont-sizepx="13" cy="14.60" filterCol="3" scroll_type="1" height="506.99" defaultSortCol="7" filterString="^((Not Triggered Acked|Not Triggered Not Acked|Triggered).*$)" scrollHeight="25"/>
+    <dataLinks>
+     <dataLink readWrite="R" attribute="rowCount" tag="alarmCount" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+     <dataLink readWrite="R" attribute="fgColor" tag="FGColor" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+     <dataLink readWrite="R" attribute="bgColor" tag="BGColor" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr">
+      <xForms>
+       <xForm class="ColorPaletteCustomXForm" ColorPaletteCustom="" name="ColorPaletteCustom"/>
+      </xForms>
+     </dataLink>
+     <dataLink readWrite="R/W" attribute="selectionAttr" tag="alSelect" widgetType="Project" sourceType="Widget" tagIndex="-1" dataSource="_AlarmsMgr"/>
+    </dataLinks>
+    <table cols="10" rows="0">
+     <colInfo>
+      <col width="50" sizeToFit="false" stringList="" visibility="false" type="2" name="Select">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="10"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alSelect" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="90" sizeToFit="false" stringList="" visibility="true" type="0" name="Name">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="9"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alName" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="100" sizeToFit="false" stringList="" visibility="false" type="0" name="Groups">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="8"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alGroups" widgetType="Project" sourceType="Widget" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="148" sizeToFit="false" stringList="" visibility="false" type="0" name="State">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="7"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alState" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="90" sizeToFit="false" stringList="" visibility="true" type="0" name="Value">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="6"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alValue" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="152" sizeToFit="false" stringList="" visibility="true" numberformat="MM/DD/YYYY - hh:mm:ss AP" type="4" name="Time">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="5"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alDateTime" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="150" sizeToFit="false" stringList="" visibility="true" type="0" name="Description">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="4"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R" attribute="value" tag="alDescription" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="80" sizeToFit="false" stringList="" visibility="true" type="0" name="Severity">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="3"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alSeverity" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="45" sizeToFit="false" stringList="" visibility="false" type="2" name="Enable">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="2"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alEnable" widgetType="Project" sourceType="Data" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+      <col width="100" sizeToFit="false" stringList="" imagePath="images/action.png" visibility="false" type="5" name="Action">
+       <links>
+        <lang class="MLTableColLink:tableCol:" textid="1"/>
+       </links>
+       <dataLinks>
+        <dataLink readWrite="R/W" attribute="value" tag="alUserAction" widgetType="Project" sourceType="Widget" dataSource="_AlarmsMgr"/>
+       </dataLinks>
+      </col>
+     </colInfo>
+    </table>
+   </object>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="150" imagePath="images/Platina klein.jpg" x="1127" y="719" cx="75" cy="37" height="74"/>
+  </object>
+  <object class="ImageWgt" id="audImg3" static="true">
+   <wgtStyle width="66" imagePath="images/ic_ad1_003.svg" x="319.04" y="729.02" cx="33" cy="33.50" height="67"/>
+  </object>
+  <object class="ImageWgt" id="audImg1" static="true">
+   <wgtStyle width="43.46" imagePath="images/ic_ad1_001.svg" x="214.94" y="731" cx="21.73" cy="31.52" height="63.03"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea2">
+   <wgtStyle width="70" x="208.50" y="734.01" fill="rgb(160,160,164)" dx="1" cx="34.46" form="gesture" dy="-1" cy="27.95" height="57.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="flMute" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+   </links>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea3">
+   <wgtStyle width="70" x="317.04" y="734.01" fill="rgb(160,160,164)" dx="1" cx="34.46" form="gesture" dy="-1" cy="27.95" height="57.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="flMute" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+   </links>
+  </object>
+  <object class="ImageWgt" id="plyrImg44" static="true">
+   <wgtStyle width="56" imagePath="images/ic_pl1_044.svg" x="100.68" y="737.53" cx="28" cy="24.99" height="49.98"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea1">
+   <wgtStyle width="70" x="93.68" y="734.01" fill="rgb(160,160,164)" dx="1" cx="34.46" form="gesture" dy="-1" cy="27.95" height="57.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+     <dataLinks>
+      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="flAck" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </action>
+   </links>
+  </object>
+ </object>
+</wgtPage>

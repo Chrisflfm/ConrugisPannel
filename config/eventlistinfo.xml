@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<events/>
+<events>
+    <event id="1" name="Geen flow Garage" group="Geen flow Garage" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+    <event id="2" name="Geen flow Loods" group="Geen flow Loods" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+    <event id="3" name="Lage water druk" group="Lage water druk" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+    <event id="4" name="Vorstgevaar" group="Vorstgevaar" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+    <event id="5" name="Opstoken warmte voorraad uitgeput" group="Opstoken warmte voorraad uitgeput" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+</events>

@@ -1,1 +1,57 @@
-<emailInfos/>
+<emailInfos>
+ <emailInfo>
+  <id>eMail1</id>
+  <enable>true</enable>
+  <name>FT01 Geen flow garage</name>
+  <description>FT01 Geen flow garage</description>
+  <from>Conrugis@gmail.com</from>
+  <to>Thijs@platinabv.nl</to>
+  <subject>Conrugis: FT01 Geen flow garage</subject>
+  <message>FT01 Geen flow garage</message>
+  <taglist></taglist>
+ </emailInfo>
+ <emailInfo>
+  <id>eMail2</id>
+  <enable>true</enable>
+  <name>FT02 geen flow loods</name>
+  <description>FT02 geen flow loods</description>
+  <from>Conrugis@gmail.com</from>
+  <to>Thijs@platinabv.nl</to>
+  <subject>Conrugis: FT02 geen flow loods</subject>
+  <message>FT02 geen flow loods</message>
+  <taglist></taglist>
+ </emailInfo>
+ <emailInfo>
+  <id>eMail3</id>
+  <enable>true</enable>
+  <name>FT03 Waterdruk laag</name>
+  <description>FT03 Waterdruk laag</description>
+  <from>Conrugis@gmail.com</from>
+  <to>Thijs@platinabv.nl</to>
+  <subject>Conrugis: FT03 Waterdruk laag</subject>
+  <message>FT03 Waterdruk laag</message>
+  <taglist></taglist>
+ </emailInfo>
+ <emailInfo>
+  <id>eMail4</id>
+  <enable>true</enable>
+  <name>FT04 vorstgevaar</name>
+  <description>FT04 vorstgevaar</description>
+  <from>Conrugis@gmail.com</from>
+  <to>Thijs@platinabv.nl</to>
+  <subject>Conrugis: FT04 vorstgevaar</subject>
+  <message>De temperatuur in de loods en of de garage is onder de ingestelde minimum grens. ingrijpen is aangeraden.</message>
+  <taglist></taglist>
+ </emailInfo>
+ <emailInfo>
+  <id>eMail5</id>
+  <enable>true</enable>
+  <name>FT05 Warmte buffer leeg</name>
+  <description>FT05 Warmte buffer leeg</description>
+  <from>Conrugis@gmail.com</from>
+  <to>Thijs@platinabv.nl</to>
+  <subject>Conrugis: FT05 Warmte buffer leeg</subject>
+  <message>De aanvoer temperatuur van de verwarming is onder de ingestelde minimumgrens. Waarschijnlijk is de warmteopslag uitgeput.</message>
+  <taglist></taglist>
+ </emailInfo>
+</emailInfos>
