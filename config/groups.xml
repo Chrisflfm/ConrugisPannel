@@ -15,6 +15,7 @@
   <active>false</active>
   <tag>Dagopbrengst_kWh</tag>
   <tag>Totaalopbrengst_kWh</tag>
+  <tag>flAck</tag>
   <tag>flInVorstVeilig1</tag>
   <tag>flInVorstVeilig2</tag>
   <tag>laGroen</tag>
@@ -36,6 +37,7 @@
   <tag>TijdVorstVeiligAan</tag>
   <tag>TijdVorstVeiligUit</tag>
   <tag>dTVentBijschakelen</tag>
+  <tag>flMute</tag>
   <tag>regHours</tag>
   <tag>regMinutes</tag>
   <tag>regSeconds</tag>
@@ -92,6 +94,12 @@
   <tag>tmpAanv2</tag>
   <tag>tmpRet1</tag>
   <tag>tmpRet2</tag>
+ </group>
+ <group Type="Auto">
+  <name>alarm@$GroupSubscrWgt@$0</name>
+  <active>false</active>
+  <tag>flAck</tag>
+  <tag>flMute</tag>
  </group>
  <group Type="Auto">
   <name>temperaturen@$GroupSubscrWgt@$0</name>

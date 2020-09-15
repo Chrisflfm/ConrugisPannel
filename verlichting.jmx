@@ -2,7 +2,7 @@
  <object pageName="Verlichting" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/verlichting.png" id="Verlichting" staticOptEnable="true">
   <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="ImageWgt" id="image1" static="true">
-   <wgtStyle width="931" imagePath="images/conrugisPlattegrond.jpg" x="146.69" y="62" cx="465.50" cy="328.50" height="657"/>
+   <wgtStyle width="887" imagePath="images/conrugisPlattegrond.jpg" x="238.59" y="26.12" cx="443.50" cy="331.87" height="663.75" mtx="-1,0,0,0,-1,0,887,663.75,1"/>
   </object>
   <object class="ImageWgt" id="bldgImg41" static="true">
    <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
@@ -14,7 +14,7 @@
    </langs>
    <MLTexts>
     <MLText L1="" id="1"/>
-    <MLText L1="" id="3"/>
+    <MLText L1="Alles uit" id="0"/>
    </MLTexts>
   </object>
   <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
@@ -27,7 +27,7 @@
    <wgtStyle width="150" imagePath="images/Platina klein.jpg" x="1127" y="719" cx="75" cy="37" height="74"/>
   </object>
   <object class="ImageWgt" id="bldgImg9" static="true">
-   <wgtStyle width="50" imagePath="images/2-1_rev1.svg" x="587.19" y="26.21" cx="25" cy="25" height="50" mtx="-1,0,0,0,-1,0,50,50,1"/>
+   <wgtStyle width="50" imagePath="images/2-1_rev1.svg" x="597.62" y="678" cx="25" cy="25" height="50" mtx="-1,0,0,0,-1,0,50,50,1"/>
   </object>
   <object class="ImageWgt" id="bldgImg1" static="true">
    <wgtStyle width="71" imagePath="images/2-1_rev1.svg" x="367.88" y="345.73" cx="35.50" cy="42" height="84" mtx="-1,0,0,0,-1,0,71,84,1"/>
@@ -36,7 +36,7 @@
    <wgtStyle width="71" imagePath="images/2-1_rev1.svg" x="789.46" y="358" cx="35.50" cy="42" height="84" mtx="-1,0,0,0,-1,0,71,84,1"/>
   </object>
   <object class="GroupWgt" id="BtnIllum1" customType="Button With Light">
-   <wgtStyle width="52" x="656.09" y="25.21" cx="26" cy="26" height="52"/>
+   <wgtStyle width="52" x="656.09" y="677" cx="26" cy="26" height="52"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -70,7 +70,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnIllum2" customType="Button With Light">
-   <wgtStyle width="52" x="880.10" y="387.73" cx="26" cy="26" height="52"/>
+   <wgtStyle width="52" x="447" y="361.73" cx="26" cy="26" height="52"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -104,7 +104,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnIllum3" customType="Button With Light">
-   <wgtStyle width="52" x="446.06" y="387.73" cx="26" cy="26" height="52"/>
+   <wgtStyle width="52" x="868.37" y="374" cx="26" cy="26" height="52"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -146,10 +146,10 @@
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd4.frmImg" static="true">
-    <wgtStyle width="79" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="38.80" cy="40" bdrSize="0.45,0.44,0.41,0.41" height="80" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.14,0.13,0.13,0.13"/>
+    <wgtStyle width="79" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="38.80" cy="40" bdrSize="0.45,0.44,0.41,0.41" height="80" bdrEdges="0.14,0.13,0.13,0.13"/>
    </object>
    <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd4.btn">
-    <wgtStyle width="57.73" x="10.63" y="10.77" bdrImageSize="41.00,38.00" fill="rgb(120,120,120)" cx="26.75" form="standard" cy="27.69" bdrSize="0.42,0.44,0.38,0.39" height="58.46" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" mtx="1,0,0,0,1,0,0,0,1" type="momentary" value="0"/>
+    <wgtStyle width="57.73" x="10.63" y="10.77" bdrImageSize="41.00,38.00" fill="rgb(120,120,120)" cx="26.75" form="standard" cy="27.69" bdrSize="0.42,0.44,0.38,0.39" height="58.46" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
     <links>
      <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_TagMgr">
       <dataLinks>
@@ -159,14 +159,20 @@
     </links>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd4.lbl" static="true">
-    <wgtStyle width="50.13" font-color="rgb(40,40,40)" x="13.67" font-sizepx="13" y="16.92" font-family="Roboto" wrapping="true" cx="33.42" cy="29.23" height="46.15" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="12"/>
+    <wgtStyle width="50.13" font-color="rgb(40,40,40)" x="13.67" font-sizepx="13" y="16.92" font-family="Roboto" wrapping="true" cx="33.42" cy="29.23" height="46.15" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="3"/>
+     <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd4.icoImg" static="true">
-    <wgtStyle width="27.35" x="25.83" y="27.69" cx="13.67" cy="10.77" height="24.62" mtx="1,0,0,0,1,0,0,0,1"/>
+    <wgtStyle width="27.35" x="25.83" y="27.69" cx="13.67" cy="10.77" height="24.62"/>
    </object>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="115" font-color="rgb(23,30,40)" x="77" font-sizepx="21" y="250.97" font-family="Roboto" wrapping="true" cx="53.29" cy="16.11" height="34" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="0"/>
+   </links>
   </object>
  </object>
 </wgtPage>

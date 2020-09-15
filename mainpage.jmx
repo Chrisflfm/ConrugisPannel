@@ -1,5 +1,5 @@
 <wgtPage rev="1" projectType="HMI Project">
- <object pageName="MainPage" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" usedFonts="Roboto" staticFile="opt/mainpage.png" id="MainPage" staticOptEnable="true">
+ <object pageName="MainPage" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/mainpage.png" id="MainPage" staticOptEnable="true">
   <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -7,11 +7,12 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
-    <MLText L1="" id="7"/>
     <MLText L1="Garage" id="0"/>
+    <MLText L1="Alles uit" id="1"/>
     <MLText L1="Loods" id="3"/>
     <MLText L1="RSSFeed Scroll" id="4"/>
     <MLText L1="© J &amp; M Maas" id="6"/>
+    <MLText L1="" id="7"/>
     <MLText L1="Dagopbrengst_kWh" id="12"/>
     <MLText L1="Totaalopbrengst_kWh" id="13"/>
    </MLTexts>
@@ -56,10 +57,10 @@
    </links>
   </object>
   <object class="ImageWgt" id="atoImg54" static="true">
-   <wgtStyle width="83.16" imagePath="images/ic_au1_054.svg" x="1152.09" y="275.26" cx="41.58" cy="42.26" height="84.52"/>
+   <wgtStyle width="83.16" imagePath="images/ic_au1_054.svg" x="1152.09" y="258" cx="41.58" cy="42.26" height="84.52"/>
   </object>
   <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea4">
-   <wgtStyle width="118.58" x="1133" y="275.26" fill="rgb(160,160,164)" dx="1" cx="58.38" form="gesture" dy="-1" cy="49.02" height="100" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <wgtStyle width="118.58" x="1133" y="247.89" fill="rgb(160,160,164)" dx="1" cx="58.38" form="gesture" dy="-1" cy="49.02" height="100" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    <links>
     <action pageName="settings.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
    </links>
@@ -117,56 +118,43 @@
    </links>
   </object>
   <object class="LabelWgt" id="label2" static="true">
-   <wgtStyle width="206" font-color="rgb(23,30,40)" x="967.25" font-sizepx="16" y="640.55" font-family="Roboto" wrapping="true" cx="95.46" cy="11.58" height="24.46" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="206" font-color="rgb(23,30,40)" x="967.25" font-sizepx="16" y="666" font-family="Roboto" wrapping="true" cx="95.46" cy="11.58" height="24.46" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="12"/>
    </links>
   </object>
   <object class="NumericWgt" id="field12">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="34.96" showThousandSeparator="false" cy="8.84" step="1" timeSpec="local" x="1180.25" y="643.55" vert-align="top" text="75" max="65535" usingFormat="" value="75" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="76" numberFormat="1" height="19.64" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="34.96" showThousandSeparator="false" cy="8.84" step="1" timeSpec="local" x="1180.25" y="669" vert-align="top" text="75" max="65535" usingFormat="" value="75" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="76" numberFormat="1" height="19.64" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="unsignedShort" attribute="value" tag="Dagopbrengst_kWh" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="LabelWgt" id="label3" static="true">
-   <wgtStyle width="206" font-color="rgb(23,30,40)" x="967.25" font-sizepx="16" y="674.55" font-family="Roboto" wrapping="true" cx="95.46" cy="13.51" height="28.53" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <wgtStyle width="206" font-color="rgb(23,30,40)" x="967.25" font-sizepx="16" y="700" font-family="Roboto" wrapping="true" cx="95.46" cy="13.51" height="28.53" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
     <lang class="MLTextLink" textid="13"/>
    </links>
   </object>
   <object class="NumericWgt" id="field13">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="34.96" showThousandSeparator="false" cy="8.84" step="1" timeSpec="local" x="1180.25" y="677.92" vert-align="top" text="75" max="65535" usingFormat="" value="75" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="76" numberFormat="1" height="19.64" form="Numeric" font-size="12"/>
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="16" cx="34.96" showThousandSeparator="false" cy="8.84" step="1" timeSpec="local" x="1180.25" y="703" vert-align="top" text="75" max="65535" usingFormat="" value="75" keypad-type="None" font-color="rgb(23,30,40)" min="0" width="76" numberFormat="1" height="19.64" form="Numeric" font-size="12"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="unsignedShort" attribute="value" tag="Totaalopbrengst_kWh" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="ImageWgt" id="bldgImg1" static="true">
-   <wgtStyle width="71" imagePath="images/2-1_rev1.svg" x="245.29" y="145.74" cx="35.50" cy="42" height="84" mtx="-1,0,0,0,-1,0,71,84,1"/>
+   <wgtStyle width="71" imagePath="images/2-1_rev1.svg" x="69.99" y="632.31" cx="35.50" cy="42" height="84" mtx="-1,0,0,0,-1,0,71,84,1"/>
   </object>
   <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea7">
-   <wgtStyle width="118.58" x="215.79" y="137.74" fill="rgb(160,160,164)" dx="1" cx="58.38" form="gesture" dy="-1" cy="49.02" height="100" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <wgtStyle width="118.58" x="46.20" y="624.31" fill="rgb(160,160,164)" dx="1" cx="58.38" form="gesture" dy="-1" cy="49.02" height="100" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    <links>
     <action pageName="verlichting.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
    </links>
   </object>
-  <object class="ImageWgt" id="audImg3" static="true">
-   <wgtStyle width="66" imagePath="images/ic_ad1_003.svg" x="234.32" y="309.31" cx="33" cy="33.50" height="67"/>
-  </object>
-  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea8">
-   <wgtStyle width="70" x="232.32" y="314.30" fill="rgb(160,160,164)" dx="1" cx="34.46" form="gesture" dy="-1" cy="27.95" height="57.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
-   <links>
-    <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
-     <dataLinks>
-      <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="flMute" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
-     </dataLinks>
-    </action>
-   </links>
-  </object>
   <object class="ImageWgt" id="plyrImg44" static="true">
-   <wgtStyle width="56" imagePath="images/ic_pl1_044.svg" x="231.65" y="409.70" cx="28" cy="24.99" height="49.98"/>
+   <wgtStyle width="69.91" imagePath="images/ic_pl1_044.svg" x="1158.71" y="400.36" cx="35" cy="35" height="67"/>
   </object>
   <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea9">
-   <wgtStyle width="70" x="224.65" y="406.18" fill="rgb(160,160,164)" dx="1" cx="34.46" form="gesture" dy="-1" cy="27.95" height="57.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <wgtStyle width="118.25" x="1133.17" y="379" fill="rgb(160,160,164)" dx="1" cx="58.21" form="gesture" dy="-1" cy="52.96" height="108.05" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    <links>
     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
      <dataLinks>
@@ -176,7 +164,7 @@
    </links>
   </object>
   <object class="GroupWgt" id="BtnStd4" customType="Button">
-   <wgtStyle width="79" x="220.15" y="518.69" cx="39.50" cy="40" height="80"/>
+   <wgtStyle width="79" x="1154.17" y="525.21" cx="39.50" cy="40" height="80"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -204,7 +192,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="AnalogClock" customType="AnalogClock">
-   <wgtStyle width="145" x="429.80" y="143.59" cx="268.50" cy="268.50" height="145" mtx="3.70345,0,0,0,3.70345,0,0,0,1" groupStyle="xform-scaling"/>
+   <wgtStyle width="145" x="371.50" y="102.39" cx="268.50" cy="268.50" height="145" mtx="3.70345,0,0,0,3.70345,0,0,0,1" groupStyle="xform-scaling"/>
    <object class="ImageWgt" hmiStyle="hmi-name:metal; hmi-shape:round; hmi-type:bkgd" id="AnalogClock.bkgfrmImg" static="true">
     <wgtStyle width="145" imagePath="images/bkgd_round_metal.svg" x="0" y="0" fill="rgb(255,255,255)" cx="56" cy="53" height="145"/>
    </object>
@@ -214,30 +202,30 @@
      <wgtStyle width="105" imagePath="images/clkticks_round_thin.svg" x="0" y="0" cx="20" cy="14" height="105"/>
     </object>
     <object class="NeedleWgt" id="AnalogClock.Clock.hourndl">
-     <wgtStyle forcePaint="8" cx="52" startAngle="90" cy="53" reverseScale="true" endAngle="-270" x="0" y="-1" discrete="true" max="12" value="3.65944" initAngle="180" width="105" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="105" toolTipBgColor="rgb(255,255,255)" form="round"/>
+     <wgtStyle forcePaint="8" cx="52" startAngle="90" cy="53" reverseScale="true" endAngle="-270" x="0" y="-1" discrete="true" max="12" initAngle="180" width="105" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="105" toolTipBgColor="rgb(255,255,255)" form="round"/>
      <dataLinks>
       <dataLink readWrite="R" attribute="value" tag="hour" sourceType="Widget" dataSource="AnalogClock.Clock"/>
      </dataLinks>
      <object class="ImageWgt" id="AnalogClock.Clock.hourndl.img">
-      <wgtStyle width="45" rot="19.7833" imagePath="images/needle_solid_hours1.svg" x="37" forcePaint="65" y="50" cx="15" cy="3" height="5" stroke="none" mtx="1,0.01,0,-0.01,1,0,0.07,0,1" stroke-width="2"/>
+      <wgtStyle width="45" rot="-90" imagePath="images/needle_solid_hours1.svg" x="37" forcePaint="65" y="50" cx="15" cy="3" height="5" stroke="none" mtx="1,0.01,0,-0.01,1,0,0.07,0,1" stroke-width="2"/>
      </object>
     </object>
     <object class="NeedleWgt" id="AnalogClock.Clock.minutendl">
-     <wgtStyle forcePaint="73" cx="55" startAngle="90" cy="55" reverseScale="true" endAngle="-270" x="-2" y="-2" discrete="true" max="60" value="39.5667" initAngle="180" width="108" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="109" toolTipBgColor="rgb(255,255,255)" form="round"/>
+     <wgtStyle forcePaint="73" cx="55" startAngle="90" cy="55" reverseScale="true" endAngle="-270" x="-2" y="-2" discrete="true" max="60" initAngle="180" width="108" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="109" toolTipBgColor="rgb(255,255,255)" form="round"/>
      <dataLinks>
       <dataLink readWrite="R" attribute="value" tag="minute" sourceType="Widget" dataSource="AnalogClock.Clock"/>
      </dataLinks>
      <object class="ImageWgt" id="AnalogClock.Clock.minutendl.img">
-      <wgtStyle width="58" rot="147.4" imagePath="images/needle_solid_mins1.svg" x="42" forcePaint="65" y="52" cx="12" cy="2" height="5" stroke="none" mtx="1.06,-0.01,0,0.01,1.14,0,0,0.38,1" stroke-width="2"/>
+      <wgtStyle width="58" rot="-90" imagePath="images/needle_solid_mins1.svg" x="42" forcePaint="65" y="52" cx="12" cy="2" height="5" stroke="none" mtx="1.06,-0.01,0,0.01,1.14,0,0,0.38,1" stroke-width="2"/>
      </object>
     </object>
     <object class="NeedleWgt" id="AnalogClock.Clock.secondndl">
-     <wgtStyle forcePaint="73" cx="54" startAngle="90" cy="56" reverseScale="true" endAngle="-270" x="-2" y="-3" discrete="true" max="60" value="34" initAngle="180" width="109" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="112" toolTipBgColor="rgb(255,255,255)" form="round"/>
+     <wgtStyle forcePaint="73" cx="54" startAngle="90" cy="56" reverseScale="true" endAngle="-270" x="-2" y="-3" discrete="true" max="60" initAngle="180" width="109" toolTipFontSize="12" toolTipFontName="Roboto" toolTipTextColor="rgb(0,0,0)" writeMode="0" height="112" toolTipBgColor="rgb(255,255,255)" form="round"/>
      <dataLinks>
       <dataLink readWrite="R" attribute="value" tag="second" sourceType="Widget" dataSource="AnalogClock.Clock"/>
      </dataLinks>
      <object class="ImageWgt" id="AnalogClock.Clock.secondndl.img">
-      <wgtStyle width="58" rot="114" imagePath="images/needle_solid_secs1.svg" x="48" forcePaint="65" y="54" fill="rgb(255,0,0)" cx="6" cy="2" height="5" stroke="none"/>
+      <wgtStyle width="58" rot="-90" imagePath="images/needle_solid_secs1.svg" x="48" forcePaint="65" y="54" fill="rgb(255,0,0)" cx="6" cy="2" height="5" stroke="none"/>
      </object>
     </object>
    </object>
@@ -246,13 +234,13 @@
    </object>
   </object>
   <object class="ImageWgt" id="GroupWgt1.wthrImg57" static="true">
-   <wgtStyle width="32" imagePath="images/IC_fo1_032.svg" x="36.56" y="659.43" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/IC_fo1_032.svg" x="492" y="699" cx="16" cy="16" height="32"/>
   </object>
   <object class="ImageWgt" id="GroupWgt1.wthrImg48" static="true">
-   <wgtStyle width="32" imagePath="images/IC_fo1_031.svg" x="117.56" y="662.43" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/IC_fo1_031.svg" x="571" y="702" cx="16" cy="16" height="32"/>
   </object>
   <object class="GroupWgt" id="GroupWgt1.Switch1" customType="Switch">
-   <wgtStyle width="101" x="27.14" y="680.43" cx="65" cy="35" height="64" mtx="1.2871,0,0,0,1.0937,0,0,0,1" groupStyle="xform-scaling"/>
+   <wgtStyle width="101" x="481" y="720" cx="65" cy="35" height="64" mtx="1.2871,0,0,0,1.0937,0,0,0,1" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="min" alias="NeedleWgt.min;TicksWgt.min;LabelsWgt.min;ScaleWgt.min"/>
     <attr attrName="max" alias="NeedleWgt.max;TicksWgt.max;LabelsWgt.max;ScaleWgt.max"/>
@@ -278,19 +266,19 @@
    </object>
   </object>
   <object class="LabelWgt" id="GroupWgt1.label1" static="true">
-   <wgtStyle width="78" font-color="rgb(23,30,40)" x="53.14" font-sizepx="21" y="632.43" font-family="Roboto" wrapping="true" cx="36.15" cy="12.79" height="27" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="78" font-color="rgb(23,30,40)" x="509" font-sizepx="21" y="672" font-family="Roboto" wrapping="true" cx="36.15" cy="12.79" height="27" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="0"/>
    </links>
   </object>
   <object class="ImageWgt" id="GroupWgt2.wthrImg1" static="true">
-   <wgtStyle width="32" imagePath="images/IC_fo1_032.svg" x="225.21" y="659.43" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/IC_fo1_032.svg" x="679" y="699" cx="16" cy="16" height="32"/>
   </object>
   <object class="ImageWgt" id="GroupWgt2.wthrImg2" static="true">
-   <wgtStyle width="32" imagePath="images/IC_fo1_031.svg" x="306.21" y="662.43" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/IC_fo1_031.svg" x="760" y="702" cx="16" cy="16" height="32"/>
   </object>
   <object class="GroupWgt" id="GroupWgt2.Switch2" customType="Switch">
-   <wgtStyle width="101" x="215.79" y="680.43" cx="65" cy="35" height="64" mtx="1.2871,0,0,0,1.0937,0,0,0,1" groupStyle="xform-scaling"/>
+   <wgtStyle width="101" x="671" y="720" cx="65" cy="35" height="64" mtx="1.2871,0,0,0,1.0937,0,0,0,1" groupStyle="xform-scaling"/>
    <links>
     <attr attrName="min" alias="NeedleWgt.min;TicksWgt.min;LabelsWgt.min;ScaleWgt.min"/>
     <attr attrName="max" alias="NeedleWgt.max;TicksWgt.max;LabelsWgt.max;ScaleWgt.max"/>
@@ -316,10 +304,40 @@
    </object>
   </object>
   <object class="LabelWgt" id="GroupWgt2.label2" static="true">
-   <wgtStyle width="78" font-color="rgb(23,30,40)" x="241.79" font-sizepx="21" y="632.43" font-family="Roboto" wrapping="true" cx="36.15" cy="12.79" height="27" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="78" font-color="rgb(23,30,40)" x="697" font-sizepx="21" y="672" font-family="Roboto" wrapping="true" cx="36.15" cy="12.79" height="27" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="3"/>
    </links>
+  </object>
+  <object class="LabelWgt" id="label4" static="true">
+   <wgtStyle width="85.17" font-color="rgb(23,30,40)" x="1151.08" font-sizepx="16" y="606" font-family="Roboto" wrapping="true" cx="39.47" cy="12.46" height="26.31" alignment="center" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="1"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LgtSmp3" customType="Light">
+   <wgtStyle width="20" x="1219" forcePaint="1" y="457.36" cx="10" cy="10" height="20"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp3.frmImg" static="true">
+    <wgtStyle width="25.77" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-3.85" y="-3.08" visibility="false" cx="12.88" cy="13.27" height="26.54"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp3.ind">
+    <wgtStyle width="20" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="10" cy="10" bkgColor="rgb(0,255,0);rgb(255,0,0)" height="20" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="flAck" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp3.lbl" static="true">
+    <wgtStyle width="16.92" x="1.15" font-sizepx="13" y="1.54" font-family="Roboto" cx="8.46" cy="8.65" height="17.31" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="7"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp3.icoImg" static="true">
+    <wgtStyle width="6.92" enableCache="true" x="5.38" y="5.38" cx="3.46" cy="4.04" height="8.08" fill-opacity="0.5"/>
+   </object>
   </object>
  </object>
 </wgtPage>

@@ -1,6 +1,9 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="Ventilatoren" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/ventilatoren.png" id="Ventilatoren" staticOptEnable="true">
   <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
+  <object class="ImageWgt" id="image1" static="true">
+   <wgtStyle width="877.97" imagePath="images/conrugisPlattegrond.jpg" x="399.03" y="8.01" cx="438.99" cy="337.99" height="675.99" mtx="-1,0,0,0,-1,0,877.973,675.99,1"/>
+  </object>
   <object class="ImageWgt" id="bldgImg41" static="true">
    <wgtStyle width="32" imagePath="images/7-5.svg" x="13" y="756" cx="15.45" cy="15.41" height="32"/>
   </object>
@@ -10,8 +13,8 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
-    <MLText L1="Ventilatoren" id="0"/>
     <MLText L1="" id="1"/>
+    <MLText L1="Ventilatoren" id="0"/>
     <MLText L1="Garage" id="2"/>
     <MLText L1="Ventilatoren" id="3"/>
     <MLText L1="Loods" id="9"/>
@@ -156,32 +159,29 @@
   <object class="GroupSubscribeWgt" id="Ventilatoren@$GroupSubscrWgt@$0">
    <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
-  <object class="ImageWgt" id="image1" static="true">
-   <wgtStyle width="768" imagePath="images/conrugisPlattegrond.jpg" x="488" y="10" cx="384" cy="261.59" height="523.18"/>
-  </object>
   <object class="ImageWgt" id="bldgImg64" static="true">
-   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="683.07" y="151" cx="53.85" cy="37.61" height="37.68"/>
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="1010.23" y="200.53" cx="53.85" cy="37.61" height="37.68"/>
   </object>
   <object class="ImageWgt" id="bldgImg1" static="true">
-   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="683.07" y="350" cx="18.48" cy="18.84" height="37.68"/>
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="1010.23" y="463.40" cx="18.48" cy="18.84" height="37.68"/>
   </object>
   <object class="ImageWgt" id="bldgImg2" static="true">
-   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="985.18" y="184" cx="18.48" cy="18.84" height="37.68"/>
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="598.06" y="410.80" cx="18.48" cy="18.84" height="37.68"/>
   </object>
   <object class="ImageWgt" id="bldgImg13" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="829" y="82" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="847.25" y="323.14" cx="16" cy="16" height="32"/>
   </object>
   <object class="ImageWgt" id="bldgImg3" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="829" y="322" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="847.25" y="563.14" cx="16" cy="16" height="32"/>
   </object>
   <object class="ImageWgt" id="bldgImg4" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="1194.82" y="98" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="428.40" y="341.74" cx="16" cy="16" height="32"/>
   </object>
   <object class="ImageWgt" id="bldgImg5" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="1194.82" y="325" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="428.40" y="568.74" cx="16" cy="16" height="32"/>
   </object>
   <object class="GroupWgt" id="LgtSmp3" customType="Light">
-   <wgtStyle width="10" x="693" y="366" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="1020.16" y="479.40" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -205,7 +205,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp4" customType="Light">
-   <wgtStyle width="10" x="842" y="334" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="860.25" y="575.14" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -224,12 +224,12 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp6" customType="Light">
-   <wgtStyle width="10" x="995" y="200" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="607.88" y="426.80" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -253,7 +253,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp7" customType="Light">
-   <wgtStyle width="10" x="1205.82" y="109" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="439.40" y="352.74" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -280,10 +280,10 @@
    <wgtStyle width="150" imagePath="images/Platina klein.jpg" x="1127" y="719" cx="75" cy="37" height="74"/>
   </object>
   <object class="ImageWgt" id="clscblwrImg7" static="true">
-   <wgtStyle width="67" imagePath="images/Simple fan2.svg" x="789" y="453" cx="33" cy="27" height="55"/>
+   <wgtStyle width="67" imagePath="images/Simple fan2.svg" x="856" y="38.51" cx="33" cy="27" height="55"/>
   </object>
   <object class="GroupWgt" id="LgtSmp5" customType="Light">
-   <wgtStyle width="10" x="812" y="477" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="879" y="62.51" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -307,10 +307,10 @@
    </object>
   </object>
   <object class="ImageWgt" id="clscblwrImg1" static="true">
-   <wgtStyle width="67" imagePath="images/Simple fan2.svg" x="998.85" y="385.22" cx="33" cy="27" height="55"/>
+   <wgtStyle width="67" imagePath="images/Simple fan2.svg" x="576.84" y="96" cx="34" cy="28" height="55" mtx="-1,0,0,0,-1,0,67,55,1"/>
   </object>
   <object class="GroupWgt" id="LgtSmp9" customType="Light">
-   <wgtStyle width="10" x="1021.85" y="409.22" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="609.99" y="119" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -334,7 +334,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnIllum1" customType="Button With Light">
-   <wgtStyle width="52" x="787" y="556" cx="26" cy="26" height="52"/>
+   <wgtStyle width="52" x="941" y="36.51" cx="26" cy="26" height="52"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -368,7 +368,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="BtnIllum2" customType="Button With Light">
-   <wgtStyle width="52" x="1006.35" y="556" cx="26" cy="26" height="52"/>
+   <wgtStyle width="52" x="583.99" y="158" cx="26" cy="26" height="52"/>
    <links>
     <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -402,7 +402,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp2" customType="Light">
-   <wgtStyle width="10" x="693" y="167" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="1020.16" y="216.53" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -426,7 +426,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp1" customType="Light">
-   <wgtStyle width="10" x="840" y="94" cx="22" cy="-97" height="10"/>
+   <wgtStyle width="10" x="858.25" y="335.14" cx="22" cy="-97" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -450,7 +450,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp8" customType="Light">
-   <wgtStyle width="10" x="1205" y="336" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="438.58" y="579.74" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -469,7 +469,7 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp8.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp8.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>

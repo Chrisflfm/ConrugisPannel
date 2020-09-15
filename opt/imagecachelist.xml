@@ -3,7 +3,6 @@
  <file fill="rgb(0,0,0)" strokeSize="2" imgSize="58,5" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_mins1.svg" numSizes="1"/>
  <file fill="rgb(255,0,0)" strokeSize="-1" imgSize="58,5" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_secs1.svg" numSizes="1"/>
  <file fill="rgb(192,192,192)" strokeSize="3" imgSize="16,29" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/ribbed_thumb_gray1.svg" numSizes="1"/>
- <file fill="rgb(0,255,0)" imgSize="28,23" stroke="rgb(255,251,240)" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
  <file fill="rgb(255,0,0)" imgSize="28,23" stroke="rgb(255,251,240)" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
  <file fill="rgb(200,200,200)" imgSize="28,23" stroke="rgb(255,251,240)" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
  <file fill="rgb(255,128,0)" imgSize="52,46" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
@@ -16,6 +15,8 @@
  <file fill="rgb(128,128,128)" strokeSize="0" imgSize="12,12" stroke="rgb(255,255,255)" numUses="2" isSvgFile="true" dynamic="true" file="images/li_inset_round.svg" numSizes="1"/>
  <file fill="rgb(192,192,192)" imgSize="10,10" stroke="rgb(255,251,240)" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
  <file fill="rgb(128,128,128)" imgSize="10,10" stroke="rgb(255,251,240)" numUses="7" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
+ <file fill="rgb(255,255,255)" imgSize="20,20" stroke="rgb(255,251,240)" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
+ <file fill="rgb(0,255,0)" imgSize="20,20" stroke="rgb(255,251,240)" numUses="5" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="3"/>
  <file fill="rgb(192,192,192)" strokeSize="0" imgSize="12,12" stroke="rgb(255,255,255)" numUses="3" isSvgFile="true" dynamic="true" file="images/li_inset_round.svg" numSizes="1"/>
  <file fill="rgb(246,246,246)" imgSize="43,51" stroke="none" numUses="76" isSvgFile="true" file="images/btn_kbdwht_std_2_rev1.svg" numSizes="36" prePath="keypads"/>
  <file fill="rgb(246,246,246)" imgSize="43,51" stroke="none" numUses="76" isSvgFile="true" file="images/btn_kbdwht_std_1_rev1.svg" numSizes="36" prePath="keypads"/>
