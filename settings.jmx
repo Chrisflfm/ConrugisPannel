@@ -1,5 +1,5 @@
 <wgtPage rev="1" projectType="HMI Project">
- <object pageName="Settings" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="false" usedFonts="Roboto" staticFile="opt/settings.png" id="Settings" staticOptEnable="true">
+ <object pageName="Settings" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/settings.png" id="Settings" staticOptEnable="true">
   <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -21,6 +21,7 @@
     <MLText L1="HysteresischVorstV" id="13"/>
     <MLText L1="HysteresischDak" id="14"/>
     <MLText L1="MinTempAanvoer1" id="15"/>
+    <MLText L1="MaxTempBuitenDakvent" id="16"/>
     <MLText L1="HysteresischAanv" id="17"/>
     <MLText L1="MinTempAanvoer2" id="18"/>
     <MLText L1="dTVentBijschakelen" id="19"/>
@@ -363,9 +364,21 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp2.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp2.icoImg" static="true">
     <wgtStyle width="6.92" enableCache="true" x="5.38" y="5.38" cx="3.46" cy="4.04" height="8.08" fill-opacity="0.5"/>
    </object>
+  </object>
+  <object class="LabelWgt" id="label21" static="true">
+   <wgtStyle width="239" font-color="rgb(23,30,40)" x="779.33" font-sizepx="21" y="668.50" font-family="Roboto" wrapping="true" cx="110.76" cy="13.74" height="29" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="16"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field21">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="1029.33" y="673" vert-align="top" text="2" max="4294967295" usingFormat="" value="2" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="MaxTempBuitenDakvent" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
   </object>
  </object>
 </wgtPage>

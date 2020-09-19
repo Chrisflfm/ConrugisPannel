@@ -13,10 +13,12 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
-    <MLText L1="" id="1"/>
     <MLText L1="Ventilatoren" id="0"/>
+    <MLText L1="" id="1"/>
     <MLText L1="Garage" id="2"/>
     <MLText L1="Ventilatoren" id="3"/>
+    <MLText L1="" id="5"/>
+    <MLText L1="" id="6"/>
     <MLText L1="Loods" id="9"/>
     <MLText L1="Dak Vent" id="12"/>
     <MLText L1="Dak Vent" id="15"/>
@@ -159,29 +161,200 @@
   <object class="GroupSubscribeWgt" id="Ventilatoren@$GroupSubscrWgt@$0">
    <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
-  <object class="ImageWgt" id="bldgImg64" static="true">
-   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="1010.23" y="200.53" cx="53.85" cy="37.61" height="37.68"/>
+  <object class="GroupWgt" id="LgtSmp11" customType="Light">
+   <wgtStyle width="52" x="1000" y="195" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp11.frmImg" static="true">
+    <wgtStyle width="67" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-10" y="-8" visibility="false" cx="33.50" cy="34.50" height="69"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp11.ind">
+    <wgtStyle width="52" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="26" cy="26" bkgColor="rgb(200,200,200);rgb(0,255,0)" height="52" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrDakvent2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp11.lbl" static="true">
+    <wgtStyle width="44" x="3" font-sizepx="13" y="4" font-family="Roboto" cx="22" cy="22.50" height="45" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp11.icoImg" static="true">
+    <wgtStyle width="18" enableCache="true" x="14" y="14" cx="9" cy="10.50" height="21" fill-opacity="0.5"/>
+   </object>
   </object>
-  <object class="ImageWgt" id="bldgImg1" static="true">
-   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="1010.23" y="463.40" cx="18.48" cy="18.84" height="37.68"/>
+  <object class="ImageWgt" id="bldgImg64">
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="1010.23" forcePaint="1" y="200.53" cx="0" cy="0" height="37.68"/>
   </object>
-  <object class="ImageWgt" id="bldgImg2" static="true">
-   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="598.06" y="410.80" cx="18.48" cy="18.84" height="37.68"/>
+  <object class="GroupWgt" id="LgtSmp12" customType="Light">
+   <wgtStyle width="52" x="999" y="457" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp12.frmImg" static="true">
+    <wgtStyle width="67" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-10" y="-8" visibility="false" cx="33.50" cy="34.50" height="69"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp12.ind">
+    <wgtStyle width="52" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="26" cy="26" bkgColor="rgb(200,200,200);rgb(0,255,0)" height="52" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrDakvent2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp12.lbl" static="true">
+    <wgtStyle width="44" x="3" font-sizepx="13" y="4" font-family="Roboto" cx="22" cy="22.50" height="45" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp12.icoImg" static="true">
+    <wgtStyle width="18" enableCache="true" x="14" y="14" cx="9" cy="10.50" height="21" fill-opacity="0.5"/>
+   </object>
   </object>
-  <object class="ImageWgt" id="bldgImg13" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="847.25" y="323.14" cx="16" cy="16" height="32"/>
+  <object class="ImageWgt" id="bldgImg1">
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="1010.23" forcePaint="1" y="463.40" cx="0" cy="0" height="37.68"/>
   </object>
-  <object class="ImageWgt" id="bldgImg3" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="847.25" y="563.14" cx="16" cy="16" height="32"/>
+  <object class="GroupWgt" id="LgtSmp10" customType="Light">
+   <wgtStyle width="52" x="590" y="406" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp10.frmImg" static="true">
+    <wgtStyle width="67" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-10" y="-8" visibility="false" cx="33.50" cy="34.50" height="69"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp10.ind">
+    <wgtStyle width="52" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="26" cy="26" bkgColor="rgb(200,200,200);rgb(0,255,0)" height="52" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrDakvent1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp10.lbl" static="true">
+    <wgtStyle width="44" x="3" font-sizepx="13" y="4" font-family="Roboto" cx="22" cy="22.50" height="45" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="5"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp10.icoImg" static="true">
+    <wgtStyle width="18" enableCache="true" x="14" y="14" cx="9" cy="10.50" height="21" fill-opacity="0.5"/>
+   </object>
   </object>
-  <object class="ImageWgt" id="bldgImg4" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="428.40" y="341.74" cx="16" cy="16" height="32"/>
+  <object class="ImageWgt" id="bldgImg2">
+   <wgtStyle width="36.97" imagePath="images/11-1.svg" x="600" forcePaint="9" y="410.80" cx="18.48" cy="18.84" height="37.68"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="unsignedInt" attribute="rot" tag="rotDakVentGarage" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
   </object>
-  <object class="ImageWgt" id="bldgImg5" static="true">
-   <wgtStyle width="32" imagePath="images/2-5.svg" x="428.40" y="568.74" cx="16" cy="16" height="32"/>
+  <object class="GroupWgt" id="LgtSmp15" customType="Light">
+   <wgtStyle width="55" x="846" y="299" cx="27.50" cy="38.50" height="77"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp15.frmImg" static="true">
+    <wgtStyle width="74.04" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-10.58" y="-13.39" visibility="false" bdrImageSize="60.00,49.00" cx="37.50" cy="51.34" bdrSize="0.23,0.24,0.19,0.19" height="103.78" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp15.ind">
+    <wgtStyle width="55" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="27.50" cy="36.36" bkgColor="rgb(180,180,180);rgb(0,255,0)" height="77" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrVent2B" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp15.lbl" static="true">
+    <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp15.icoImg" static="true">
+    <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="ImageWgt" id="bldgImg13">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="847.25" forcePaint="1" y="323.14" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="GroupWgt" id="LgtSmp16" customType="Light">
+   <wgtStyle width="55" x="846" y="539" cx="27.50" cy="38.50" height="77"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp16.frmImg" static="true">
+    <wgtStyle width="74.04" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-10.58" y="-13.39" visibility="false" bdrImageSize="60.00,49.00" cx="37.50" cy="51.34" bdrSize="0.23,0.24,0.19,0.19" height="103.78" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp16.ind">
+    <wgtStyle width="55" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="27.50" cy="36.36" bkgColor="rgb(180,180,180);rgb(0,255,0)" height="77" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrVent2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp16.lbl" static="true">
+    <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp16.icoImg" static="true">
+    <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="ImageWgt" id="bldgImg3">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="847.25" forcePaint="1" y="563.14" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="GroupWgt" id="LgtSmp13" customType="Light">
+   <wgtStyle width="55" x="429" y="319" cx="27.50" cy="38.50" height="77"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp13.frmImg" static="true">
+    <wgtStyle width="74.04" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-10.58" y="-13.39" visibility="false" bdrImageSize="60.00,49.00" cx="37.50" cy="51.34" bdrSize="0.23,0.24,0.19,0.19" height="103.78" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp13.ind">
+    <wgtStyle width="55" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="27.50" cy="36.36" bkgColor="rgb(180,180,180);rgb(0,255,0)" height="77" stroke="none" mtx="1,0,0,0,1,0,0,0,1"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrVent1B" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp13.lbl" static="true">
+    <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="6"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp13.icoImg" static="true">
+    <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5" mtx="1,0,0,0,1,0,0,0,1"/>
+   </object>
+  </object>
+  <object class="ImageWgt" id="bldgImg4">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="428.40" forcePaint="1" y="341.74" cx="16" cy="16" height="32"/>
+  </object>
+  <object class="GroupWgt" id="LgtSmp14" customType="Light">
+   <wgtStyle width="55" x="429" y="545" cx="27.50" cy="38.50" height="77"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp14.frmImg" static="true">
+    <wgtStyle width="74.04" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-10.58" y="-13.39" visibility="false" bdrImageSize="60.00,49.00" cx="37.50" cy="51.34" bdrSize="0.23,0.24,0.19,0.19" height="103.78" bdrEdges="0.15,0.14,0.12,0.12"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp14.ind">
+    <wgtStyle width="55" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="27.50" cy="36.36" bkgColor="rgb(180,180,180);rgb(0,255,0)" height="77" stroke="none"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrVent1A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp14.lbl" static="true">
+    <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp14.icoImg" static="true">
+    <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5"/>
+   </object>
+  </object>
+  <object class="ImageWgt" id="bldgImg5">
+   <wgtStyle width="32" imagePath="images/2-5.svg" x="428.40" forcePaint="1" y="568.74" cx="16" cy="16" height="32"/>
   </object>
   <object class="GroupWgt" id="LgtSmp3" customType="Light">
-   <wgtStyle width="10" x="1020.16" y="479.40" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="1020.16" forcePaint="1" y="479.40" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -189,7 +362,7 @@
     <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp3.ind">
-    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(192,192,192);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="5" cy="5" bkgColor="rgb(192,192,192);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVentDak2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
@@ -200,12 +373,12 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp3.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp3.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp4" customType="Light">
-   <wgtStyle width="10" x="860.25" y="575.14" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="860.25" forcePaint="1" y="575.14" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -213,7 +386,7 @@
     <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp4.ind">
-    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
@@ -229,7 +402,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp6" customType="Light">
-   <wgtStyle width="10" x="607.88" y="426.80" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="607.88" forcePaint="1" y="426.80" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -237,7 +410,7 @@
     <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp6.ind">
-    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVentDak1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
@@ -248,12 +421,12 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp6.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp6.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp7" customType="Light">
-   <wgtStyle width="10" x="439.40" y="352.74" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="439.40" forcePaint="1" y="352.74" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -261,7 +434,7 @@
     <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp7.ind">
-    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent1A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
@@ -272,7 +445,7 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp7.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp7.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
@@ -302,7 +475,7 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp5.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp5.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
@@ -329,7 +502,7 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp9.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp9.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
@@ -402,7 +575,7 @@
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp2" customType="Light">
-   <wgtStyle width="10" x="1020.16" y="216.53" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="1020.16" forcePaint="1" y="216.53" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -410,7 +583,7 @@
     <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp2.ind">
-    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(192,192,192);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="5" cy="5" bkgColor="rgb(192,192,192);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVentDak2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
@@ -421,12 +594,12 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp2.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp2.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp1" customType="Light">
-   <wgtStyle width="10" x="858.25" y="335.14" cx="22" cy="-97" height="10"/>
+   <wgtStyle width="10" x="858.25" forcePaint="1" y="335.14" cx="22" cy="-97" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -434,7 +607,7 @@
     <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp1.ind">
-    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent2A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
@@ -445,12 +618,12 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
   </object>
   <object class="GroupWgt" id="LgtSmp8" customType="Light">
-   <wgtStyle width="10" x="438.58" y="579.74" cx="5" cy="5" height="10"/>
+   <wgtStyle width="10" x="438.58" forcePaint="1" y="579.74" cx="5" cy="5" height="10"/>
    <links>
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
@@ -458,7 +631,7 @@
     <wgtStyle width="12.88" imagePath="images/frame_round_chrome.svg" enableCache="true" x="-1.92" y="-1.54" visibility="false" cx="6.44" cy="6.63" height="13.27"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp8.ind">
-    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="8" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
+    <wgtStyle width="10" imagePath="images/li_shape_round.svg" x="0" forcePaint="9" y="0" cx="5" cy="5" bkgColor="rgb(128,128,128);rgb(0,0,255);rgb(255,0,0);rgb(0,255,0)" height="10" stroke="rgb(255,251,240)"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="StatusVent1A" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>

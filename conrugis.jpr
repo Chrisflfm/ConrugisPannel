@@ -1,5 +1,5 @@
 <wgtPage rev="1" projectType="HMI Project">
- <object ServerSynchEnable="disable" holdTime="2000" diskSizes="128MB" longDateFormat="MM/DD/YY - hh:mm:ss" maxBandwidth="0" webConnectionMode="auto" browserOpt="1" staticOptEnable="true" class="ProjectWgt" autoRepeatPeriod="250" webInactivityTimeout="600" UserMgmtTmplType="Large" screenSaverTimeout="0" enableUserMgmt="true" browserOptForceLayers="1" decimalSymbol="." IncludeVNC="false" downloadPrepDone="false" pageName="Conrugis" guid="B82B4575-CF10-4AA8-ACF4-234B1CF663EE" screenSaverPage="0" qtft="true" IncludePDFReader="false" id="Conrugis" ContextMenu="0" pageType="project" webShowRuntimeErrors="false" targetName="eX710" pageSize="640,480" orientation="0" shortDateFormat="DD/MM/YYYY" webMemoryThreshold="0" debugIP="127.0.0.1" thousandSymbol="," dataWndSize="0,70" TouchBuzzerTime="200" maxOpenDlgs="5" gesturePassthruDelay="200" onAccessDenied="0" listSeparator="," panelMemory="2GB" bgColorOption="0" targetType="Linux OE/un65" screenSaverDisplayTime="0" maxTrendPrintRows="10000" webMemoryAvailable="0" refreshTime="100" defaultPageSize="1280,800" browserOptNativeRenderLoop="1" manufacturerCode="510" KeyPadTmplType="KeyPadTemplates_large">
+ <object ServerSynchEnable="disable" holdTime="2000" diskSizes="128MB" longDateFormat="MM/DD/YY - hh:mm:ss" maxBandwidth="0" webConnectionMode="auto" browserOpt="1" staticOptEnable="true" class="ProjectWgt" autoRepeatPeriod="250" webInactivityTimeout="600" UserMgmtTmplType="Large" screenSaverTimeout="0" enableUserMgmt="true" browserOptForceLayers="1" decimalSymbol="." IncludeVNC="false" downloadPrepDone="true" pageName="Conrugis" guid="B82B4575-CF10-4AA8-ACF4-234B1CF663EE" screenSaverPage="0" qtft="true" IncludePDFReader="false" id="Conrugis" ContextMenu="0" pageType="project" webShowRuntimeErrors="false" targetName="eX710" pageSize="640,480" orientation="0" shortDateFormat="DD/MM/YYYY" webMemoryThreshold="0" debugIP="127.0.0.1" thousandSymbol="," dataWndSize="0,70" TouchBuzzerTime="200" maxOpenDlgs="5" gesturePassthruDelay="200" onAccessDenied="0" listSeparator="," panelMemory="2GB" bgColorOption="0" targetType="Linux OE/un65" screenSaverDisplayTime="0" maxTrendPrintRows="10000" webMemoryAvailable="0" refreshTime="100" defaultPageSize="1280,800" browserOptNativeRenderLoop="1" manufacturerCode="510" KeyPadTmplType="KeyPadTemplates_large">
   <wgtStyle width="640" x="0" y="0" height="480" fitToSize="1" ver="040000100" v="04.00.00.100"/>
   <object class="MultiLangMgrWgt" id="_MultiLangMgr" fileName="multilang.xml">
    <wgtStyle width="0" x="0" y="0" height="0"/>
@@ -169,6 +169,9 @@
    <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
   <object class="SignatureMgrWgt" id="_SignatureMgr">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupSubscribeWgt" id="Conrugis@$GroupSubscrWgt@$0">
    <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
  </object>

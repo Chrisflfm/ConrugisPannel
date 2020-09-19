@@ -13,11 +13,15 @@
  <group Type="Auto">
   <name>MainPage@$GroupSubscrWgt@$0</name>
   <active>false</active>
+  <tag>Bedrijfsuren</tag>
   <tag>Dagopbrengst_kWh</tag>
+  <tag>StatusErr</tag>
   <tag>Totaalopbrengst_kWh</tag>
+  <tag>VorstVeiligregimeGarage</tag>
+  <tag>VorstVeiligregimeLoods</tag>
   <tag>flAck</tag>
-  <tag>flInVorstVeilig1</tag>
-  <tag>flInVorstVeilig2</tag>
+  <tag>flActInVorstVeilig1</tag>
+  <tag>flActInVorstVeilig2</tag>
   <tag>laGroen</tag>
  </group>
  <group Type="Auto">
@@ -29,6 +33,7 @@
   <tag>HysteresischBedrijf</tag>
   <tag>HysteresischDak</tag>
   <tag>HysteresischVorstV</tag>
+  <tag>MaxTempBuitenDakvent</tag>
   <tag>MinTempAanVBedrijf</tag>
   <tag>MinTempAanVVorstVlg</tag>
   <tag>MinTempAanvoer1</tag>
@@ -53,8 +58,15 @@
   <tag>StatusVentDak2</tag>
   <tag>ctVentGarage</tag>
   <tag>ctVentLoods</tag>
+  <tag>hrDakvent1</tag>
+  <tag>hrDakvent2</tag>
+  <tag>hrVent1A</tag>
+  <tag>hrVent1B</tag>
+  <tag>hrVent2A</tag>
+  <tag>hrVent2B</tag>
   <tag>hrpVentGarage</tag>
   <tag>hrpVentLoods</tag>
+  <tag>rotDakVentGarage</tag>
  </group>
  <group Type="Auto">
   <name>Verlichting@$GroupSubscrWgt@$0</name>
@@ -82,6 +94,9 @@
   <tag>ctKlepGarage</tag>
   <tag>ctKlepLoods</tag>
   <tag>ctPressH2O</tag>
+  <tag>flWeekTestBezig</tag>
+  <tag>flWeekTestGarageResult</tag>
+  <tag>flWeekTestLoodsResult</tag>
   <tag>hrPomp1</tag>
   <tag>hrPomp2</tag>
   <tag>hrVent1A</tag>
@@ -111,6 +126,12 @@
   <tag>Temp garage H</tag>
   <tag>Temp garage L</tag>
   <tag>Temp stal L</tag>
+  <tag>VorstVeiligregimeGarage</tag>
+  <tag>VorstVeiligregimeLoods</tag>
+  <tag>ctFlow1</tag>
+  <tag>ctFlow2</tag>
+  <tag>flActInVorstVeilig1</tag>
+  <tag>flActInVorstVeilig2</tag>
   <tag>tmpRth1</tag>
   <tag>tmpRth1dak</tag>
   <tag>tmpRth2</tag>

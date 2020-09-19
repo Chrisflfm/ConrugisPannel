@@ -1,9 +1,9 @@
 <if_mqtt>
  <enableserver>1</enableserver>
- <enablealarm>0</enablealarm>
+ <enablealarm>1</enablealarm>
  <maxPersistSize>50000</maxPersistSize>
  <maxPendingMessages>100</maxPendingMessages>
- <alarmGroups>None</alarmGroups>
+ <alarmGroups>All</alarmGroups>
  <server port="1883" address="192.168.250.250">
   <enableTLS>0</enableTLS>
   <caCert></caCert>
@@ -43,7 +43,7 @@
   <pluginName>mosquitto</pluginName>
   <groups>
    <group name="MQTT_PUB">
-    <qos>0</qos>
+    <qos>1</qos>
     <retain>0</retain>
     <persist>0</persist>
     <policy>
@@ -60,7 +60,7 @@
     </policy>
    </group>
    <group name="MQTT_SUB">
-    <qos>0</qos>
+    <qos>1</qos>
     <retain>0</retain>
     <persist>0</persist>
     <policy>

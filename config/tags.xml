@@ -1043,7 +1043,7 @@
     </tag>
     <tag>
         <name>Temperatuur verbrandingsgas</name>
-        <resourceLocator>prot2://1?IREG?330002?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330002?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1056,7 +1056,7 @@
     </tag>
     <tag>
         <name>Bedrijfsuren</name>
-        <resourceLocator>prot2://1?IREG?330021?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?300020?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1069,7 +1069,7 @@
     </tag>
     <tag>
         <name>Uren sinds laatste onderhoud</name>
-        <resourceLocator>prot2://1?IREG?330056?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330056?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1082,7 +1082,7 @@
     </tag>
     <tag>
         <name>Ketelvraag via verwarmingscircuit of boiler aanwezig</name>
-        <resourceLocator>prot2://1?IREG?330057?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330057?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1095,7 +1095,7 @@
     </tag>
     <tag>
         <name>Dagopbrengst_kWh</name>
-        <resourceLocator>prot2://1?IREG?330085?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330085?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1108,7 +1108,7 @@
     </tag>
     <tag>
         <name>Totaalopbrengst_kWh</name>
-        <resourceLocator>prot2://1?IREG?330086?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330086?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1121,7 +1121,7 @@
     </tag>
     <tag>
         <name>Waarschuwing resterende verwarmingsuren tot as legen</name>
-        <resourceLocator>prot2://1?IREG?330087?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330087?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1134,7 +1134,7 @@
     </tag>
     <tag>
         <name>Temperatuur verbrandingsruimte</name>
-        <resourceLocator>prot2://1?IREG?330088?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330088?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1147,7 +1147,7 @@
     </tag>
     <tag>
         <name>Vermogensvraag</name>
-        <resourceLocator>prot2://1?IREG?330101?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330101?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1160,7 +1160,7 @@
     </tag>
     <tag>
         <name>Aantal reinigingen</name>
-        <resourceLocator>prot2://1?IREG?330102?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330102?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1173,7 +1173,7 @@
     </tag>
     <tag>
         <name>Tijd tot volgende reiniging</name>
-        <resourceLocator>prot2://1?IREG?330103?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330103?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1186,7 +1186,7 @@
     </tag>
     <tag>
         <name>Buffer 1 - Buffertemperatuur boven</name>
-        <resourceLocator>prot2://1?IREG?332001?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?332001?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1199,7 +1199,7 @@
     </tag>
     <tag>
         <name>Buffer 1 - Buffertemperatuur midden</name>
-        <resourceLocator>prot2://1?IREG?331002?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?331002?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1212,7 +1212,7 @@
     </tag>
     <tag>
         <name>Buffer 1 - Buffertemperatuur onder</name>
-        <resourceLocator>prot2://1?IREG?331003?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?331003?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1225,7 +1225,7 @@
     </tag>
     <tag>
         <name>Buffer 1 - Aansturing bufferpompen</name>
-        <resourceLocator>prot2://1?IREG?331004?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?331004?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1238,7 +1238,7 @@
     </tag>
     <tag>
         <name>Buffer 1 - Laadtoestand buffer</name>
-        <resourceLocator>prot2://1?IREG?331007?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?331007?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1251,7 +1251,7 @@
     </tag>
     <tag>
         <name>Keteltemperatuur</name>
-        <resourceLocator>prot2://1?IREG?330001?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?330001?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1264,7 +1264,7 @@
     </tag>
     <tag>
         <name>Regelvariabele ketel</name>
-        <resourceLocator>prot2://1?IREG?300015?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?300015?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1278,71 +1278,71 @@
     <tag>
         <name>Temp garage H</name>
         <group>MQTT_SUB</group>
-        <resourceLocator>prot3://Temp garage H?float</resourceLocator>
+        <resourceLocator>prot1://0?REG?1000101?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Temp garage H?float</simulator>
+        <simulator>VRBL://Temp garage H?unsignedInt</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>-3.40282e+38</min>
-        <max>3.40282e+38</max>
+        <min>0</min>
+        <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>Temp garage L</name>
         <group>MQTT_SUB</group>
-        <resourceLocator>prot3://Temp garage L?float</resourceLocator>
+        <resourceLocator>prot1://0?REG?1000102?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Temp garage L?float</simulator>
+        <simulator>VRBL://Temp garage L?unsignedInt</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>-3.40282e+38</min>
-        <max>3.40282e+38</max>
+        <min>0</min>
+        <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>Temp Stal H</name>
         <group>MQTT_SUB</group>
-        <resourceLocator>prot3://Temp Stal H?float</resourceLocator>
+        <resourceLocator>prot1://0?REG?1000103?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Temp Stal H?float</simulator>
+        <simulator>VRBL://Temp Stal H?unsignedInt</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>-3.40282e+38</min>
-        <max>3.40282e+38</max>
+        <min>0</min>
+        <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>Temp stal L</name>
         <group>MQTT_SUB</group>
-        <resourceLocator>prot3://Temp stal L?float</resourceLocator>
+        <resourceLocator>prot1://0?REG?1000104?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://Temp stal L?float</simulator>
+        <simulator>VRBL://Temp stal L?unsignedInt</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>-3.40282e+38</min>
-        <max>3.40282e+38</max>
+        <min>0</min>
+        <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>Buiten Temp</name>
         <group>MQTT_SUB</group>
-        <resourceLocator>prot3://Buiten Temp?float</resourceLocator>
+        <resourceLocator>prot1://0?REG?1000100?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
         <simulator>VRBL://Buiten Temp?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>-3.40282e+38</min>
-        <max>3.40282e+38</max>
+        <min>0</min>
+        <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
@@ -1660,6 +1660,149 @@
     <tag>
         <name>flInVorstVeilig2</name>
         <resourceLocator>prot1://0?FLAG?21?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>rotDakVentGarage</name>
+        <resourceLocator>prot1://0?REG?1000036?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://rotDakVentGarage?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>rotDakVentLoods</name>
+        <resourceLocator>prot1://0?REG?1000037?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>MaxTempBuitenDakvent</name>
+        <resourceLocator>prot1://0?REG?1000038?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://MaxTempBuitenDakvent?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>VorstVeiligregimeGarage</name>
+        <resourceLocator>prot1://0?REG?1000039?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://VorstVeiligregimeGarage?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>VorstVeiligregimeLoods</name>
+        <resourceLocator>prot1://0?REG?1000040?unsignedInt</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://VorstVeiligregimeLoods?unsignedInt</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>4294967295</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flActInVorstVeilig1</name>
+        <resourceLocator>prot1://0?FLAG?42?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://flActInVorstVeilig1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flActInVorstVeilig2</name>
+        <resourceLocator>prot1://0?FLAG?43?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flStartWeekTest</name>
+        <resourceLocator>prot1://0?FLAG?39?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://flStartWeekTest?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flWeekTestBezig</name>
+        <resourceLocator>prot1://0?FLAG?44?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://flWeekTestBezig?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flWeekTestGarageResult</name>
+        <resourceLocator>prot1://0?FLAG?45?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>flWeekTestLoodsResult</name>
+        <resourceLocator>prot1://0?FLAG?46?boolean</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>

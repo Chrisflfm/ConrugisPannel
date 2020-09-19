@@ -28,9 +28,7 @@
         <requireAck>false</requireAck>
         <blinkTxt>false</blinkTxt>
         <requireReset>false</requireReset>
-        <actions>
-            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail1" actionID="0" actionType="onClick"/>
-        </actions>
+        <actions/>
         <useractions/>
         <description>[7@Alarm]</description>
         <severity>1</severity>
@@ -57,9 +55,7 @@
         <requireAck>false</requireAck>
         <blinkTxt>false</blinkTxt>
         <requireReset>false</requireReset>
-        <actions>
-            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail2" actionID="1" actionType="onClick"/>
-        </actions>
+        <actions/>
         <useractions/>
         <description>[7@Alarm]</description>
         <severity>1</severity>
@@ -86,9 +82,7 @@
         <requireAck>false</requireAck>
         <blinkTxt>false</blinkTxt>
         <requireReset>false</requireReset>
-        <actions>
-            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail3" actionID="2" actionType="onClick"/>
-        </actions>
+        <actions/>
         <useractions/>
         <description>[7@Alarm]</description>
         <severity>1</severity>
@@ -115,9 +109,7 @@
         <requireAck>false</requireAck>
         <blinkTxt>false</blinkTxt>
         <requireReset>false</requireReset>
-        <actions>
-            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail4" actionID="3" actionType="onClick"/>
-        </actions>
+        <actions/>
         <useractions/>
         <description>[7@Alarm]</description>
         <severity>1</severity>
@@ -144,9 +136,7 @@
         <requireAck>false</requireAck>
         <blinkTxt>false</blinkTxt>
         <requireReset>false</requireReset>
-        <actions>
-            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail5" actionID="4" actionType="onClick"/>
-        </actions>
+        <actions/>
         <useractions/>
         <description>[7@Alarm]</description>
         <severity>1</severity>
