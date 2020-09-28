@@ -41,6 +41,8 @@
   <tag>SetpointVorstVeilig</tag>
   <tag>TijdVorstVeiligAan</tag>
   <tag>TijdVorstVeiligUit</tag>
+  <tag>WaterDrukKritiek</tag>
+  <tag>WaterDruklaag</tag>
   <tag>dTVentBijschakelen</tag>
   <tag>flMute</tag>
   <tag>regHours</tag>
@@ -84,11 +86,14 @@
   <tag>Buffer 1 - Laadtoestand buffer</tag>
   <tag>Keteltemperatuur</tag>
   <tag>Regelvariabele ketel</tag>
+  <tag>SetpointBedrijf1</tag>
+  <tag>SetpointBedrijf2</tag>
   <tag>Temperatuur verbrandingsgas</tag>
   <tag>Temperatuur verbrandingsruimte</tag>
   <tag>Tijd tot volgende reiniging</tag>
   <tag>Uren sinds laatste onderhoud</tag>
   <tag>Waarschuwing resterende verwarmingsuren tot as legen</tag>
+  <tag>WaterDruk</tag>
   <tag>ctFlow1</tag>
   <tag>ctFlow2</tag>
   <tag>ctKlepGarage</tag>
@@ -109,6 +114,8 @@
   <tag>tmpAanv2</tag>
   <tag>tmpRet1</tag>
   <tag>tmpRet2</tag>
+  <tag>tmpRth1</tag>
+  <tag>tmpRth2</tag>
  </group>
  <group Type="Auto">
   <name>alarm@$GroupSubscrWgt@$0</name>

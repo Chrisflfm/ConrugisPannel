@@ -1251,7 +1251,7 @@
     </tag>
     <tag>
         <name>Keteltemperatuur</name>
-        <resourceLocator>prot2://2?IREG?330001?unsignedShort</resourceLocator>
+        <resourceLocator>prot2://2?IREG?300001?unsignedShort</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
@@ -1425,28 +1425,28 @@
     </tag>
     <tag>
         <name>WensTemp1</name>
-        <resourceLocator>prot1://0?REG?1000029?unsignedInt</resourceLocator>
+        <resourceLocator>prot1://0?REG?1000075?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://WensTemp1?unsignedInt</simulator>
+        <simulator>VRBL://WensTemp1?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>4294967295</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
         <name>WensTemp2</name>
-        <resourceLocator>prot1://0?REG?1000030?unsignedInt</resourceLocator>
+        <resourceLocator>prot1://0?REG?1000080?float</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
-        <simulator>VRBL://WensTemp2?unsignedInt</simulator>
+        <simulator>VRBL://WensTemp2?float</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
-        <min>0</min>
-        <max>4294967295</max>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
@@ -1807,6 +1807,97 @@
         <accessMode>READ-WRITE</accessMode>
         <active>false</active>
         <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>WaterDruk</name>
+        <resourceLocator>prot1://0?REG?1000060?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://WaterDruk?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>WaterDruklaag</name>
+        <resourceLocator>prot1://0?REG?1000065?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://WaterDruklaag?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>WaterDrukKritiek</name>
+        <resourceLocator>prot1://0?REG?1000070?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://WaterDrukKritiek?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Ft06_WeekTestGarFaalt</name>
+        <resourceLocator>prot1://0?FLAG?105?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Ft06_WeekTestGarFaalt?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Ft07_WeekTestLoodsFaalt</name>
+        <resourceLocator>prot1://0?FLAG?106?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Ft07_WeekTestLoodsFaalt?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Ft08_Waterdruklaag</name>
+        <resourceLocator>prot1://0?FLAG?107?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Ft08_Waterdruklaag?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Ft09_Waterdrukkritiek</name>
+        <resourceLocator>prot1://0?FLAG?108?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Ft09_Waterdrukkritiek?boolean</simulator>
         <enableScaling>false</enableScaling>
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <min>0</min>

@@ -10,26 +10,26 @@
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp4.frmImg" static="true">
-    <wgtStyle width="138.65" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-19.81" y="-20.87" visibility="false" bdrImageSize="60.00,49.00" cx="70.22" cy="80.01" bdrSize="0.23,0.24,0.19,0.19" height="161.74" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.15,0.14,0.12,0.12"/>
+    <wgtStyle width="138.65" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-19.81" y="-20.87" visibility="false" bdrImageSize="60.00,49.00" cx="70.22" cy="80.01" bdrSize="0.23,0.24,0.19,0.19" height="161.74" bdrEdges="0.15,0.14,0.12,0.12"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp4.ind">
-    <wgtStyle width="103" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="51.50" cy="56.66" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="120" stroke="none" mtx="1,0,0,0,1,0,0,0,1"/>
+    <wgtStyle width="103" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="51.50" cy="56.66" bkgColor="rgb(192,192,192);rgb(0,255,0)" height="120" stroke="none"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="boolean" attribute="value" tag="ctFlow2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp4.lbl" static="true">
-    <wgtStyle width="93.10" x="3.96" font-sizepx="13" y="2.61" font-family="Roboto" cx="47.22" cy="56.35" height="109.57" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="12"/>
+    <wgtStyle width="93.10" x="3.96" font-sizepx="13" y="2.61" font-family="Roboto" cx="47.22" cy="56.35" height="109.57" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="31"/>
+     <lang class="MLTextLink" textid="6"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
-    <wgtStyle width="35.65" enableCache="true" x="33.67" y="31.30" cx="18.72" cy="26.66" height="52.17" fill-opacity="0.5" mtx="1,0,0,0,1,0,0,0,1"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
+    <wgtStyle width="35.65" enableCache="true" x="33.67" y="31.30" cx="18.72" cy="26.66" height="52.17" fill-opacity="0.5"/>
    </object>
   </object>
   <object class="LabelWgt" id="label11" static="true">
-   <wgtStyle width="88" x="541" font-sizepx="21" y="446.44" font-family="Roboto" wrapping="true" cx="40.77" cy="9.79" height="20.66" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="88" x="541" font-sizepx="21" y="446.64" font-family="Roboto" wrapping="true" cx="40.77" cy="14.15" height="29.87" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="9"/>
    </links>
@@ -66,10 +66,10 @@
    <MLTexts>
     <MLText L1="Ruimte" id="0"/>
     <MLText L1="" id="1"/>
-    <MLText L1="" id="31"/>
     <MLText L1="Mun H" id="2"/>
     <MLText L1="Dak" id="3"/>
     <MLText L1="Mun L" id="5"/>
+    <MLText L1="" id="6"/>
     <MLText L1="Buiten temp" id="8"/>
     <MLText L1="setpunt" id="9"/>
     <MLText L1="Garage" id="17"/>
@@ -170,31 +170,31 @@
    </dataLinks>
   </object>
   <object class="LabelWgt" id="label5" static="true">
-   <wgtStyle width="128" font-color="rgb(23,30,40)" x="931.53" font-sizepx="21" y="84.67" font-family="Roboto" wrapping="true" cx="59.32" cy="13.01" height="27.47" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="128" font-color="rgb(23,30,40)" x="931.53" font-sizepx="21" y="88.40" font-family="Roboto" wrapping="true" cx="59.32" cy="13.01" height="27.47" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="8"/>
    </links>
   </object>
   <object class="NumericWgt" id="field9">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="1059.53" y="88.16" vert-align="top" text="99999" max="3.40282e+038" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-3.40282e+038" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="1059.53" y="88.40" vert-align="top" text="99999" max="3.40282e+038" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-3.40282e+038" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="unsignedInt" attribute="value" tag="Buiten Temp" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="NumericWgt" id="GroupWgt2.field1">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="301" y="446.80" vert-align="top" text="20" max="3.40282e+038" usingFormat="" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-3.40282e+038" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="301" y="446.80" vert-align="top" text="20" max="3.40282e+038" usingFormat="" decimalDigits="1" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-3.40282e+038" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="float" attribute="value" tag="SetpointBedrijf1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="NumericWgt" id="GroupWgt1.field1">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="639" y="446.80" vert-align="top" text="20" max="3.40282e+038" usingFormat="" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-3.40282e+038" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="639" y="446.80" vert-align="top" text="20" max="3.40282e+038" usingFormat="" decimalDigits="1" value="20" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-3.40282e+038" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
    <dataLinks>
     <dataLink readWrite="R" tagType="float" attribute="value" tag="SetpointBedrijf2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
   <object class="LabelWgt" id="label6" static="true">
-   <wgtStyle width="93.65" x="199.92" font-sizepx="21" y="446.10" font-family="Roboto" wrapping="true" cx="43.39" cy="10.14" height="21.40" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="94" x="199.92" font-sizepx="21" y="446.14" font-family="Roboto" wrapping="true" cx="43.55" cy="14.45" height="30.50" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="9"/>
    </links>
@@ -338,7 +338,7 @@
      <lang class="MLTextLink" textid="1"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
     <wgtStyle width="35.65" enableCache="true" x="33.67" y="31.30" cx="18.72" cy="26.66" height="52.17" fill-opacity="0.5"/>
    </object>
   </object>

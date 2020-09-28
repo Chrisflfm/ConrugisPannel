@@ -1318,11 +1318,11 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://WensTemp1?unsignedInt</resourceLocator>
+    <resourceLocator>VRBL://WensTemp1?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>4294967295</max>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
     <isMinMaxEdited>false</isMinMaxEdited>
 </tag>
 <tag>
@@ -1330,11 +1330,11 @@
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
-    <resourceLocator>VRBL://WensTemp2?unsignedInt</resourceLocator>
+    <resourceLocator>VRBL://WensTemp2?float</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>4294967295</max>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
     <isMinMaxEdited>false</isMinMaxEdited>
 </tag>
 <tag>
@@ -1667,6 +1667,90 @@
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
     <resourceLocator>VRBL://Tag1?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>WaterDruk</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://WaterDruk?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>WaterDruklaag</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://WaterDruklaag?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>WaterDrukKritiek</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://WaterDrukKritiek?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Ft06_WeekTestGarFaalt</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Ft06_WeekTestGarFaalt?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Ft07_WeekTestLoodsFaalt</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Ft07_WeekTestLoodsFaalt?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Ft08_Waterdruklaag</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Ft08_Waterdruklaag?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Ft09_Waterdrukkritiek</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Ft09_Waterdrukkritiek?boolean</resourceLocator>
     <enableScaling>false</enableScaling>
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <min>0</min>

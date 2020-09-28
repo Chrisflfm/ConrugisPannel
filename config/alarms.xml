@@ -152,4 +152,112 @@
         <printMask>1</printMask>
         <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
     </bitMaskAlarm>
+    <bitMaskAlarm alarmId="6" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Waterdruklaag</name>
+        <groups></groups>
+        <source>Ft08_Waterdruklaag</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[7@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="7" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Waterdrukkritiek</name>
+        <groups></groups>
+        <source>Ft09_Waterdrukkritiek</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[7@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="8" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>WeekTestGarFaalt</name>
+        <groups></groups>
+        <source>Ft06_WeekTestGarFaalt</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[7@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="9" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>WeekTestLoodsFaalt</name>
+        <groups></groups>
+        <source>Ft07_WeekTestLoodsFaalt</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions/>
+        <useractions/>
+        <description>[7@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
 </alarms>
