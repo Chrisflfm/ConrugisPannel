@@ -30,6 +30,7 @@
     <MLText L1="setpointDakVent" id="21"/>
     <MLText L1="TijdVorstVeiligUit" id="22"/>
     <MLText L1="TijdVorstVeiligAan" id="23"/>
+    <MLText L1="MinBufferVorstVeilig" id="25"/>
    </MLTexts>
   </object>
   <object class="LabelWgt" id="label1" static="true">
@@ -404,6 +405,18 @@
    <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="407.75" y="598.31" vert-align="top" text="2" max="3.40282e+038" usingFormat="" decimalDigits="1" value="2" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-3.40282e+038" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="16"/>
    <dataLinks>
     <dataLink readWrite="R/W" tagType="float" attribute="value" tag="WaterDruklaag" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label24" static="true">
+   <wgtStyle width="239" font-color="rgb(23,30,40)" x="780.82" font-sizepx="21" y="639.07" font-family="Roboto" wrapping="true" cx="110.76" cy="13.74" height="29" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="25"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field24">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" alignment="right" x="1030.82" y="643.57" vert-align="top" text="2" max="4294967295" usingFormat="" value="2" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="MinBufferVorstVeilig" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
    </dataLinks>
   </object>
  </object>

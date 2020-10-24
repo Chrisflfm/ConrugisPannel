@@ -13,13 +13,13 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
+    <MLText L1="" id="8"/>
     <MLText L1="Ventilatoren" id="0"/>
-    <MLText L1="" id="1"/>
     <MLText L1="Garage" id="2"/>
     <MLText L1="Ventilatoren" id="3"/>
-    <MLText L1="" id="5"/>
-    <MLText L1="" id="6"/>
+    <MLText L1="Basis tijdspanne (min):" id="7"/>
     <MLText L1="Loods" id="9"/>
+    <MLText L1="Tot tijdspanne (min):" id="10"/>
     <MLText L1="Dak Vent" id="12"/>
     <MLText L1="Dak Vent" id="15"/>
    </MLTexts>
@@ -178,10 +178,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp11.lbl" static="true">
     <wgtStyle width="44" x="3" font-sizepx="13" y="4" font-family="Roboto" cx="22" cy="22.50" height="45" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp11.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp11.icoImg" static="true">
     <wgtStyle width="18" enableCache="true" x="14" y="14" cx="9" cy="10.50" height="21" fill-opacity="0.5"/>
    </object>
   </object>
@@ -205,10 +205,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp12.lbl" static="true">
     <wgtStyle width="44" x="3" font-sizepx="13" y="4" font-family="Roboto" cx="22" cy="22.50" height="45" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp12.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp12.icoImg" static="true">
     <wgtStyle width="18" enableCache="true" x="14" y="14" cx="9" cy="10.50" height="21" fill-opacity="0.5"/>
    </object>
   </object>
@@ -232,10 +232,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp10.lbl" static="true">
     <wgtStyle width="44" x="3" font-sizepx="13" y="4" font-family="Roboto" cx="22" cy="22.50" height="45" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="5"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp10.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp10.icoImg" static="true">
     <wgtStyle width="18" enableCache="true" x="14" y="14" cx="9" cy="10.50" height="21" fill-opacity="0.5"/>
    </object>
   </object>
@@ -262,10 +262,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp15.lbl" static="true">
     <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp15.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp15.icoImg" static="true">
     <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5"/>
    </object>
   </object>
@@ -289,10 +289,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp16.lbl" static="true">
     <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp16.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp16.icoImg" static="true">
     <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5"/>
    </object>
   </object>
@@ -305,22 +305,22 @@
     <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
    </links>
    <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtSmp13.frmImg" static="true">
-    <wgtStyle width="74.04" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-10.58" y="-13.39" visibility="false" bdrImageSize="60.00,49.00" cx="37.50" cy="51.34" bdrSize="0.23,0.24,0.19,0.19" height="103.78" mtx="1,0,0,0,1,0,0,0,1" bdrEdges="0.15,0.14,0.12,0.12"/>
+    <wgtStyle width="74.04" imagePath="images/frame_rrect_chrome.svg" enableCache="true" x="-10.58" y="-13.39" visibility="false" bdrImageSize="60.00,49.00" cx="37.50" cy="51.34" bdrSize="0.23,0.24,0.19,0.19" height="103.78" bdrEdges="0.15,0.14,0.12,0.12"/>
    </object>
    <object class="IndicatorWgt" hmiStyle="hmi-type:light; type:light" id="LgtSmp13.ind">
-    <wgtStyle width="55" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="27.50" cy="36.36" bkgColor="rgb(180,180,180);rgb(0,255,0)" height="77" stroke="none" mtx="1,0,0,0,1,0,0,0,1"/>
+    <wgtStyle width="55" imagePath="images/li_shape_rrect.svg" x="0" forcePaint="8" y="0" cx="27.50" cy="36.36" bkgColor="rgb(180,180,180);rgb(0,255,0)" height="77" stroke="none"/>
     <dataLinks>
      <dataLink readWrite="R" tagType="boolean" attribute="value" tag="hrVent1B" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
     </dataLinks>
    </object>
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp13.lbl" static="true">
-    <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" mtx="1,0,0,0,1,0,0,0,1" keypad-type="None" font-size="12"/>
+    <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="6"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp13.icoImg" static="true">
-    <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5" mtx="1,0,0,0,1,0,0,0,1"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp13.icoImg" static="true">
+    <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5"/>
    </object>
   </object>
   <object class="ImageWgt" id="bldgImg4">
@@ -343,10 +343,10 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp14.lbl" static="true">
     <wgtStyle width="49.71" x="2.12" font-sizepx="13" y="1.67" font-family="Roboto" cx="25.22" cy="36.16" height="70.30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
-   <object class="ImageWgt" hmiStyle="hmi-name:solid; ; hmi-type:icon" id="LgtSmp14.icoImg" static="true">
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp14.icoImg" static="true">
     <wgtStyle width="19.04" enableCache="true" x="17.98" y="20.09" cx="10" cy="17.11" height="33.48" fill-opacity="0.5"/>
    </object>
   </object>
@@ -370,7 +370,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp3.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp3.icoImg" static="true">
@@ -394,7 +394,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp4.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
@@ -418,7 +418,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp6.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp6.icoImg" static="true">
@@ -442,7 +442,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp7.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp7.icoImg" static="true">
@@ -472,7 +472,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp5.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp5.icoImg" static="true">
@@ -499,7 +499,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp9.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp9.icoImg" static="true">
@@ -527,7 +527,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum1.lbl" static="true">
     <wgtStyle width="39" font-color="rgb(40,40,40)" x="6" font-sizepx="13" y="19" font-family="Roboto" wrapping="true" cx="23.88" cy="15.42" height="24" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="BtnIllum1.icoImg" static="true">
@@ -561,7 +561,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum2.lbl" static="true">
     <wgtStyle width="39" font-color="rgb(40,40,40)" x="6" font-sizepx="13" y="19" font-family="Roboto" wrapping="true" cx="23.88" cy="15.42" height="24" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="BtnIllum2.icoImg" static="true">
@@ -591,7 +591,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp2.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp2.icoImg" static="true">
@@ -615,7 +615,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp1.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
@@ -639,12 +639,48 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp8.lbl" static="true">
     <wgtStyle width="8.46" x="0.58" font-sizepx="13" y="0.77" font-family="Roboto" cx="4.23" cy="4.33" height="8.65" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="8"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp8.icoImg" static="true">
     <wgtStyle width="3.46" enableCache="true" x="2.69" y="2.69" cx="1.73" cy="2.02" height="4.04" fill-opacity="0.5"/>
    </object>
+  </object>
+  <object class="LabelWgt" id="label3" static="true">
+   <wgtStyle width="219" font-color="rgb(23,30,40)" x="169.34" font-sizepx="21" y="731" font-family="Roboto" wrapping="true" cx="101.49" cy="11.84" height="25" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="7"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" x="407" y="731" vert-align="top" text="99999" max="4294967295" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="VentDraaiTijd" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label4" static="true">
+   <wgtStyle width="201" font-color="rgb(23,30,40)" x="494.25" font-sizepx="21" y="246.59" font-family="Roboto" wrapping="true" cx="93.15" cy="17.05" height="36" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field2">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" x="709.77" y="250" vert-align="top" text="99999" max="4294967295" usingFormat="" decimalDigits="1" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="TotVentDraaiTijdGarage" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label5" static="true">
+   <wgtStyle width="201" font-color="rgb(23,30,40)" x="887.94" font-sizepx="21" y="106.68" font-family="Roboto" wrapping="true" cx="93.15" cy="17.05" height="36" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field3">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" x="1103.46" y="110.09" vert-align="top" text="99999" max="4294967295" usingFormat="" decimalDigits="1" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="float" attribute="value" tag="TotVentDraaiTijdLoods" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
   </object>
  </object>
 </wgtPage>

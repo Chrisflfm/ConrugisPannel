@@ -14,9 +14,7 @@
   <name>MainPage@$GroupSubscrWgt@$0</name>
   <active>false</active>
   <tag>Bedrijfsuren</tag>
-  <tag>Dagopbrengst_kWh</tag>
   <tag>StatusErr</tag>
-  <tag>Totaalopbrengst_kWh</tag>
   <tag>VorstVeiligregimeGarage</tag>
   <tag>VorstVeiligregimeLoods</tag>
   <tag>flAck</tag>
@@ -34,6 +32,7 @@
   <tag>HysteresischDak</tag>
   <tag>HysteresischVorstV</tag>
   <tag>MaxTempBuitenDakvent</tag>
+  <tag>MinBufferVorstVeilig</tag>
   <tag>MinTempAanVBedrijf</tag>
   <tag>MinTempAanVVorstVlg</tag>
   <tag>MinTempAanvoer1</tag>
@@ -58,6 +57,9 @@
   <tag>StatusVent2A</tag>
   <tag>StatusVentDak1</tag>
   <tag>StatusVentDak2</tag>
+  <tag>TotVentDraaiTijdGarage</tag>
+  <tag>TotVentDraaiTijdLoods</tag>
+  <tag>VentDraaiTijd</tag>
   <tag>ctVentGarage</tag>
   <tag>ctVentLoods</tag>
   <tag>hrDakvent1</tag>
@@ -80,19 +82,16 @@
  <group Type="Auto">
   <name>Verwarming@$GroupSubscrWgt@$0</name>
   <active>false</active>
-  <tag>Buffer 1 - Buffertemperatuur boven</tag>
-  <tag>Buffer 1 - Buffertemperatuur midden</tag>
-  <tag>Buffer 1 - Buffertemperatuur onder</tag>
-  <tag>Buffer 1 - Laadtoestand buffer</tag>
+  <tag>Bedrijfsuren</tag>
+  <tag>BufferBoven</tag>
+  <tag>BufferLading</tag>
+  <tag>BufferMidden</tag>
+  <tag>BufferOnder</tag>
+  <tag>Kaarttemperatuur</tag>
   <tag>Keteltemperatuur</tag>
-  <tag>Regelvariabele ketel</tag>
   <tag>SetpointBedrijf1</tag>
   <tag>SetpointBedrijf2</tag>
-  <tag>Temperatuur verbrandingsgas</tag>
-  <tag>Temperatuur verbrandingsruimte</tag>
-  <tag>Tijd tot volgende reiniging</tag>
-  <tag>Uren sinds laatste onderhoud</tag>
-  <tag>Waarschuwing resterende verwarmingsuren tot as legen</tag>
+  <tag>TemperatuurVerbrandingsgas</tag>
   <tag>WaterDruk</tag>
   <tag>ctFlow1</tag>
   <tag>ctFlow2</tag>
@@ -108,6 +107,7 @@
   <tag>hrVent1B</tag>
   <tag>hrVent2A</tag>
   <tag>hrVent2B</tag>
+  <tag>sindslaatsteonderhoud</tag>
   <tag>swKlepGarage</tag>
   <tag>swKlepLoods</tag>
   <tag>tmpAanv1</tag>
@@ -152,10 +152,20 @@
  <group Type="userdefined">
   <name>MQTT_SUB</name>
   <active>false</active>
+  <tag>Bedrijfsuren</tag>
+  <tag>BufferBoven</tag>
+  <tag>BufferLading</tag>
+  <tag>BufferMidden</tag>
+  <tag>BufferOnder</tag>
   <tag>Buiten Temp</tag>
+  <tag>Kaarttemperatuur</tag>
+  <tag>Keteltemperatuur</tag>
+  <tag>RegelvariabeleKetel</tag>
   <tag>Temp Stal H</tag>
   <tag>Temp garage H</tag>
   <tag>Temp garage L</tag>
   <tag>Temp stal L</tag>
+  <tag>TemperatuurVerbrandingsgas</tag>
+  <tag>sindslaatsteonderhoud</tag>
  </group>
 </groups>

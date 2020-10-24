@@ -1,5 +1,5 @@
 <JMFiles>
- <ProjectInfo Size="8843710" AllowedSize="251658240"/>
+ <ProjectInfo Size="8923707" AllowedSize="251658240"/>
  <files>
   <file size="8312" md5="52608e9a017f91d7311eb21c6a1c89fc" name="alarm.jmxb"/>
   <file size="1097" md5="ac01bf75c8b5a1bc7cfaf5fd059bb8b2" name="camera.jmxb"/>
@@ -17,14 +17,16 @@
   <file size="8579" md5="c3f01522b4a2cdaf55fe429821d1d0fc" name="images/Platina klein.jpg"/>
   <file size="295107" md5="d90947dd100270e980210b7c7d8bace8" name="images/PlatinaBanner.jpg"/>
   <file size="991" md5="25534e610cf82ab36a0b20f77790ccab" name="images/Simple fan2.svg"/>
+  <file size="21327" md5="97f265b39369899cc281c111666b3afc" name="images/Tank03Meter_rev2.svg"/>
+  <file size="16950" md5="4b679dd9f1fb8418db1bde47672188cc" name="images/TankGlass2.svg"/>
   <file size="454" md5="ebcee715bbd25a47063a7d66cba99b82" name="images/action.png"/>
   <file size="12026" md5="ddf6d082c1de1dcf7954e94db3f3d6f3" name="images/bkgd_round_metal.svg"/>
+  <file size="4702" md5="76e4d89645c4a8c4279ec3ebd5605d40" name="images/boilrwithflms.svg"/>
   <file size="1781" md5="aedbe37709fff0d07e05e58237df26a1" name="images/clkticks_round_thin.svg"/>
   <file size="71931" md5="4247eefaf320991c347d6a770d06a8b1" name="images/conrugisPlattegrond.jpg"/>
   <file size="4447" md5="d061aca03f49085f2782aa6472691fc7" name="images/frame_rect_chrome.svg"/>
   <file size="6200" md5="679b4da44d138acb8cb3dff23328e7b0" name="images/frame_round_chrome.svg"/>
   <file size="6848" md5="b31656df812f5a0151f02d0a7588f49b" name="images/frame_rrect_chrome.svg"/>
-  <file size="5202" md5="602a0cd24aa1f20d82ceda93f8859fd8" name="images/gau_rect1_chrome.svg"/>
   <file size="1375" md5="3d8ecee33ee01c89c91d0c1cc5624db0" name="images/glasswctr_round.svg"/>
   <file size="667" md5="8c780ec2239e099f3924c81b02777c79" name="images/ic_ad1_001.svg"/>
   <file size="734" md5="1878896a85184f460faf4ef59c781b27" name="images/ic_ad1_003.svg"/>
@@ -37,7 +39,6 @@
   <file size="370" md5="5724659afbcb360b73bf4f4fbffd9512" name="images/li_inset_round.svg"/>
   <file size="223" md5="0346e719a414d26d2c6778ea50bacefb" name="images/li_shape_round.svg"/>
   <file size="608" md5="8b44c317346a789826f1029a842ae985" name="images/li_shape_rrect.svg"/>
-  <file size="1418" md5="3dc9ddc87fe13cc1fc1845f04ac114fe" name="images/ne_2line_1.svg"/>
   <file size="601" md5="22ae34f639564c0b9eeacf017a4b62ad" name="images/needle_solid_hours1.svg"/>
   <file size="593" md5="6ac7b2ea20b6ba3e2753506396cf1cd2" name="images/needle_solid_mins1.svg"/>
   <file size="614" md5="568adc09c6440d365e9d2147c1a35df1" name="images/needle_solid_secs1.svg"/>
@@ -68,20 +69,20 @@
   <file size="29512" md5="55c857ee6d09178bbb241212615cb781" name="keypads\alphabet.jmx"/>
   <file size="9299" md5="d1de0d9013bc64bdce9163c90ce6b0cc" name="keypads\calendar.jmx"/>
   <file size="11509" md5="83853cd4d6371c4d14e62dc3f4777986" name="keypads\numeric.jmx"/>
-  <file size="17188" md5="56baa3f3556ebf37f3df28833511b77a" name="mainpage.jmxb"/>
+  <file size="16991" md5="5d483bf56d30bd9d3e2a16231de2b5cb" name="mainpage.jmxb"/>
   <file size="31876" md5="432a61f00e975a218cee4960151bee14" name="opt/alarm.png"/>
   <file size="24043" md5="e06d456363f167a49c0190932ada824b" name="opt/camera.png"/>
-  <file size="252999" md5="5b54c6cb6cbc1bb78b966dc44e86847d" name="opt/mainpage.png"/>
-  <file size="78446" md5="d7c59f6b88361edd85d6d36f7de83f2e" name="opt/settings.png"/>
+  <file size="248120" md5="b7206efec0c9168edc4490010181fedd" name="opt/mainpage.png"/>
+  <file size="81305" md5="56dfcc90c0a2bee02d54a697d0c53e3a" name="opt/settings.png"/>
   <file size="116277" md5="d870edfd658e7c9d8a44c4d6f67e4339" name="opt/settingsinfo.png"/>
   <file size="134704" md5="d5e68de46e0cf4d5f7ff8878c00d1352" name="opt/temperaturen.png"/>
-  <file size="152535" md5="c0b24949b87f30d151c5a18658658359" name="opt/ventilatoren.png"/>
+  <file size="161657" md5="ce2311aa1060dcfde687a5236e53d562" name="opt/ventilatoren.png"/>
   <file size="157030" md5="22771fc2fc538ed11248e2411a39c999" name="opt/verlichting.png"/>
-  <file size="193512" md5="27676fff84bbd9c6b4cf671a7657eaba" name="opt/verwarming.png"/>
+  <file size="197325" md5="5d22a25a080d9d36cc0bde0278f0b2d5" name="opt/verwarming.png"/>
   <file size="24035" md5="bb58679e70d303b3744e1b7a62f6a01b" name="opt/weerbericht.png"/>
-  <file size="15893" md5="9f84e63817da32c4f6b734b3c4011695" name="settings.jmxb"/>
+  <file size="16394" md5="71f593f15eff8a97f690f9fdef249cf0" name="settings.jmxb"/>
   <file size="3651" md5="dd0902b3105ba7d4e56e4fb9e177ec45" name="settingsinfo.jmxb"/>
-  <file size="13395" md5="20adc0c68d26754b217fc5e928f1596a" name="temperaturen.jmxb"/>
+  <file size="13395" md5="23da56b63aa7e083a4ef32b676f763b5" name="temperaturen.jmxb"/>
   <file size="4586" md5="4137eb5b1c689967b920ea6cd217967b" name="usermgmttemplates/images/Button.svg"/>
   <file size="6250" md5="2a71e1093df90b1829b0296a58937a10" name="usermgmttemplates/images/ButtonFrame.svg"/>
   <file size="5244" md5="bb902146e5b22c6209291715e76fc66f" name="usermgmttemplates/images/ButtonPressed.svg"/>
@@ -110,32 +111,31 @@
   <file size="7286" md5="3be02024311478c1510b5cad6eb8d2b3" name="usermgmttemplates\deleteuser.jmx"/>
   <file size="6951" md5="b38bc81ca9460fed2b43b370526b5790" name="usermgmttemplates\loginpage.jmx"/>
   <file size="7247" md5="e2280aeacd38ae5f4accb6a5d10335e5" name="usermgmttemplates\loginpage_combo.jmx"/>
-  <file size="7193" md5="6031352e06160003cdf7ea66a0ec5371" name="usermgmttemplates\signaturedialog.jmx"/>
+  <file size="7223" md5="1ca267dc518fc23ad5426dd967f99476" name="usermgmttemplates\signaturedialog.jmx"/>
   <file size="8207" md5="a86b073fe21c334dd04d8602307cc460" name="usermgmttemplates\switchuserloginpage.jmx"/>
   <file size="8488" md5="f47af80d4b37c87055b5f95f191bb9cf" name="usermgmttemplates\switchuserloginpage_combo.jmx"/>
   <file size="14087" md5="820d21c4c8149fd8c8370b9de15fefff" name="usermgmttemplates\usereditor.jmx"/>
-  <file size="27575" md5="d2b580ddaf02ab6aa36beae9a775ef84" name="ventilatoren.jmxb"/>
+  <file size="29053" md5="26f2fa3b8c6c52244a9d8cccbb08c6f6" name="ventilatoren.jmxb"/>
   <file size="10589" md5="de71c1ce928326624b7454fbc3519490" name="verlichting.jmxb"/>
-  <file size="36877" md5="bb1a6b02ab705ba68ad57fef916e12b4" name="verwarming.jmxb"/>
-  <file size="0" md5="d41d8cd98f00b204e9800998ecf8427e" name="verwarming.js"/>
+  <file size="31639" md5="1837b536176d25bbd18420ac4a9d0962" name="verwarming.jmxb"/>
   <file size="4493" md5="24542df7c6a964e070d5d08dd8f3b462" name="weerbericht.jmxb"/>
   <file size="9397" md5="e4b828b57506b35b6c92ff63d829c443" name="conrugis.jpr"/>
-  <file size="4523" md5="ab10097e260fd2d06fab479a5af7f455" name="config\groups.xml"/>
+  <file size="4674" md5="728aea9e0469b4b1eb35607b45b53b69" name="config\groups.xml"/>
   <file size="367" md5="39d5ce3446d4c16c08a887a21ca421f3" name="config\engineconfig.xml"/>
   <file size="70" md5="e83275dd47bf34c1dd4597e220049b5b" name="config\storagemonitor.xml"/>
   <file size="70" md5="9c686935bec5664c48af2db23cef4bb3" name="config\fastboot.xml"/>
-  <file size="76001" md5="6d41bbcbe37947ff76085ce047989daa" name="config\tags.xml"/>
-  <file size="17604" md5="1223a2f1b80070971fa1d3ba043bba9f" name="config\tags.bin"/>
+  <file size="74338" md5="4791f22d2f188bff00059ef257527203" name="config\tags.xml"/>
+  <file size="16903" md5="fc9345012dd2ff00ddcdccc1b21e080f" name="config\tags.bin"/>
   <file size="500" md5="79845b381ac046bba43276805dd9eaa8" name="config\trends.xml"/>
   <file size="19" md5="00b1acd79e2d9cbdaf53f075e27847b2" name="config\indexedtagset.xml"/>
   <file size="63" md5="320ca9c6da63d1ef6e59979d13d67173" name="config\recipe.xml"/>
-  <file size="11027" md5="8d5cecfc77dbd4ba52a0dd9918036282" name="config\alarms.xml"/>
-  <file size="2542" md5="f0ef1b6c3d634d8c68badd877bebcf6d" name="config\alarms.bin"/>
+  <file size="12086" md5="a768b6fb1f1b63642e804a9a72d3851f" name="config\alarms.xml"/>
+  <file size="2758" md5="e4978136ade3bc56c11855132abf51e0" name="config\alarms.bin"/>
   <file size="192" md5="77519fa747957a78a3b4f155ee26179d" name="config\multilang.xml"/>
   <file size="1870" md5="fe01125cfbf69bab1a71ab48285703ea" name="config\scheduler.xml"/>
-  <file size="1791" md5="5d50b87d93003aa513b073ace2a164bc" name="config\protocols.xml"/>
+  <file size="1137" md5="a1300e2a15ca28c93672406ddca8c1e0" name="config\protocols.xml"/>
   <file size="2733" md5="b43d0768a1a57fa5ce270320f1de7434" name="config\eventconfig.xml"/>
-  <file size="1132" md5="1be4164219ccde5b45e813b80c5da0e2" name="config\eventlistinfo.xml"/>
+  <file size="1256" md5="9c7d24187cbed3ef7d341125218d1502" name="config\eventlistinfo.xml"/>
   <file size="349" md5="0eb76d512eda1fe8886980a57009cc99" name="config\emailconfig.xml"/>
   <file size="1942" md5="2640a52a9bc4cc63eed714a3cca122a6" name="config\emailinfo.xml"/>
   <file size="739" md5="22ff2212ca7d19981a6ad54faf0f090a" name="config\reports.xml"/>
@@ -146,11 +146,11 @@
   <file size="332" md5="fafd0dac35db999c2d68772db6a44598" name="config\ftpd_security_auth.xml"/>
   <file size="1100" md5="5ebe785373856c47d9122ea4cb67f842" name="config\httpd_security_auth.xml"/>
   <file size="988" md5="a2e4e8764992f66376704e33919b0d7d" name="config\usermgnt_taggroupauth.xml"/>
-  <file size="16" md5="8d0263d50231ea6da87aa07fead098fb" name="config\audittrail.xml"/>
+  <file size="490" md5="5c30022d59b97442b59c6a960fb63769" name="config\audittrail.xml"/>
   <file size="59" md5="22f2393ca4d87f6e330372761f7a0c01" name="config\dbconnector.xml"/>
   <file size="72" md5="195c2f284691f2e55e86413a482022c0" name="config\datatransfers.xml"/>
   <file size="229" md5="393498678e4be0b6c957df0f7c17610c" name="config\screensaver.xml"/>
-  <file size="7285" md5="387c30715118790c2164d75b1546d12a" name="opt\imagecachelist.xml"/>
+  <file size="7308" md5="007c3883bb7a1078acbdd8afc57189ed" name="opt\imagecachelist.xml"/>
   <file size="311" md5="cee6fd1306d07bc8dacd867d5c2d2e9e" name="config\if_opcua.xml"/>
   <file size="5822" md5="10d3961757c569bbc3705f42a18183d4" name="config\opcserverconfig.ini"/>
   <file size="174" md5="9603fe64804a3f52b1205a60eca04669" name="config\if_corvina.xml"/>
@@ -161,13 +161,13 @@
   <file size="315272" md5="0a55fb5f8eca8b0c924236046f3dd1e7" name="web/web/js/hmi.libs.min.js"/>
   <file size="788853" md5="b9c952733be069db9355c62eab40fc96" name="web/web/js/hmi.combined.min.js"/>
   <file size="5279" md5="ade42df4aafa1e528f3c7352d4ac304b" name="web/web/js/loadProject.js"/>
-  <file size="717" md5="2ad1f226c6b7c664230d3e176fb2f9a7" name="web/web/js/page.combined.js"/>
+  <file size="24" md5="8de032acb8d8ea93795c0fadf9f1e403" name="web/web/js/page.combined.js"/>
   <file size="101" md5="8c5b1fd7648d91e534d05e495a8719bd" name="web/web/js/index.html"/>
   <file size="7091" md5="ec52497edc22cf1664fbc3d085253bc7" name="web/web/js/eventsource.min.js"/>
   <file size="315272" md5="0a55fb5f8eca8b0c924236046f3dd1e7" name="web/web/umtemplates/js/hmi.libs.min.js"/>
   <file size="788853" md5="b9c952733be069db9355c62eab40fc96" name="web/web/umtemplates/js/hmi.combined.min.js"/>
   <file size="104" md5="caf93a8927277744a94e5750a82367dc" name="web/web/config/server.json"/>
-  <file size="14789" md5="0123bb3e6c05e4380b30cab4ac083c53" name="web/web/config/conf.json"/>
+  <file size="16141" md5="b1c1f02700b764ad8c737c85ad888c2c" name="web/web/config/conf.json"/>
   <file size="178" md5="d84d08e7aa770e5d7d3634b33aa121f8" name="web/web/css/fonts.css"/>
   <file size="0" md5="d41d8cd98f00b204e9800998ecf8427e" name="web/web/css/pages/commons.css"/>
   <file size="3337" md5="007da34ca51b5a64042aa5cccf068c14" name="web/web/css/lib.min.css"/>
@@ -195,7 +195,7 @@
   <file size="11" md5="f9df91370d9b344946e23cbcd6a1541f" name="web/web/pages/precached.html"/>
   <file size="1084" md5="233ca4c69b111b53f6999add81e0432d" name="web/web/index.html"/>
   <file size="4227" md5="337ea8dd27bd6f9c091823f47137d9d2" name="web/web/_webmain.html"/>
-  <file size="14789" md5="0123bb3e6c05e4380b30cab4ac083c53" name="web\web\config\conf.json"/>
+  <file size="16141" md5="b1c1f02700b764ad8c737c85ad888c2c" name="web\web\config\conf.json"/>
   <file size="104" md5="caf93a8927277744a94e5750a82367dc" name="web\web\config\server.json"/>
   <file size="0" md5="d41d8cd98f00b204e9800998ecf8427e" name="web\web\css\pages\commons.css"/>
   <file size="107501" md5="98da739cec41d367f2703326814a5cd0" name="web\web\css\pages\_m10_page10.css"/>
@@ -215,16 +215,16 @@
   <file size="262" md5="abb0e4789b02a702215e6f326b1f95d9" name="web\web\images\56656e74696c61746f72656e536c647248727a34.png"/>
   <file size="31876" md5="432a61f00e975a218cee4960151bee14" name="web\web\images\616c61726d.png"/>
   <file size="24043" md5="e06d456363f167a49c0190932ada824b" name="web\web\images\63616d657261.png"/>
-  <file size="252999" md5="5b54c6cb6cbc1bb78b966dc44e86847d" name="web\web\images\6d61696e70616765.png"/>
+  <file size="248120" md5="b7206efec0c9168edc4490010181fedd" name="web\web\images\6d61696e70616765.png"/>
   <file size="2917" md5="cc0cf382b4005e587f4fafa611f8c3d3" name="web\web\images\6d61696e7061676567726f757077677432.png"/>
   <file size="7324" md5="fa2612179e874c22006330b1197e8194" name="web\web\images\7061676531.png"/>
-  <file size="78446" md5="d7c59f6b88361edd85d6d36f7de83f2e" name="web\web\images\73657474696e6773.png"/>
+  <file size="81305" md5="56dfcc90c0a2bee02d54a697d0c53e3a" name="web\web\images\73657474696e6773.png"/>
   <file size="116277" md5="d870edfd658e7c9d8a44c4d6f67e4339" name="web\web\images\73657474696e6773696e666f.png"/>
   <file size="134704" md5="d5e68de46e0cf4d5f7ff8878c00d1352" name="web\web\images\74656d70657261747572656e.png"/>
   <file size="4567" md5="880ec5b10e9947e18141742f2af07a5f" name="web\web\images\74656d70657261747572656e4761755665727435.png"/>
-  <file size="152535" md5="c0b24949b87f30d151c5a18658658359" name="web\web\images\76656e74696c61746f72656e.png"/>
+  <file size="161657" md5="ce2311aa1060dcfde687a5236e53d562" name="web\web\images\76656e74696c61746f72656e.png"/>
   <file size="157030" md5="22771fc2fc538ed11248e2411a39c999" name="web\web\images\7665726c69636874696e67.png"/>
-  <file size="193512" md5="27676fff84bbd9c6b4cf671a7657eaba" name="web\web\images\7665727761726d696e67.png"/>
+  <file size="197325" md5="5d22a25a080d9d36cc0bde0278f0b2d5" name="web\web\images\7665727761726d696e67.png"/>
   <file size="24035" md5="bb58679e70d303b3744e1b7a62f6a01b" name="web\web\images\7765657262657269636874.png"/>
   <file size="822" md5="1f8ed733e28e320b4bb6b0e7deeb3c43" name="web\web\images\accessdenied.png"/>
   <file size="1255" md5="8abf9f2d9ad1c6a78b9c2f640c4e59f2" name="web\web\images\arrow_down_mod.png"/>
@@ -243,13 +243,13 @@
   <file size="23429" md5="a6598526052da10892ef5b65356dce15" name="web\web\images\sprite.png"/>
   <file size="332" md5="4222157ee259e323e55c9cfd9b030597" name="web\web\images\x-4x-red.png"/>
   <file size="0" md5="d41d8cd98f00b204e9800998ecf8427e" name="web\web\modules\resources\templates.xml"/>
-  <file size="23832" md5="8911e3c2560e81d3064f26ee792e61f5" name="web\web\pages\m10_page10.html"/>
-  <file size="36729" md5="4b49bef30eb721081509bcfe613c4788" name="web\web\pages\m1_page1.html"/>
-  <file size="84418" md5="5dfde7941e4a867217c0fc829c7ee47b" name="web\web\pages\m2_page2.html"/>
-  <file size="63060" md5="ade2c3e398f58b530bbf40f5dfe9d5b0" name="web\web\pages\m3_page3.html"/>
-  <file size="34504" md5="4ab1fabbc33558981aced079cc01bb1a" name="web\web\pages\m4_page4.html"/>
+  <file size="23818" md5="02b73b1c4d0b5414dcfbaa784027ebe7" name="web\web\pages\m10_page10.html"/>
+  <file size="36332" md5="ea219c22f20fcc6275ee29c1036f81e1" name="web\web\pages\m1_page1.html"/>
+  <file size="105354" md5="4c58b62c685a5e1056f7657cbd276801" name="web\web\pages\m2_page2.html"/>
+  <file size="65788" md5="7970d6182a7df074682e402d95f39131" name="web\web\pages\m3_page3.html"/>
+  <file size="34504" md5="4567e5af712c2762cb26cc640a8f4230" name="web\web\pages\m4_page4.html"/>
   <file size="4706" md5="06984d4f6a3f4669bfc24e307500091f" name="web\web\pages\m5_page5.html"/>
-  <file size="30488" md5="524cec5d757c6c9e9863a43334012c42" name="web\web\pages\m6_page6.html"/>
+  <file size="31429" md5="a3ae8d512a5b666bd2019fff37cf7c27" name="web\web\pages\m6_page6.html"/>
   <file size="6699" md5="c6c117537e97a0242d68a6546cd65bf9" name="web\web\pages\m7_page7.html"/>
   <file size="31438" md5="6c68d3404e611cff7f05ac4b7d6c40f4" name="web\web\pages\m8_page8.html"/>
   <file size="19758" md5="9bcbf779c42a9cff7c98819b88de3af2" name="web\web\pages\m9_page9.html"/>
@@ -265,7 +265,7 @@
   <file size="315272" md5="0a55fb5f8eca8b0c924236046f3dd1e7" name="web\web\umtemplates\js\hmi.libs.min.js"/>
   <file size="35905" md5="9165e677a579ccf1df567753c0a764a0" name="web\web\umtemplates\loginpage.html"/>
   <file size="36076" md5="6f6ea4a35c2b12ace5e1a95ea5504cb9" name="web\web\umtemplates\loginpage_combo.html"/>
-  <file size="32684" md5="f11095f32d43e19abed04aeef2542391" name="web\web\umtemplates\signaturedialog.html"/>
+  <file size="32684" md5="36300509e8edb2583387e897f1518c81" name="web\web\umtemplates\signaturedialog.html"/>
   <file size="38771" md5="7136af7e088ea5d53d7382ab48906a03" name="web\web\umtemplates\switchuserloginpage.html"/>
   <file size="38939" md5="ef944699781949c79479fef0806e2669" name="web\web\umtemplates\switchuserloginpage_combo.html"/>
   <file size="54426" md5="8f8abd0d2868b52f6f574a95fe751b33" name="web\web\umtemplates\usereditor.html"/>

@@ -961,222 +961,6 @@
     <isMinMaxEdited>false</isMinMaxEdited>
 </tag>
 <tag>
-    <name>Temperatuur verbrandingsgas</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Temperatuur verbrandingsgas?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Bedrijfsuren</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Bedrijfsuren?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Uren sinds laatste onderhoud</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Uren sinds laatste onderhoud?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Ketelvraag via verwarmingscircuit of boiler aanwezig</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Ketelvraag via verwarmingscircuit of boiler aanwezig?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Dagopbrengst_kWh</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Dagopbrengst_kWh?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Totaalopbrengst_kWh</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Totaalopbrengst_kWh?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Waarschuwing resterende verwarmingsuren tot as legen</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Waarschuwing resterende verwarmingsuren tot as legen?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Temperatuur verbrandingsruimte</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Temperatuur verbrandingsruimte?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Vermogensvraag</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Vermogensvraag?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Aantal reinigingen</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Aantal reinigingen?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Tijd tot volgende reiniging</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Tijd tot volgende reiniging?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Buffer 1 - Buffertemperatuur boven</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Buffer 1 - Buffertemperatuur boven?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Buffer 1 - Buffertemperatuur midden</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Buffer 1 - Buffertemperatuur midden?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Buffer 1 - Buffertemperatuur onder</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Tag1?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Buffer 1 - Aansturing bufferpompen</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Tag1?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Buffer 1 - Laadtoestand buffer</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Buffer 1 - Laadtoestand buffer?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Keteltemperatuur</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Keteltemperatuur?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
-    <name>Regelvariabele ketel</name>
-    <refreshTime>500</refreshTime>
-    <accessMode>READ-WRITE</accessMode>
-    <active>false</active>
-    <resourceLocator>VRBL://Tag1?unsignedShort</resourceLocator>
-    <enableScaling>false</enableScaling>
-    <enableAudit subT="1" eventT="18">false</enableAudit>
-    <min>0</min>
-    <max>65535</max>
-    <isMinMaxEdited>false</isMinMaxEdited>
-</tag>
-<tag>
     <name>Temp garage H</name>
     <group>MQTT_SUB</group>
     <refreshTime>500</refreshTime>
@@ -1755,5 +1539,195 @@
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <min>0</min>
     <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Keteltemperatuur</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Keteltemperatuur?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>RegelvariabeleKetel</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://RegelvariabeleKetel?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>TemperatuurVerbrandingsgas</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://TemperatuurRookGas?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Bedrijfsuren</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Kaarttemperatuur</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Kaarttemperatuur?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Ft10_MoederbordTemp</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>VentDraaiTijd</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://TijdFactor?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>TotVentDraaiTijdGarage</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://TotVentDraaiTijdGarage?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>TotVentDraaiTijdLoods</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://TotVentDraaiTijdLoods?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>sindslaatsteonderhoud</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://sindslaatsteonderhoud?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>BufferBoven</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>BufferMidden</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>BufferOnder</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>BufferLading</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>MinBufferVorstVeilig</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://MinBufferVorstVeilig?unsignedInt</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>4294967295</max>
     <isMinMaxEdited>false</isMinMaxEdited>
 </tag>

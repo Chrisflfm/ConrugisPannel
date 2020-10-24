@@ -5,7 +5,6 @@
  <file fill="rgb(255,128,0)" imgSize="52,46" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
  <file fill="rgb(0,0,255)" imgSize="52,46" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
  <file fill="rgb(0,255,0)" imgSize="16,20" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
- <file fill="rgb(255,0,0)" strokeSize="-1" imgSize="69,13" stroke="rgb(255,0,0)" numUses="2" isSvgFile="true" dynamic="true" file="images/ne_2line_1.svg" numSizes="1"/>
  <file fill="rgb(128,128,128)" imgSize="27,25" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
  <file fill="rgb(255,0,0)" imgSize="28,23" stroke="rgb(255,251,240)" numUses="3" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="3"/>
  <file fill="rgb(40,40,40)" strokeSize="3" imgSize="65,62" stroke="none" numUses="6" isSvgFile="true" dynamic="true" file="images/knob_blkpl_1_rev1.svg" numSizes="1"/>
@@ -14,7 +13,7 @@
  <file fill="rgb(192,192,192)" imgSize="10,10" stroke="rgb(255,251,240)" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
  <file fill="rgb(128,128,128)" imgSize="10,10" stroke="rgb(255,251,240)" numUses="7" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
  <file fill="rgb(192,192,192)" strokeSize="3" imgSize="16,29" stroke="none" numUses="4" isSvgFile="true" dynamic="true" file="images/ribbed_thumb_gray1.svg" numSizes="1"/>
- <file fill="rgb(192,192,192)" imgSize="85,191" stroke="none" numUses="5" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="3"/>
+ <file fill="rgb(192,192,192)" imgSize="103,120" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
  <file fill="rgb(255,255,255)" imgSize="20,20" stroke="rgb(255,251,240)" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="1"/>
  <file fill="rgb(0,255,0)" imgSize="20,20" stroke="rgb(255,251,240)" numUses="6" isSvgFile="true" dynamic="true" file="images/li_shape_round.svg" numSizes="3"/>
  <file fill="rgb(192,192,192)" strokeSize="0" imgSize="12,12" stroke="rgb(255,255,255)" numUses="4" isSvgFile="true" dynamic="true" file="images/li_inset_round.svg" numSizes="1"/>
@@ -42,9 +41,10 @@
  <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_117.svg" numSizes="1" prePath="keypads"/>
  <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_116_rev1.svg" numSizes="1" prePath="keypads"/>
  <file fill="rgb(0,0,0)" imgSize="389,389" stroke="none" numUses="1" isSvgFile="true" file="images/glasswctr_round.svg" numSizes="1"/>
+ <file fill="rgb(160,160,160)" imgSize="89,256" stroke="none" numUses="1" isSvgFile="true" file="images/tank03meter_rev2.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="61,143" stroke="none" numUses="1" isSvgFile="true" file="images/tankglass2.svg" numSizes="1"/>
  <file fill="rgb(0,0,0)" imgSize="49,36" stroke="none" numUses="1" isSvgFile="true" file="images/leftarrow_symbol_rev1.svg" numSizes="1"/>
  <file fill="rgb(0,0,0)" imgSize="49,36" stroke="none" numUses="1" isSvgFile="true" file="images/rightarrow_symbol_rev1.svg" numSizes="1"/>
  <file imgSize="132,89" numUses="1" file="images/alarm.png" numSizes="1"/>
- <file imgSize="1280,800" numUses="1" file="opt/verwarming.png" numSizes="1"/>
  <file imgSize="1051,507" numUses="1" file="images/action.png" numSizes="1"/>
 </files>
