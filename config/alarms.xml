@@ -287,4 +287,62 @@
         <printMask>1</printMask>
         <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
     </bitMaskAlarm>
+    <bitMaskAlarm alarmId="11" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Raspberry PI niet actief bij Conrugis</name>
+        <groups></groups>
+        <source>Ft10_MoederbordTemp</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail6" actionID="0" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[7@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
+    <bitMaskAlarm alarmId="12" logToEventArchive="true" eventType="14" subType="1" storeAlarmInfo="true" eventBuffer="AlarmBuffer1">
+        <name>Ft11_Raspberry_piTemp</name>
+        <groups></groups>
+        <source>Ft11_Raspberry_piTemp</source>
+        <enableTag></enableTag>
+        <remoteAck></remoteAck>
+        <ackNotify></ackNotify>
+        <enabled>true</enabled>
+        <requireAck>false</requireAck>
+        <blinkTxt>false</blinkTxt>
+        <requireReset>false</requireReset>
+        <actions>
+            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail7" actionID="1" actionType="onClick"/>
+        </actions>
+        <useractions/>
+        <description>[7@Alarm]</description>
+        <severity>1</severity>
+        <priority>3</priority>
+        <customFields>
+            <customField_1></customField_1>
+            <customField_2></customField_2>
+        </customFields>
+        <bitMask>1</bitMask>
+        <logMask>76</logMask>
+        <notifyMask>76</notifyMask>
+        <actionMask>1</actionMask>
+        <printMask>1</printMask>
+        <enableAudit auditBuff="" subT="1" eventT="18">false</enableAudit>
+    </bitMaskAlarm>
 </alarms>

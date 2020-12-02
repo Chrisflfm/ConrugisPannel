@@ -54,4 +54,26 @@
   <message>De aanvoer temperatuur van de verwarming is onder de ingestelde minimumgrens. Waarschijnlijk is de warmteopslag uitgeput.</message>
   <taglist></taglist>
  </emailInfo>
+ <emailInfo>
+  <id>eMail6</id>
+  <enable>true</enable>
+  <name>Raspberry pi niet actief bij Conrugis</name>
+  <description>Raspberry pi niet actief bij Conrugis</description>
+  <from>Conrugis@gmail.com</from>
+  <to>chris.dries@posteo.net</to>
+  <subject>Raspberry pi niet actief bij Conrugis</subject>
+  <message></message>
+  <taglist></taglist>
+ </emailInfo>
+ <emailInfo>
+  <id>eMail7</id>
+  <enable>true</enable>
+  <name>Raspberry pi te warm</name>
+  <description>Raspberry pi te warm</description>
+  <from>Conrugis@gmail.com</from>
+  <to>chris.dries@posteo.net</to>
+  <subject>Raspberry pi Conrugis te warm</subject>
+  <message></message>
+  <taglist></taglist>
+ </emailInfo>
 </emailInfos>

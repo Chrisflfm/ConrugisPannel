@@ -21,7 +21,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp4.lbl" static="true">
     <wgtStyle width="93.10" x="3.96" font-sizepx="13" y="2.61" font-family="Roboto" cx="47.22" cy="56.35" height="109.57" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="4"/>
+     <lang class="MLTextLink" textid="6"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
@@ -65,7 +65,7 @@
    </langs>
    <MLTexts>
     <MLText L1="" id="1"/>
-    <MLText L1="" id="4"/>
+    <MLText L1="" id="6"/>
     <MLText L1="Ruimte" id="0"/>
     <MLText L1="Mun H" id="2"/>
     <MLText L1="Dak" id="3"/>

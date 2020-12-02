@@ -7,8 +7,8 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
-    <MLText L1="regTimeOutPomp" id="0"/>
     <MLText L1="" id="2"/>
+    <MLText L1="regTimeOutPomp" id="0"/>
     <MLText L1="AlarmTempVorst" id="3"/>
     <MLText L1="MinTempAanVBedrijf" id="4"/>
     <MLText L1="MinTempAanVVorstVlg" id="5"/>

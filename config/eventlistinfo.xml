@@ -10,4 +10,6 @@
     <event id="8" name="WeekTestGarFaalt" group="WeekTestGarFaalt" trigger="bitMaskAlarm" description="[7@Alarm]"/>
     <event id="9" name="WeekTestLoodsFaalt" group="WeekTestLoodsFaalt" trigger="bitMaskAlarm" description="[7@Alarm]"/>
     <event id="10" name="Ft10_MoederbordTemp" group="Ft10_MoederbordTemp" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+    <event id="11" name="Raspberry PI niet actief bij Conrugis" group="Raspberry PI niet actief bij Conrugis" trigger="bitMaskAlarm" description="[7@Alarm]"/>
+    <event id="12" name="Ft11_Raspberry_piTemp" group="Ft11_Raspberry_piTemp" trigger="bitMaskAlarm" description="[7@Alarm]"/>
 </events>

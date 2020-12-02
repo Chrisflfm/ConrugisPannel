@@ -1731,3 +1731,54 @@
     <max>4294967295</max>
     <isMinMaxEdited>false</isMinMaxEdited>
 </tag>
+<tag>
+    <name>Alive</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Alive?int</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-2147483648</min>
+    <max>2147483647</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>ftPiAlive</name>
+    <group>MQTT_PUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>CPUTemperature</name>
+    <group>MQTT_SUB</group>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://CPUTemperature?float</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-3.40282e+38</min>
+    <max>3.40282e+38</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>Ft11_Raspberry_piTemp</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://Tag1?boolean</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>0</min>
+    <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>

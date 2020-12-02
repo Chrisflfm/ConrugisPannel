@@ -87,6 +87,7 @@
   <tag>BufferLading</tag>
   <tag>BufferMidden</tag>
   <tag>BufferOnder</tag>
+  <tag>CPUTemperature</tag>
   <tag>Kaarttemperatuur</tag>
   <tag>Keteltemperatuur</tag>
   <tag>SetpointBedrijf1</tag>
@@ -101,6 +102,7 @@
   <tag>flWeekTestBezig</tag>
   <tag>flWeekTestGarageResult</tag>
   <tag>flWeekTestLoodsResult</tag>
+  <tag>ftPiAlive</tag>
   <tag>hrPomp1</tag>
   <tag>hrPomp2</tag>
   <tag>hrVent1A</tag>
@@ -148,16 +150,19 @@
   <name>MQTT_PUB</name>
   <active>false</active>
   <tag>StatusErr</tag>
+  <tag>ftPiAlive</tag>
  </group>
  <group Type="userdefined">
   <name>MQTT_SUB</name>
   <active>false</active>
+  <tag>Alive</tag>
   <tag>Bedrijfsuren</tag>
   <tag>BufferBoven</tag>
   <tag>BufferLading</tag>
   <tag>BufferMidden</tag>
   <tag>BufferOnder</tag>
   <tag>Buiten Temp</tag>
+  <tag>CPUTemperature</tag>
   <tag>Kaarttemperatuur</tag>
   <tag>Keteltemperatuur</tag>
   <tag>RegelvariabeleKetel</tag>

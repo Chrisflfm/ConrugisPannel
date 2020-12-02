@@ -1875,4 +1875,59 @@
         <max>4294967295</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
+    <tag>
+        <name>Alive</name>
+        <group>MQTT_SUB</group>
+        <resourceLocator>prot1://0?REG?1000115?int</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Alive?int</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-2147483648</min>
+        <max>2147483647</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>ftPiAlive</name>
+        <group>MQTT_PUB</group>
+        <resourceLocator>prot1://0?FLAG?48?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>CPUTemperature</name>
+        <group>MQTT_SUB</group>
+        <resourceLocator>prot1://0?REG?1000215?float</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://CPUTemperature?float</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-3.40282e+38</min>
+        <max>3.40282e+38</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>Ft11_Raspberry_piTemp</name>
+        <resourceLocator>prot1://0?FLAG?110?boolean</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://Tag1?boolean</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>0</min>
+        <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
 </tags>
