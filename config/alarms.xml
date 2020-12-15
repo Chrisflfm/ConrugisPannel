@@ -299,7 +299,7 @@
         <blinkTxt>false</blinkTxt>
         <requireReset>false</requireReset>
         <actions>
-            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail6" actionID="0" actionType="onClick"/>
+            <macroAction actionFunction="SendMailAction" parameters="eMailServer1;eMail1" actionID="0" actionType="onClick"/>
         </actions>
         <useractions/>
         <description>[7@Alarm]</description>

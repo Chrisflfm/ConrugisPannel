@@ -7,8 +7,8 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
-    <MLText L1="Waterdruklaag: lager of gelijk aan deze druk geeft foutmelding&#xa;&#xa;Waterdrikkritiek:lager of gelijk aan deze druk geeft foutmelding geeft foutmelding en stopt systeem" id="0"/>
-    <MLText L1="regTimeOutPomp: Time out geen flow als pomp draait&#xa;&#xa;AlarmTempVorst: Ruimte temp lager dan alarm&#xa;&#xa;MinTempAanVBedrijf: Temp aanvoer in bedrijf lager dan alarm opstoken&#xa;&#xa;MinTempAanVVorstVlg: Temp aanvoer in vorstveilig lager dan alarm opstoken&#xa;&#xa;BaseSetpointBedrijf: Setpoint met thermostaat in de middenstand&#xa;&#xa;SetpointVorstVeilig: Setpoint in vorstveilig&#xa;&#xa;regHours: Automatische synchronisatie met pannel op dit tijdstip (uren)&#xa;&#xa;regMinutes: Automatische synchronisatie met pannel op dit tijdstip (min)&#xa;&#xa;regSeconds: Automatische synchronisatie met pannel op dit tijdstip (sec)&#xa;&#xa;HysteresischBedrijf: Hysteresisch ruimte temp tijdens bedrijf waarde = span 50/50 verdeeld&#xa;&#xa;HysteresischVorstV: Hysteresisch ruimte temp tijdens vorstveilig waarde = span 50/50 verdeeld&#xa;&#xa;HysteresischDak: Hysteresisch temp onder dak aan uitschaklen dakventiatoren waarde = span 50/50 verdeeld&#xa;&#xa;MinTempAanvoer1: Aanvoer hoger dan deze temp dan schakelen ventilaoren heater in Garage&#xa;&#xa;MinTempAanvoer2: Aanvoer hoger dan deze temp dan schakelen ventilaoren heater in Loods&#xa;&#xa;HysteresischAanv: Hysteresisch voor in en uit schakelen heater ventilatoren waarde = span 50/50 verdeeld&#xa;&#xa;dTVentBijschakelen: Als er meer verschil is dan dTVentBijschakelen tussen het vorstveilig setpunt en &#x9;&#x9;&#xa;de ruimte temp waord de tweede vent bij in geschakeld&#xa;&#xa;setpointDakVent: Als de temperatuur onder het dak hoger is dan setpointDakVent schakeld de dakventilator in&#x9;&#xa;&#xa;TijdVorstVeiligUit: Schakeld 's morgens de vorstbeileging uit en gaat naar bedrijf.&#xa;&#xa;TijdVorstVeiligAan: Schakeld 's avonds de vorstbeileging in&#xa;&#xa;MaxTempBuitenDakvent: boven deze temperatuur werken de dakventilatoren niet mee." id="1"/>
+    <MLText L1="Waterdruklaag: lager of gelijk aan deze druk geeft foutmelding&#xa;&#xa;Waterdrukkritiek:lager of gelijk aan deze druk geeft foutmelding geeft foutmelding en stopt systeem" id="2"/>
+    <MLText L1="regTimeOutPomp: Time out geen flow als pomp draait&#xa;&#xa;AlarmTempVorst: Ruimte temp lager dan alarm&#xa;&#xa;MinTempAanVBedrijf: Temp aanvoer in bedrijf lager dan alarm opstoken&#xa;&#xa;MinTempAanVVorstVlg: Temp aanvoer in vorstveilig lager dan alarm opstoken&#xa;&#xa;BaseSetpointBedrijf: Setpoint met thermostaat in de middenstand&#xa;&#xa;SetpointVorstVeilig: Setpoint in vorstveilig&#xa;&#xa;regHours: Automatische synchronisatie met pannel op dit tijdstip (uren)&#xa;&#xa;regMinutes: Automatische synchronisatie met pannel op dit tijdstip (min)&#xa;&#xa;regSeconds: Automatische synchronisatie met pannel op dit tijdstip (sec)&#xa;&#xa;HysteresischBedrijf: Hysteresisch ruimte temp tijdens bedrijf waarde = span 50/50 verdeeld&#xa;&#xa;HysteresischVorstV: Hysteresisch ruimte temp tijdens vorstveilig waarde = span 50/50 verdeeld&#xa;&#xa;HysteresischDak: Hysteresisch temp onder dak aan uitschakelen dakventiatoren waarde = span 50/50 verdeeld&#xa;&#xa;MinTempAanvoer1: Aanvoer hoger dan deze temp dan schakelen ventilaoren heater in Garage&#xa;&#xa;MinTempAanvoer2: Aanvoer hoger dan deze temp dan schakelen ventilaoren heater in Loods&#xa;&#xa;HysteresischAanv: Hysteresisch voor in en uit schakelen heater ventilatoren waarde = span 50/50 verdeeld&#xa;&#xa;dTVentBijschakelen: Als er meer verschil is dan dTVentBijschakelen tussen het vorstveilig setpunt en &#x9;&#x9;&#xa;de ruimte temp waord de tweede vent bij in geschakeld&#xa;&#xa;setpointDakVent: Als de temperatuur onder het dak hoger is dan setpointDakVent schakelt de dakventilator in&#x9;&#xa;&#xa;TijdVorstVeiligUit: Schakelt 's morgens de vorstbeveileging uit en gaat naar bedrijf.&#xa;&#xa;TijdVorstVeiligAan: Schakelt 's avonds de vorstbeveileging in&#xa;&#xa;MaxTempBuitenDakvent: boven deze temperatuur werken de dakventilatoren niet mee." id="4"/>
    </MLTexts>
   </object>
   <object class="ImageWgt" id="bldgImg41" static="true">
@@ -23,7 +23,7 @@
   <object class="LabelWgt" id="label1" static="true">
    <wgtStyle width="1236" font-color="rgb(23,30,40)" x="180" font-sizepx="16" y="8" font-family="Roboto" cx="572.78" cy="371.85" height="785" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="1"/>
+    <lang class="MLTextLink" textid="4"/>
    </links>
   </object>
   <object class="ImageWgt" id="plyrImg9" static="true">
@@ -41,7 +41,7 @@
   <object class="LabelWgt" id="label2" static="true">
    <wgtStyle width="408" font-color="rgb(23,30,40)" x="832" font-sizepx="16" y="6" font-family="Roboto" wrapping="true" cx="189.07" cy="64.42" height="136" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
    <links>
-    <lang class="MLTextLink" textid="0"/>
+    <lang class="MLTextLink" textid="2"/>
    </links>
   </object>
  </object>

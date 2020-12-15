@@ -32,9 +32,7 @@
   <tag>HysteresischDak</tag>
   <tag>HysteresischVorstV</tag>
   <tag>MaxTempBuitenDakvent</tag>
-  <tag>MinBufferVorstVeilig</tag>
-  <tag>MinTempAanVBedrijf</tag>
-  <tag>MinTempAanVVorstVlg</tag>
+  <tag>MinBuffer</tag>
   <tag>MinTempAanvoer1</tag>
   <tag>MinTempAanvoer2</tag>
   <tag>SetpointVorstVeilig</tag>
@@ -71,6 +69,10 @@
   <tag>hrpVentGarage</tag>
   <tag>hrpVentLoods</tag>
   <tag>rotDakVentGarage</tag>
+  <tag>tmpRth1</tag>
+  <tag>tmpRth1dak</tag>
+  <tag>tmpRth2</tag>
+  <tag>tmpRth2dak</tag>
  </group>
  <group Type="Auto">
   <name>Verlichting@$GroupSubscrWgt@$0</name>
@@ -87,6 +89,7 @@
   <tag>BufferLading</tag>
   <tag>BufferMidden</tag>
   <tag>BufferOnder</tag>
+  <tag>Buiten Temp</tag>
   <tag>CPUTemperature</tag>
   <tag>Kaarttemperatuur</tag>
   <tag>Keteltemperatuur</tag>

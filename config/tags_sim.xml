@@ -1720,7 +1720,7 @@
     <isMinMaxEdited>false</isMinMaxEdited>
 </tag>
 <tag>
-    <name>MinBufferVorstVeilig</name>
+    <name>MinBuffer</name>
     <refreshTime>500</refreshTime>
     <accessMode>READ-WRITE</accessMode>
     <active>false</active>
@@ -1780,5 +1780,17 @@
     <enableAudit subT="1" eventT="18">false</enableAudit>
     <min>0</min>
     <max>1</max>
+    <isMinMaxEdited>false</isMinMaxEdited>
+</tag>
+<tag>
+    <name>MinBuitenTempOpstoken</name>
+    <refreshTime>500</refreshTime>
+    <accessMode>READ-WRITE</accessMode>
+    <active>false</active>
+    <resourceLocator>VRBL://MinBuitenTempOpstoken?int</resourceLocator>
+    <enableScaling>false</enableScaling>
+    <enableAudit subT="1" eventT="18">false</enableAudit>
+    <min>-2147483648</min>
+    <max>2147483647</max>
     <isMinMaxEdited>false</isMinMaxEdited>
 </tag>

@@ -1,7 +1,7 @@
 <files>
- <file fill="rgb(0,0,0)" strokeSize="2" imgSize="45,5" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_hours1.svg" numSizes="1"/>
- <file fill="rgb(0,0,0)" strokeSize="2" imgSize="58,5" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_mins1.svg" numSizes="1"/>
- <file fill="rgb(255,0,0)" strokeSize="-1" imgSize="58,5" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_secs1.svg" numSizes="1"/>
+ <file fill="rgb(127,255,212)" strokeSize="-1" imgSize="19,54" stroke="rgb(255,255,255)" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_fathours.svg" numSizes="1"/>
+ <file fill="rgb(127,255,212)" strokeSize="-1" imgSize="18,66" stroke="rgb(255,255,255)" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_fatmins.svg" numSizes="1"/>
+ <file fill="rgb(60,179,113)" strokeSize="-1" imgSize="7,61" stroke="rgb(255,255,255)" numUses="1" isSvgFile="true" dynamic="true" file="images/needle_solid_secs2.svg" numSizes="1"/>
  <file fill="rgb(255,128,0)" imgSize="52,46" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
  <file fill="rgb(0,0,255)" imgSize="52,46" stroke="none" numUses="2" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
  <file fill="rgb(0,255,0)" imgSize="16,20" stroke="none" numUses="1" isSvgFile="true" dynamic="true" file="images/li_shape_rrect.svg" numSizes="1"/>
@@ -40,11 +40,13 @@
  <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/backspace_small.svg" numSizes="1" prePath="keypads"/>
  <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_117.svg" numSizes="1" prePath="keypads"/>
  <file fill="rgb(23,30,40)" imgSize="66,61" stroke="none" numUses="1" isSvgFile="true" file="images/ic_pl2_116_rev1.svg" numSizes="1" prePath="keypads"/>
- <file fill="rgb(0,0,0)" imgSize="389,389" stroke="none" numUses="1" isSvgFile="true" file="images/glasswctr_round.svg" numSizes="1"/>
+ <file fill="rgb(127,255,212)" imgSize="498,477" stroke="none" numUses="1" isSvgFile="true" file="images/clkticks_round_dots.svg" numSizes="1"/>
+ <file fill="rgb(0,0,0)" imgSize="498,477" stroke="none" numUses="1" isSvgFile="true" file="images/glass_round_dkgray.svg" numSizes="1"/>
  <file fill="rgb(160,160,160)" imgSize="89,256" stroke="none" numUses="1" isSvgFile="true" file="images/tank03meter_rev2.svg" numSizes="1"/>
  <file fill="rgb(0,0,0)" imgSize="61,143" stroke="none" numUses="1" isSvgFile="true" file="images/tankglass2.svg" numSizes="1"/>
  <file fill="rgb(0,0,0)" imgSize="49,36" stroke="none" numUses="1" isSvgFile="true" file="images/leftarrow_symbol_rev1.svg" numSizes="1"/>
  <file fill="rgb(0,0,0)" imgSize="49,36" stroke="none" numUses="1" isSvgFile="true" file="images/rightarrow_symbol_rev1.svg" numSizes="1"/>
  <file imgSize="132,89" numUses="1" file="images/alarm.png" numSizes="1"/>
+ <file imgSize="1280,800" numUses="1" file="opt/verwarming.png" numSizes="1"/>
  <file imgSize="1051,507" numUses="1" file="images/action.png" numSizes="1"/>
 </files>

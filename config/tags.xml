@@ -1863,7 +1863,7 @@
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
     <tag>
-        <name>MinBufferVorstVeilig</name>
+        <name>MinBuffer</name>
         <resourceLocator>prot1://0?REG?1000044?unsignedInt</resourceLocator>
         <refreshTime>500</refreshTime>
         <accessMode>READ-WRITE</accessMode>
@@ -1928,6 +1928,19 @@
         <enableAudit subT="1" eventT="18">false</enableAudit>
         <min>0</min>
         <max>1</max>
+        <isMinMaxEdited>false</isMinMaxEdited>
+    </tag>
+    <tag>
+        <name>MinBuitenTempOpstoken</name>
+        <resourceLocator>prot1://0?REG?1000046?int</resourceLocator>
+        <refreshTime>500</refreshTime>
+        <accessMode>READ-WRITE</accessMode>
+        <active>false</active>
+        <simulator>VRBL://MinBuitenTempOpstoken?int</simulator>
+        <enableScaling>false</enableScaling>
+        <enableAudit subT="1" eventT="18">false</enableAudit>
+        <min>-2147483648</min>
+        <max>2147483647</max>
         <isMinMaxEdited>false</isMinMaxEdited>
     </tag>
 </tags>

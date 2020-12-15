@@ -21,7 +21,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp4.lbl" static="true">
     <wgtStyle width="93.10" x="3.96" font-sizepx="13" y="2.61" font-family="Roboto" cx="47.22" cy="56.35" height="109.57" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="6"/>
+     <lang class="MLTextLink" textid="22"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp4.icoImg" static="true">
@@ -64,8 +64,6 @@
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
-    <MLText L1="" id="1"/>
-    <MLText L1="" id="6"/>
     <MLText L1="Ruimte" id="0"/>
     <MLText L1="Mun H" id="2"/>
     <MLText L1="Dak" id="3"/>
@@ -74,6 +72,9 @@
     <MLText L1="setpunt" id="9"/>
     <MLText L1="Garage" id="17"/>
     <MLText L1="Loods" id="19"/>
+    <MLText L1="°C" id="20"/>
+    <MLText L1="" id="22"/>
+    <MLText L1="" id="23"/>
     <MLText L1="Vorstveilig op basis van tijdstip en verlichting in de ruimte" id="25"/>
     <MLText L1="Vorstveilig op basis van aanvoer temperatuur verwarming" id="26"/>
     <MLText L1="Vorstveilig op basis van thermostaat setting" id="27"/>
@@ -335,7 +336,7 @@
    <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtSmp1.lbl" static="true">
     <wgtStyle width="93.10" x="3.96" font-sizepx="13" y="2.61" font-family="Roboto" cx="47.22" cy="56.35" height="109.57" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
     <links>
-     <lang class="MLTextLink" textid="1"/>
+     <lang class="MLTextLink" textid="23"/>
     </links>
    </object>
    <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtSmp1.icoImg" static="true">
@@ -344,6 +345,66 @@
   </object>
   <object class="ImageWgt" id="bldgImg1">
    <wgtStyle width="79" imagePath="images/2-5.svg" x="248.03" forcePaint="1" y="522.80" cx="39.50" cy="38.50" height="77"/>
+  </object>
+  <object class="LabelWgt" id="label20" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="694.42" font-sizepx="21" y="286.85" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label12" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="694.42" font-sizepx="21" y="326.55" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="694.42" font-sizepx="21" y="367.51" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label14" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="694.42" font-sizepx="21" y="410.37" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label15" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="359.03" font-sizepx="21" y="288.39" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label16" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="359.03" font-sizepx="21" y="328.09" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label17" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="359.03" font-sizepx="21" y="369.05" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label18" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="359.03" font-sizepx="21" y="411.91" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label19" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="359.03" font-sizepx="21" y="451.89" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label21" static="true">
+   <wgtStyle width="41" font-color="rgb(23,30,40)" x="694.42" font-sizepx="21" y="451.89" font-family="Roboto" wrapping="true" cx="19" cy="9" height="19" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="20"/>
+   </links>
   </object>
  </object>
 </wgtPage>
