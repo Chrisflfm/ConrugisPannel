@@ -1,6 +1,6 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="Ventilatoren" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/ventilatoren.png" id="Ventilatoren" staticOptEnable="true">
-  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
   <object class="ImageWgt" id="image1" static="true">
    <wgtStyle width="877.97" imagePath="images/conrugisPlattegrond.jpg" x="399.03" y="8.01" cx="438.99" cy="337.99" height="675.99" mtx="-1,0,0,0,-1,0,877.973,675.99,1"/>
   </object>
@@ -17,11 +17,13 @@
     <MLText L1="Ruimte" id="1"/>
     <MLText L1="Garage" id="2"/>
     <MLText L1="Ventilatoren" id="3"/>
-    <MLText L1="Basis tijdspanne (min):" id="7"/>
+    <MLText L1="Basis tijdspanne (min/piep):" id="4"/>
+    <MLText L1="Tot tijdspanne [TotVentDraaiTijdGarage|format(&quot;##.##&quot;)] min" id="7"/>
+    <MLText L1="Tot tijdspanne [TotVentDraaiTijdLoods|format(&quot;##.##&quot;)] min" id="8"/>
     <MLText L1="Loods" id="9"/>
-    <MLText L1="Tot tijdspanne (min):" id="10"/>
     <MLText L1="Dak" id="11"/>
     <MLText L1="Dak Vent" id="12"/>
+    <MLText L1="Tank diesel stalplaats:  [InhoudDieselStal|format(&quot;##.#&quot;)] liter&#xa;Ruwe waarde: [mVDieselStal] eenheden" id="14"/>
     <MLText L1="Dak Vent" id="15"/>
     <MLText L1="°C" id="32"/>
     <MLText L1="" id="41"/>
@@ -650,40 +652,28 @@
    </object>
   </object>
   <object class="LabelWgt" id="label3" static="true">
-   <wgtStyle width="219" font-color="rgb(23,30,40)" x="169.34" font-sizepx="21" y="731" font-family="Roboto" wrapping="true" cx="101.49" cy="11.84" height="25" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <wgtStyle width="274.58" font-color="rgb(23,30,40)" x="169.43" font-sizepx="21" y="731" font-family="Roboto" wrapping="true" cx="127.25" cy="11.84" height="25" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="NumericWgt" id="field1">
+   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" x="455.43" y="731" vert-align="top" text="99999" max="2147483647" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="-2147483648" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="16"/>
+   <dataLinks>
+    <dataLink readWrite="R/W" tagType="int" attribute="value" tag="TijdfactorMin" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="LabelWgt" id="label4">
+   <wgtStyle width="262" font-color="rgb(23,30,40)" x="576" forcePaint="16" font-sizepx="21" y="26" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="121.42" cy="25.81" wgtStaticOpt="dynamic" height="54.51" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
     <lang class="MLTextLink" textid="7"/>
    </links>
   </object>
-  <object class="NumericWgt" id="field1">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" x="407" y="731" vert-align="top" text="99999" max="4294967295" usingFormat="" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" readWrite="true" height="20" form="Numeric" font-size="16"/>
-   <dataLinks>
-    <dataLink readWrite="R/W" tagType="unsignedInt" attribute="value" tag="VentDraaiTijd" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
-   </dataLinks>
-  </object>
-  <object class="LabelWgt" id="label4" static="true">
-   <wgtStyle width="201" font-color="rgb(23,30,40)" x="494.25" font-sizepx="21" y="246.59" font-family="Roboto" wrapping="true" cx="93.15" cy="17.05" height="36" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+  <object class="LabelWgt" id="label5">
+   <wgtStyle width="351" font-color="rgb(23,30,40)" x="887.94" forcePaint="16" font-sizepx="21" y="106.68" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="162.66" cy="25.10" wgtStaticOpt="dynamic" height="53" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
    <links>
-    <lang class="MLTextLink" textid="10"/>
+    <lang class="MLTextLink" textid="8"/>
    </links>
-  </object>
-  <object class="NumericWgt" id="field2">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="35.25" showThousandSeparator="false" cy="14.67" step="1" timeSpec="local" x="709.77" y="250" vert-align="top" text="999.0" max="4294967295" usingFormat="" decimalDigits="1" value="999.0" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="76.63" numberFormat="1" height="32.59" form="Numeric" font-size="16"/>
-   <dataLinks>
-    <dataLink readWrite="R" tagType="float" attribute="value" tag="TotVentDraaiTijdGarage" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
-   </dataLinks>
-  </object>
-  <object class="LabelWgt" id="label5" static="true">
-   <wgtStyle width="201" font-color="rgb(23,30,40)" x="887.94" font-sizepx="21" y="106.68" font-family="Roboto" wrapping="true" cx="93.15" cy="17.05" height="36" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
-   <links>
-    <lang class="MLTextLink" textid="10"/>
-   </links>
-  </object>
-  <object class="NumericWgt" id="field3">
-   <wgtStyle forcePaint="8" font-family="Roboto" font-sizepx="21" cx="23" showThousandSeparator="false" cy="9" step="1" timeSpec="local" x="1103.46" y="110.09" vert-align="top" text="99999" max="4294967295" usingFormat="" decimalDigits="1" value="99999" keypad-type="Numeric" font-color="rgb(23,30,40)" min="0" width="50" numberFormat="1" height="20" form="Numeric" font-size="16"/>
-   <dataLinks>
-    <dataLink readWrite="R" tagType="float" attribute="value" tag="TotVentDraaiTijdLoods" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
-   </dataLinks>
   </object>
   <object class="LabelWgt" id="label6" static="true">
    <wgtStyle width="82.32" x="952.89" font-sizepx="21" y="327.95" font-family="Roboto" wrapping="true" cx="38.14" cy="10.62" height="22.42" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
@@ -756,6 +746,71 @@
    <links>
     <lang class="MLTextLink" textid="32"/>
    </links>
+  </object>
+  <object class="LabelWgt" id="label17">
+   <wgtStyle width="467" font-color="rgb(23,30,40)" x="714.92" forcePaint="16" font-sizepx="21" y="685.97" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="216.42" cy="52.14" wgtStaticOpt="dynamic" height="110.05" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="14"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="tankbargphWgt4" customType="Tankbargraph">
+   <wgtStyle width="150" x="1097.43" y="515.06" cx="48" cy="60.08" height="105" mtx="0,-0.801067,0,0.914286,0,0,0,120.16,1" groupStyle="xform-scaling"/>
+   <links>
+    <attr attrName="align" alias="ScaleWgt1.align;LabelsWgt1.align;TicksWgt1.align"/>
+    <attr attrName="TicksWgt_stroke-width" alias="TicksWgt1.stroke-width"/>
+    <attr attrName="LabelsWgt_font-size" alias="LabelsWgt1.font-size"/>
+    <attr attrName="TicksWgt_strokeMajor" alias="TicksWgt1.strokeMajor"/>
+    <attr attrName="TicksWgt_tickSize" alias="TicksWgt1.tickSize"/>
+    <attr attrName="TicksWgt_frame" alias="TicksWgt1.frame"/>
+    <attr attrName="TicksWgt_tickFreq" alias="TicksWgt1.tickFreq"/>
+    <attr attrName="labelFreq" alias="TicksWgt1.labelFreq;LabelsWgt1.labelFreq"/>
+    <attr attrName="ScaleWgt_stroke" alias="ScaleWgt1.stroke"/>
+    <attr attrName="reverseScale" alias="BargraphWgt1.reverseScale;LabelsWgt1.reverseScale;ScaleWgt1.reverseScale;TicksWgt1.reverseScale"/>
+    <attr attrName="max" alias="BargraphWgt1.max;LabelsWgt1.max;ScaleWgt1.max"/>
+    <attr attrName="TicksWgt_tickSize2" alias="TicksWgt1.tickSize2"/>
+    <attr attrName="LabelsWgt_fill" alias="LabelsWgt1.fill"/>
+    <attr attrName="min" alias="BargraphWgt1.min;ScaleWgt1.min;LabelsWgt1.min"/>
+    <attr attrName="ScaleWgt_alarmMax" alias="ScaleWgt1.max"/>
+    <attr attrName="LabelsWgt_dataFormat" alias="LabelsWgt1.dataFormat"/>
+    <attr attrName="TicksWgt_strokeMinor" alias="TicksWgt1.strokeMinor"/>
+    <attr attrName="ScaleWgt_offset" alias="ScaleWgt1.offset"/>
+    <attr attrName="TicksWgt_minorStroke-width" alias="TicksWgt1.minorStroke-width"/>
+    <attr attrName="ScaleWgt_alarmMin" alias="ScaleWgt1.min"/>
+    <attr attrName="visibility2" alias="LabelsWgt1.visibility;ScaleWgt1.visibility;TicksWgt1.visibility"/>
+   </links>
+   <object class="ImageWgt" id="tankbargphWgt4.bgImg" static="true">
+    <wgtStyle width="150" imagePath="images/Tank03Meter_rev2.svg" x="0" y="21" fill="rgb(160,160,160)" cx="123.99" cy="34.02" height="60"/>
+   </object>
+   <object class="GroupWgt" id="tankbargphWgt4.bargph" customType="Bargraph">
+    <wgtStyle width="73" x="39" y="0" cx="36.67" cy="52.62" height="105"/>
+    <links>
+     <attr attrName="min" alias="BargraphWgt.min;ScaleWgt.min;LabelsWgt.min"/>
+     <attr attrName="max" alias="BargraphWgt.max;ScaleWgt.max;LabelsWgt.max"/>
+     <attr attrName="visibility2" alias="TicksWgt.visibility2;ScaleWgt.visibility2;LabelsWgt.visibility2"/>
+     <attr attrName="align" alias="TicksWgt.align;ScaleWgt.align;LabelsWgt.align"/>
+     <attr attrName="autoAdjust" alias="TicksWgt.autoAdjust;LabelsWgt.autoAdjust"/>
+     <attr attrName="reverseScale" alias="BargraphWgt.reverseScale;ScaleWgt.reverseScale;LabelsWgt.reverseScale;TicksWgt.reverseScale"/>
+     <attr attrName="labelFreq" alias="TicksWgt.labelFreq;LabelsWgt.labelFreq"/>
+    </links>
+    <object class="LabelsWgt" id="tankbargphWgt4.bargph.lbls">
+     <wgtStyle font-family="Roboto" font-sizepx="11" cx="47.18" showThousandSeparator="false" startAngle="-20" cy="21.14" step="1" timeSpec="local" endAngle="185" x="0" y="1" visibility="false" rotated="true" vert-align="top" text="" max="5000" usingFormat="" value="" keypad-type="None" min="0" width="71.03" labelNames="" numberFormat="1" readWrite="true" tickFreq="4" height="102" labelFreq="6" form="horizontal" font-size="0"/>
+    </object>
+    <object class="ScaleWgt" id="tankbargphWgt4.bargph.scale" static="true">
+     <wgtStyle cx="36.89" startAngle="-20" cy="42.10" reverseScale="false" endAngle="185" x="3.95" y="14" visibility="false" autoAdjust="true" stroke-width="6" width="62.15" Color="none" fill="none" size="99" height="74" stroke="rgb(255,0,0)" form="horizontal" offset="2400"/>
+    </object>
+    <object class="TicksWgt" id="tankbargphWgt4.bargph.ticks" static="true">
+     <wgtStyle cx="41.11" startAngle="-10" cy="50.87" endAngle="200" reverseScale="true" tickSize2="8" x="3.95" y="13" visibility="false" max="10" stroke-width="2" width="62.15" stroke-linecap="butt" tickSize="6" tickFreq="1" height="77" labelFreq="6" form="horizontal" frame="1"/>
+    </object>
+    <object class="BargraphWgt" hmiStyle="hmi-type:*barh" id="tankbargphWgt4.bargph.bar">
+     <wgtStyle width="62.15" reverseScale="false" x="3.95" forcePaint="73" y="24" fill="rgb(50,205,50)" cx="41.11" form="horizontal" cy="25.89" height="39" value="0" max="5000" color="rgb(255,255,255)"/>
+     <dataLinks>
+      <dataLink readWrite="R" tagType="float" attribute="value" tag="InhoudDieselStal" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+     </dataLinks>
+    </object>
+   </object>
+   <object class="ImageWgt" id="tankbargphWgt4.glassImg">
+    <wgtStyle width="84" imagePath="images/TankGlass2.svg" x="23" forcePaint="65" y="23" cx="42" cy="20.50" height="41"/>
+   </object>
   </object>
  </object>
 </wgtPage>

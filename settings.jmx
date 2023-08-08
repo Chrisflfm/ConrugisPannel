@@ -1,15 +1,15 @@
 <wgtPage rev="1" projectType="HMI Project">
  <object pageName="Settings" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/settings.png" id="Settings" staticOptEnable="true">
-  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040000100" v="04.00.00.100"/>
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
   <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
    <wgtStyle width="0" x="0" y="0" height="0"/>
    <langs defLangId="L1" curLangId="L1">
     <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
    </langs>
    <MLTexts>
+    <MLText L1="" id="2"/>
     <MLText L1="regTimeOutPomp" id="0"/>
     <MLText L1="MinBuffer" id="1"/>
-    <MLText L1="" id="2"/>
     <MLText L1="AlarmTempVorst" id="3"/>
     <MLText L1="BaseSetpointBedrijf" id="6"/>
     <MLText L1="WaterDruklaag" id="7"/>
@@ -261,10 +261,10 @@
    <wgtStyle width="0" x="0" y="0" height="0"/>
   </object>
   <object class="ImageWgt" id="comImg43" static="true">
-   <wgtStyle width="32" imagePath="images/ic_co1_043.svg" x="118" y="753" cx="16" cy="16" height="32"/>
+   <wgtStyle width="32" imagePath="images/ic_co1_043.svg" x="134" y="756" cx="16" cy="16" height="32"/>
   </object>
   <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea1">
-   <wgtStyle width="65" x="101.50" y="746.50" fill="rgb(160,160,164)" dx="1" cx="32" form="gesture" dy="-1" cy="25" height="51" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <wgtStyle width="106.50" x="104.50" y="697.06" fill="rgb(160,160,164)" dx="1" cx="52.43" form="gesture" dy="-1" cy="49" height="99.97" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    <links>
     <action pageName="settingsinfo.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
    </links>
@@ -279,7 +279,7 @@
    <wgtStyle width="43.46" imagePath="images/ic_ad1_001.svg" x="214.94" y="731" cx="21.73" cy="31.52" height="63.03"/>
   </object>
   <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea2">
-   <wgtStyle width="70" x="208.50" y="734.01" fill="rgb(160,160,164)" dx="1" cx="34.46" form="gesture" dy="-1" cy="27.95" height="57.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <wgtStyle width="70" x="208.50" forcePaint="1" y="734.01" fill="rgb(160,160,164)" dx="1" cx="34.46" form="gesture" dy="-1" cy="27.95" height="57.02" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
    <links>
     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
      <dataLinks>

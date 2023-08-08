@@ -1,0 +1,35 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="Protocol test" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/protocol test.png" id="Protocol test" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="Netwerk comunicatie status: [Status:_SysPropMgr] (Empty string = no errors)&#xa;Communication Status: [Protocol Communication Status:_SysPropMgr] &#xa;0 = No protocol running, protocol drivers might not have been properly downloaded to the HMI device.&#xa;1 = Protocols loaded and started, no communication error.&#xa;2 = At least one communication protocol is reporting an error: [Protocol Error Message:_SysPropMgr]&#xa;System up time: [System UpTime:_SysPropMgr]" id="6"/>
+   </MLTexts>
+  </object>
+  <object class="ImageWgt" id="bldgImg41" static="true">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="20.82" y="754.70" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
+   <wgtStyle width="137" x="4" y="684.90" fill="rgb(160,160,164)" dx="1" cx="67.45" form="gesture" dy="-1" cy="54.90" height="112" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="image2" static="true">
+   <wgtStyle width="150" imagePath="images/Platina klein.jpg" x="1127" y="719" cx="75" cy="37" height="74"/>
+  </object>
+  <object class="LabelWgt" id="label1">
+   <wgtStyle width="835" font-color="rgb(23,30,40)" x="242" forcePaint="16" font-sizepx="21" y="62" enableLiveTags="true" font-family="Roboto" wrapping="true" cx="386.95" cy="109.42" wgtStaticOpt="dynamic" height="231" vert-align="top" marker="true" keypad-type="None" font-size="16"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="GroupSubscribeWgt" id="Protocol test@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+ </object>
+</wgtPage>

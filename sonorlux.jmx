@@ -1,0 +1,850 @@
+<wgtPage rev="1" projectType="HMI Project">
+ <object pageName="SonorLux" pageSize="1280,800" class="PageWgt" dataWndSize="0,70" downloadPrepDone="true" usedFonts="Roboto" staticFile="opt/sonorlux.png" id="SonorLux" staticOptEnable="true">
+  <wgtStyle width="1280" x="0" y="0" height="800" fitToSize="1" ver="040001443" v="04.00.01.443"/>
+  <object class="PageMLTextMgrWgt" id="_PageMLTextMgrWgt" mgrType="Page" mlFileName="">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+   <langs defLangId="L1" curLangId="L1">
+    <lang removable="false" langCode="en-US" langId="L1" writingsystem="Any" name="Lang1" defaultFont="Roboto"/>
+   </langs>
+   <MLTexts>
+    <MLText L1="" id="1"/>
+    <MLText L1="Lampschakeling volgens programma,&#xa;Rood: Lampschakeling aleen handmatig. " id="4"/>
+    <MLText L1="Mast 1" id="6"/>
+    <MLText L1="Mast 2" id="8"/>
+    <MLText L1="Mast 3" id="9"/>
+    <MLText L1="Mast 4" id="10"/>
+    <MLText L1="Mast 5" id="11"/>
+    <MLText L1="Mast 6" id="12"/>
+    <MLText L1="Buitenlampen 7.0" id="13"/>
+    <MLText L1="SonorLux Live" id="15"/>
+    <MLText L1="Buitenlamp banden" id="18"/>
+   </MLTexts>
+  </object>
+  <object class="GroupWgt" id="LgtStd2" customType="Light">
+   <wgtStyle width="52" x="378" y="37.80" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd2.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd2.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(0,255,0);rgb(0,0,255)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="mAlive" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd2.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd2.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="ImageWgt" id="bldgImg41" static="true">
+   <wgtStyle width="32" imagePath="images/7-5.svg" x="21" y="761" cx="15.45" cy="15.41" height="32"/>
+  </object>
+  <object class="ButtonWgt" hmiStyle="type:btn" id="gstArea">
+   <wgtStyle width="131.50" x="3" y="671.98" fill="rgb(160,160,164)" dx="1" cx="64.74" form="gesture" dy="-1" cy="62.75" height="128" releasePath="../../shared/gallery/images/bu_other/win-like.svg" needlePath="../../shared/gallery/images/bu_other/win-like-press.svg" type="momentary" value="0" pushColor="rgb(128,128,0)"/>
+   <links>
+    <action pageName="mainpage.jmx" class="LoadPageAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_PageMgr"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="LgtStd1" customType="Light">
+   <wgtStyle width="52" x="378" y="172.97" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd1.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd1.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Lichtmast2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd1.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd1.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtStd3" customType="Light">
+   <wgtStyle width="52" x="378" y="444.18" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd3.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd3.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Lichtmast6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd3.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd3.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtStd4" customType="Light">
+   <wgtStyle width="52" x="378" y="376.38" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd4.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd4.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Lichtmast5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd4.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd4.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtStd5" customType="Light">
+   <wgtStyle width="52" x="378" y="308.58" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd5.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd5.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Lichtmast4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd5.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd5.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtStd6" customType="Light">
+   <wgtStyle width="52" x="378" y="240.77" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd6.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd6.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Lichtmast3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd6.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd6.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtStd7" customType="Light">
+   <wgtStyle width="52" x="378" y="511.99" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd7.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd7.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Buitenlamp70" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd7.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd7.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupSubscribeWgt" id="SonorLux@$GroupSubscrWgt@$0">
+   <wgtStyle width="0" x="0" y="0" height="0"/>
+  </object>
+  <object class="GroupWgt" id="LgtStd8" customType="Light">
+   <wgtStyle width="52" x="378" y="579.79" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd8.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd8.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Banden" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd8.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd8.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="LgtStd9" customType="Light">
+   <wgtStyle width="52" x="378" y="105.17" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="IndicatorWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="LgtStd9.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.53" cy="25.47" height="52"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="hmi-name:blocky1; hmi-shape:round; hmi-type:light; type:light" id="LgtStd9.ind">
+    <wgtStyle width="38" imagePath="images/li_round_blocky1_rev2.svg" x="7" forcePaint="8" y="7" cx="24.58" cy="15.53" bkgColor="rgb(120,120,120);rgb(0,255,0)" height="38" stroke="rgb(255,251,240)"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="value" tag="Lichtmast1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="LgtStd9.lbl" static="true">
+    <wgtStyle width="34" x="10" font-sizepx="13" y="9" font-family="Roboto" cx="17.02" cy="16.98" height="35" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-type:icon" id="LgtStd9.icoImg" static="true">
+    <wgtStyle width="15" enableCache="true" x="18" y="18" cx="7.56" cy="7.43" height="15"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label7" static="true">
+   <wgtStyle width="86" font-color="rgb(23,30,40)" x="457" font-sizepx="24" y="117.42" font-family="Roboto" wrapping="true" cx="39.85" cy="13.03" height="27.50" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="6"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label8" static="true">
+   <wgtStyle width="86" font-color="rgb(23,30,40)" x="457" font-sizepx="24" y="185.22" font-family="Roboto" wrapping="true" cx="39.85" cy="13.03" height="27.50" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="8"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label9" static="true">
+   <wgtStyle width="86" font-color="rgb(23,30,40)" x="457" font-sizepx="24" y="253.02" font-family="Roboto" wrapping="true" cx="39.85" cy="13.03" height="27.50" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="9"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label10" static="true">
+   <wgtStyle width="86" font-color="rgb(23,30,40)" x="457" font-sizepx="24" y="320.83" font-family="Roboto" wrapping="true" cx="39.85" cy="13.03" height="27.50" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="10"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label11" static="true">
+   <wgtStyle width="86" font-color="rgb(23,30,40)" x="457" font-sizepx="24" y="388.63" font-family="Roboto" wrapping="true" cx="39.85" cy="13.03" height="27.50" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="11"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label12" static="true">
+   <wgtStyle width="86" font-color="rgb(23,30,40)" x="457" font-sizepx="24" y="456.43" font-family="Roboto" wrapping="true" cx="39.85" cy="13.03" height="27.50" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="12"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label13" static="true">
+   <wgtStyle width="194" font-color="rgb(23,30,40)" x="458" font-sizepx="24" y="521.69" font-family="Roboto" wrapping="true" cx="89.89" cy="15.44" height="32.59" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="13"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label14" static="true">
+   <wgtStyle width="195" font-color="rgb(23,30,40)" x="458" font-sizepx="24" y="573.29" font-family="Roboto" wrapping="true" cx="90.35" cy="30.81" height="65" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="18"/>
+   </links>
+  </object>
+  <object class="LabelWgt" id="label1" static="true">
+   <wgtStyle width="193.84" font-color="rgb(23,30,40)" x="458" font-sizepx="24" y="49.91" font-family="Roboto" wrapping="true" cx="89.82" cy="13.16" height="27.77" vert-align="top" marker="true" keypad-type="None" font-size="18"/>
+   <links>
+    <lang class="MLTextLink" textid="15"/>
+   </links>
+  </object>
+  <object class="ImageWgt" id="wthrImg57">
+   <wgtStyle width="66" imagePath="images/IC_fo1_032.svg" x="246" forcePaint="8" y="27.17" cx="33" cy="31.50" height="63"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="notSchemer" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="wthrImg48">
+   <wgtStyle width="52" imagePath="images/IC_fo1_031.svg" x="246" forcePaint="9" y="32" cx="26" cy="22.49" height="44.98"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="SchemerSch" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+  <object class="GroupWgt" id="BtnIllum4" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="172.97" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum4.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum4.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum4.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum4.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum4.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="frame" tag="mMast2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd4" customType="Button">
+   <wgtStyle width="52" x="310" y="172.97" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd4.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd4.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="0" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast2" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd4.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd4.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum1" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="105.17" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum1.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum1.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum1.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum1.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum1.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="mMast1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd1" customType="Button">
+   <wgtStyle width="52" x="312" y="105.17" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd1.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd1.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast1" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd1.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd1.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum2" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="240.78" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum2.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum2.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum2.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum2.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum2.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="mMast3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd2" customType="Button">
+   <wgtStyle width="52" x="309" y="240.77" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd2.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd2.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast3" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd2.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd2.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum3" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="308.58" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum3.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum3.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum3.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum3.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum3.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="mMast4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd3" customType="Button">
+   <wgtStyle width="52" x="309" y="308.58" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd3.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd3.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast4" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd3.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd3.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum5" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="376.38" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum5.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum5.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum5.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum5.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum5.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="mMast5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd5" customType="Button">
+   <wgtStyle width="52" x="309" y="376.38" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd5.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd5.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast5" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd5.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd5.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum6" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="444.18" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum6.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum6.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum6.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum6.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum6.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="mMast6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd6" customType="Button">
+   <wgtStyle width="52" x="312" y="444.18" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd6.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd6.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mMast6" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd6.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd6.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum7" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="511.99" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum7.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum7.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mbuitenlampen70" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum7.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum7.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum7.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="frame" tag="mbuitenlampen70" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd7" customType="Button">
+   <wgtStyle width="52" x="307" y="511.99" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd7.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd7.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mbuitenlampen70" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd7.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd7.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnIllum8" customType="Button With Light">
+   <wgtStyle width="52" x="246" y="579.79" cx="26" cy="26" height="52"/>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnIllum8.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" cx="25.54" cy="26" height="52"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:round; hmi-type:btn; type:btn" id="BtnIllum8.btn">
+    <wgtStyle width="38" x="7" y="7" fill="rgb(50,205,50)" cx="18.54" form="standard" cy="19" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="SetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mBanden" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum8.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnIllum8.icoImg" static="true">
+    <wgtStyle width="18" x="16" y="22" cx="9" cy="7" height="16"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum8.ind">
+    <wgtStyle width="12" imagePath="images/li_inset_round.svg" x="24" forcePaint="9" y="11" cx="5.54" cy="5" bkgColor="rgb(192,192,192);rgb(255,128,0)" height="12" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R/W" tagType="boolean" attribute="frame" tag="mBanden" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="GroupWgt" id="BtnStd8" customType="Button">
+   <wgtStyle width="52" x="312" y="579.79" cx="26" cy="26" height="52"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:round; hmi-type:bkgd" id="BtnStd8.frmImg" static="true">
+    <wgtStyle width="52" imagePath="images/frame_round_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" fill="rgb(127,127,127)" cx="25.54" cy="26" bdrSize="0.45,0.44,0.41,0.41" height="52" bdrEdges="0.14,0.13,0.13,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:plastic; hmi-shape:round; hmi-type:btn; type:btn" id="BtnStd8.btn">
+    <wgtStyle width="38" x="7" y="7" bdrImageSize="41.00,38.00" fill="rgb(255,0,0)" cx="17.61" form="standard" cy="18" bdrSize="0.42,0.44,0.38,0.39" height="38" releasePath="images\btn_plastic_round_1_rev2.svg" needlePath="images\btn_plastic_round_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ResetBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="mBanden" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnStd8.lbl" static="true">
+    <wgtStyle width="33" font-color="rgb(40,40,40)" x="9" font-sizepx="13" y="11" font-family="Roboto" wrapping="true" cx="22" cy="19" height="30" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:none; hmi-type:icon" id="BtnStd8.icoImg" static="true">
+    <wgtStyle width="18" x="17" y="18" cx="9" cy="7" height="16"/>
+   </object>
+  </object>
+  <object class="LabelWgt" id="label5" static="true">
+   <wgtStyle width="196" font-color="rgb(23,30,40)" x="16.08" font-sizepx="16" y="182.29" font-family="Roboto" wrapping="true" cx="90.81" cy="40.67" height="85.78" vert-align="top" marker="true" keypad-type="None" font-size="12"/>
+   <links>
+    <lang class="MLTextLink" textid="4"/>
+   </links>
+  </object>
+  <object class="GroupWgt" id="BtnIllum18" customType="Button With Light">
+   <wgtStyle width="53.08" x="113.56" y="109.62" cx="26.54" cy="23.46" height="46.92"/>
+   <links>
+    <attr attrName="bdrImage" alias="ButtonWgt.bdrImage;ImageWgt1.bdrImage"/>
+   </links>
+   <object class="ImageWgt" hmiStyle="hmi-name:chrome; hmi-shape:rect; hmi-type:bkgd" id="BtnIllum18.frmImg" static="true">
+    <wgtStyle width="53.08" imagePath="images/frame_rect_chrome.svg" x="0" y="0" bdrImageSize="57.00,52.00" cx="26.08" cy="23.46" bdrSize="0.19,0.19,0.18,0.19" height="46.92" bdrEdges="0.13,0.13,0.12,0.13"/>
+   </object>
+   <object class="ButtonWgt" hmiStyle="hmi-name:shineyflat; hmi-shape:rect; hmi-type:btn; type:btn" id="BtnIllum18.btn">
+    <wgtStyle width="38.80" x="7.14" y="6.32" bdrImageSize="42.00,38.00" fill="rgb(120,120,120)" cx="18.47" form="standard" cy="15.35" height="34.29" releasePath="images\btn_shiney_rect_1.svg" needlePath="images\btn_shiney_rect_2_rev2.svg" type="momentary" value="0"/>
+    <links>
+     <action BitIndex="0" class="ToggleBitAction" attribute="onMouseClick" event="onMouseClick" actionID="1" actionWgt="_TagMgr">
+      <dataLinks>
+       <dataLink readWrite="R" tagType="boolean" attribute="tagSrc" tag="M20LampenUitInAuto" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+      </dataLinks>
+     </action>
+    </links>
+   </object>
+   <object class="LabelWgt" hmiStyle="hmi-type:wgtlabel" id="BtnIllum18.lbl" static="true">
+    <wgtStyle width="39.82" font-color="rgb(40,40,40)" x="6.12" font-sizepx="13" y="17.14" font-family="Roboto" wrapping="true" cx="24.38" cy="13.92" height="21.67" alignment="center" vert-align="middle" keypad-type="None" font-size="12"/>
+    <links>
+     <lang class="MLTextLink" textid="1"/>
+    </links>
+   </object>
+   <object class="ImageWgt" hmiStyle="hmi-name:solid; hmi-shape:rect; hmi-type:icon" id="BtnIllum18.icoImg" static="true">
+    <wgtStyle width="22.46" x="15.32" y="18.95" cx="11.23" cy="7.23" height="16.25"/>
+   </object>
+   <object class="IndicatorWgt" hmiStyle="type:light" id="BtnIllum18.ind">
+    <wgtStyle width="12.25" imagePath="images/li_inset_round.svg" x="29.60" forcePaint="9" y="8.11" cx="4.64" cy="4.07" bkgColor="rgb(192,192,192);rgb(255,0,0)" height="10.83" stroke="rgb(255,255,255)" stroke-width="0"/>
+    <dataLinks>
+     <dataLink readWrite="R" tagType="boolean" attribute="frame" tag="M20LampenUitInAuto" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+    </dataLinks>
+   </object>
+  </object>
+  <object class="ImageWgt" id="lgtImg4">
+   <wgtStyle width="32" imagePath="images/light01_004.svg" x="52" forcePaint="8" y="116" cx="16" cy="16" height="32"/>
+   <dataLinks>
+    <dataLink attribute="visibility" sourceType="Formula">
+     <xForms>
+      <xForm colorPalette="" class="FormulaXForm" expression="$Not($('M20LampenUitInAuto'))" compiledExpression="(!$0)" name="Formula">
+       <dataLinks>
+        <dataLink readWrite="R" tagType="boolean" attribute="$0" tag="M20LampenUitInAuto" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+       </dataLinks>
+      </xForm>
+     </xForms>
+    </dataLink>
+   </dataLinks>
+  </object>
+  <object class="ImageWgt" id="lgtshdImg4">
+   <wgtStyle width="32" imagePath="images/light02_004.svg" x="52" forcePaint="9" y="117.08" fill="rgb(255,0,0)" cx="16" cy="16" height="32"/>
+   <dataLinks>
+    <dataLink readWrite="R" tagType="boolean" attribute="visibility" tag="M20LampenUitInAuto" class="TagMgrWgt" widgetType="Project" sourceType="Tag" tagIndex="-1" dataSource="_TagMgr"/>
+   </dataLinks>
+  </object>
+ </object>
+</wgtPage>
